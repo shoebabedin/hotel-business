@@ -1,0 +1,210 @@
+.isotop .wrapper {
+    width: 1000px;
+    margin: auto;
+    display: block;
+}
+
+.isotop .btn {
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 5px 15px;
+    background: #d6d6d6;
+    display: inline-block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.isotop .btn:hover {
+    background: #aaa;
+}
+
+
+/* ---- button ---- */
+
+.isotop .button {
+    display: inline-block;
+    padding: 10px 18px;
+    margin-bottom: 10px;
+    background: #eee;
+    border: none;
+    border-radius: 7px;
+    background: #f3f3f3;
+    color: #0f0e0e;
+    font-size: 16px;
+    line-height: 19px;
+    text-shadow: 0;
+    cursor: pointer;
+}
+
+.isotop .button:hover {
+    background-color: #8cf;
+    color: #222;
+}
+
+.isotop .button:active,
+.isotop .button.is-checked {
+    background: #005555 !important;
+    box-shadow: 0px 0px 14px rgba(8, 91, 216, 0.35) !important;
+    color: white !important;
+}
+
+.isotop .button.is-checked {
+    color: white;
+}
+
+
+/* ---- button-group ---- */
+
+.isotop .button-group:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.isotop .button-group .button {
+    background: #ffffff;
+    box-shadow: 0px 0px 14px rgba(206, 206, 206, 0.35);
+    border-radius: 5px;
+    padding: 10px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #312e49;
+    border-radius: 5px;
+    margin: 0px 12px;
+}
+
+
+/* ---- isotope ---- */
+
+.isotop .content {
+    border: 0;
+    /* max-width: 984px;
+  width: 100%; */
+    margin: auto;
+}
+
+.isotop .element-item {
+    position: absolute;
+    float: left !important;
+    color: #262524;
+    width: 48%;
+    height: max-content;
+    padding: 10px;
+    /* transform: none !important; */
+    /* margin-bottom: 24px; */
+    box-shadow: 0px 0px 4px rgba(101, 167, 167, 0.23);
+    background: #ffffff;
+    border-radius: 10px;
+}
+
+.isotop .element-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.isotop .element-item .heading_3 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: capitalize;
+    color: #000000;
+    margin-bottom: 12px;
+}
+
+.isotop .element-item .title {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #0f0e0e;
+    opacity: 0.5;
+}
+
+.isotop .element-item .view_btn a {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: capitalize;
+    color: #005555;
+}
+
+.isotop .element-item .view_btn .dash {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    opacity: 0.6;
+}
+
+.isotop .element-item .call p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #0f0e0e;
+    opacity: 0.5;
+}
+
+.isotop .element-item .call a {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    color: #005555;
+}
+
+@media screen and (max-width: 768px) {
+    .isotop .element-item {
+        width: 100%;
+    }
+    .isotop .button-group .button {
+        font-size: 14px;
+        margin: 0px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .isotop .element-item {
+        width: 100%;
+        /* max-height: 110px; */
+    }
+    .isotop .element-item .heading_3 {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .isotop .element-item .title {
+        font-size: 10px;
+        line-height: 12px;
+    }
+    .isotop .element-item .title svg {
+        width: 8.5px;
+        height: 10.75px;
+    }
+    .isotop .element-item .view_btn a {
+        font-size: 7.44654px;
+        line-height: 9px;
+    }
+    .isotop .element-item .view_btn .dash {
+        font-size: 6.51572px;
+        line-height: 8px;
+    }
+    .isotop .element-item .call svg {
+        width: 7.75px;
+        height: 7.76px;
+    }
+    .isotop .element-item .call p {
+        font-size: 5.58491px;
+        line-height: 7px;
+    }
+    .isotop .element-item .call a {
+        font-size: 6.51572px;
+        line-height: 8px;
+    }
+}
