@@ -348,46 +348,27 @@ $(document).ready(function() {
 
     $(".hotel_item").slick({
         asNavFor: '.hotel_details_slider',
-        slidesToShow: 5,
+        slidesToShow: 3,
         slidesToScroll: 1,
         draggable: true,
         infinite: true,
-        swipeToSlide: true,
+        swipeToSlide: false,
         vertical: true,
         verticalSwiping: true,
-        centerMode: false,
         arrows: false,
         responsive: [{
-            breakpoint: 1024,
-            settings: {
-                slidesToShow: 3,
-                slidesToScroll: 1,
-                vertical: false,
-                centerMode: true,
-            }
-        }, {
-            breakpoint: 993,
+            breakpoint: 769,
             settings: {
                 slidesToShow: 4,
                 slidesToScroll: 1,
                 vertical: false,
-                centerMode: true,
-            }
-        }, {
-            breakpoint: 769,
-            settings: {
-                slidesToShow: 5,
-                slidesToScroll: 1,
-                vertical: false,
-                centerMode: true,
             }
         }, {
             breakpoint: 600,
             settings: {
-                slidesToShow: 3,
+                slidesToShow: 4,
                 slidesToScroll: 1,
                 vertical: false,
-                centerMode: true,
             }
         }]
     });

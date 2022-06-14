@@ -716,6 +716,18 @@ main {
     right: 0;
 }
 
+.hotel_banner .hotel_details_slider .hotel_slider_item img {
+    width: 100%;
+    height: 621px;
+    object-fit: fill !important;
+}
+
+.hotel_banner .hotel_item .hotel_slider_item img {
+    width: 196px;
+    height: 196px;
+    object-fit: cover !important;
+}
+
 
 /* home details banner slider */
 
@@ -1094,6 +1106,14 @@ main {
         box-shadow: 0px 0px 5px rgba(183, 177, 177, 0.2);
         padding: 20px 12px;
     }
+    .hotel_banner .hotel_details_slider .hotel_slider_item img {
+        width: 100% !important;
+        height: 320px !important;
+    }
+    .hotel_banner .hotel_item .hotel_slider_item img {
+        width: 100% !important;
+        height: 64px !important;
+    }
     .contact_part .social {
         position: fixed;
         top: 50%;
@@ -1146,6 +1166,14 @@ main {
     .details_banner .search_part {
         top: -0rem;
     }
+    .hotel_banner .hotel_details_slider .hotel_slider_item img {
+        width: 100%;
+        height: 420px;
+    }
+    .hotel_banner .hotel_item .hotel_slider_item img {
+        width: 100%;
+        height: 115px;
+    }
 }
 
 @media (min-width: 992px) {
@@ -1172,6 +1200,12 @@ main {
     }
     .hotel_banner .search_part {
         top: -60px;
+    }
+    .hotel_banner .hotel_item .hotel_slider_item img {
+        width: 196px;
+        height: 196px;
+        -o-object-fit: cover !important;
+        object-fit: cover !important;
     }
 }
 
