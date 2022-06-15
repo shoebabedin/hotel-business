@@ -3,9 +3,11 @@ $(document).ready(function() {
     AOS.init();
 
     // preloader
-    $(window).load(function() {
-        $('.loaderBody').fadeOut('slow', function() { $(this).remove(); });
-    });
+
+    // $(window).on('load', function() {
+    //     $("#preloader ").fadeOut(500);
+    //     $("#main").css({ 'overflow': 'unset' });
+    // });
 
     // preloader
 
