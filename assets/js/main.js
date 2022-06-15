@@ -4,10 +4,10 @@ $(document).ready(function() {
 
     // preloader
 
-    // $(window).on('load', function() {
-    //     $("#preloader ").fadeOut(500);
-    //     $("#main").css({ 'overflow': 'unset' });
-    // });
+    $(window).on('load', function() {
+        $("#preloader ").fadeOut(500);
+        $("#main").css({ 'overflow': 'unset' });
+    });
 
     // preloader
 
