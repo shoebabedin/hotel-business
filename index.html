@@ -117,6 +117,7 @@
                             </svg>
 
                         </button>
+
                     </div>
                     <nav :class="{'flex': open, 'hidden': !open}" class="top-2/4 md:basis-auto lg:basis-9 flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-center lg:justify-start md:flex-row bg-black md:bg-transparent w-full mt-5 md:mt-0 drop_menu">
                         <a class="mx-4 py-2 mt-2 md:mt-0 text-white text-base font-semibold leading-5 capitalize active md:border-0 border-b" href="index.html">Home</a>
@@ -348,7 +349,7 @@
 
                                                     <input id="date-range200"
                                                         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 appearance-none"
-                                                        type="date" />
+                                                        type="date" min="0" />
                                                     <div
                                                         class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
                                                         <svg class="absolute right-2 z-10 bg-white" width="24"
@@ -424,6 +425,7 @@
 
                                         <div class="md:m-auto w-full lg:w-auto">
                                             <label for="email-address-icon" class="block mb-2 text-xs font-normal text-slate-900 opacity-0">Search</label>
+
                                             <button type="submit" class="btn text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center flex align-middle gap-2 items-center justify-center md:w-full">
                                                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg">
@@ -713,7 +715,7 @@
                 <h2 class="text-2xl font-bold uppercase lg:text-3xl mb-4 text0F0E0E text-center">OUR POPULAR</h2>
                 <p class="font-normal text-xs text0F0E0E lg:text-base mb-10 opacity-50 text-center">We Choose this rooms only for you.This rooms are popular by our clint’s choice.</p>
 
-                <div class="popular_grid grid grid-cols-2 lg:grid-cols-4 gap-3">
+                <div class="popular_grid grid grid-cols-2 lg:grid-cols-4 gap-6">
                     <div class="popular_item">
                         <div class="img relative mb-3">
                             <img src="./assets/images/popular/1.png" alt="" class="rounded-lg w-full" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000">

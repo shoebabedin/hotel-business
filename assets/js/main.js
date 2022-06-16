@@ -416,6 +416,9 @@ $(document).ready(function() {
             $('#date-range201').val(s2);
         }
     });
+
+
+
     // range date picker
 
     // price range slider
@@ -435,6 +438,8 @@ $(document).ready(function() {
     });
 
     // price range slider
+
+
 
 
 
