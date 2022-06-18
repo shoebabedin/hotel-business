@@ -531,6 +531,8 @@ input[type="date"]::-webkit-input-placeholder {
 
 .payment_part .payment_slider .payment_item.slick-current img {
     -webkit-filter: contrast(1);
+    animation: moveit 900ms ease forwards;
+    will-change: transform;
 }
 
 
