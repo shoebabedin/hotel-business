@@ -1,40 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <link rel="stylesheet" type="text/css" href="./assets/plugin/slick/slick.1.8.1.css" />
-    <link rel="stylesheet" type="text/css" href="./assets/plugin/ShowMore/showMoreItems-theme.min.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./assets/plugin/slick/slick.1.8.1.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./assets/plugin/ShowMore/showMoreItems-theme.min.css"
+    />
     <link rel="stylesheet" type="text/css" href="./assets/plugin/aos/aos.css" />
-    <link rel="stylesheet" type="text/css" href="./assets/plugin/daterangepicker/daterangepicker.min.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./assets/plugin/daterangepicker/daterangepicker.min.css"
+    />
     <link rel="stylesheet" type="text/css" href="./dist/main.css" />
-</head>
+  </head>
 
-<body class="overscroll-contain">
+  <body class="overscroll-contain">
     <section id="main">
-        <!-- preloader section started   -->
-        <section id="preloader">
-            <div class="loading loading01">
-                <span>H</span>
-                <span>O</span>
-                <span>T</span>
-                <span>E</span>
-                <span>L</span>
-            </div>
-        </section>
-        <!-- preloader section ended   -->
+      <!-- preloader section started   -->
+      <section id="preloader">
+        <div class="loading loading01">
+          <span>H</span>
+          <span>O</span>
+          <span>T</span>
+          <span>E</span>
+          <span>L</span>
+        </div>
+      </section>
+      <!-- preloader section ended   -->
 
-        <!-- top nav part -->
+      <!-- top nav part -->
 
-        <section class="top_nav py-2">
-            <div class="container mx-auto px-2">
-                <div class="flex flex-row justify-between items-center">
-                    <div class="md:basis-1 close">
-                        <a href="#" class="w-4">
-                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <section class="top_nav py-2">
+        <div class="container mx-auto px-2">
+          <div class="flex flex-row justify-between items-center">
+            <div class="md:basis-1 close">
+              <a href="#" class="w-4">
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
                   <path
                     fill-rule="evenodd"
                     clip-rule="evenodd"
@@ -42,15 +59,19 @@
                     fill="#005555"
                   />
                 </svg>
-                        </a>
-                    </div>
-                    <div class="md:basis-auto flex justify-between items-center gap-1">
-                        <p class="text005555 text-xs font-bold">
-                            50% OFF ON BLACK FRIDAY
-                        </p>
-                        <div class="counting flex flex-row justify-between items-center">
-                            <div class="text-white text-xs font-medium bg005555 px-1 lg:px-2 py0.5 lg:py-1 rounded-sm" id="days"></div>
-                            <span class="text-cyan-900 text-sm not-italic font-normal mx-1">:</span
+              </a>
+            </div>
+            <div class="md:basis-auto flex justify-between items-center gap-1">
+              <p class="text005555 text-xs font-bold">
+                50% OFF ON BLACK FRIDAY
+              </p>
+              <div class="counting flex flex-row justify-between items-center">
+                <div
+                  class="text-white text-xs font-medium bg005555 px-1 lg:px-2 py0.5 lg:py-1 rounded-sm"
+                  id="days"
+                ></div>
+                <span class="text-cyan-900 text-sm not-italic font-normal mx-1"
+                  >:</span
                 >
                 <div
                   class="text-white text-xs font-medium bg005555 px-1 lg:px-2 py0.5 lg:py-1 rounded-sm"
@@ -591,7 +612,7 @@
                           <input
                             type="text"
                             id="email-address-icon"
-                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-emerald-600 dark:border-green-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            class="border text-sm rounded-lg block w-full p-2.5 custom_input"
                             placeholder="Location..."
                           />
                           <div
@@ -666,7 +687,7 @@
                           <div class="relative">
                             <input
                               id="date-range200"
-                              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 appearance-none"
+                              class="border text-sm rounded-lg block w-full p-2.5 appearance-none custom_input"
                               type="date"
                               min="0"
                             />
@@ -739,7 +760,7 @@
                             <input
                               type="date"
                               id="date-range201"
-                              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 appearance-none"
+                              class="border text-sm rounded-lg block w-full p-2.5 appearance-none custom_input"
                               placeholder=""
                             />
                             <div
@@ -803,8 +824,11 @@
                         </div>
                       </span>
 
-                            <div class="md:m-auto w-full lg:w-auto">
-                                <label for="email-address-icon" class="block mb-2 text-xs font-normal text-slate-900 opacity-0">Search</label
+                      <div class="md:m-auto w-full lg:w-auto">
+                        <label
+                          for="email-address-icon"
+                          class="block mb-2 text-xs font-normal text-slate-900 opacity-0"
+                          >Search</label
                         >
 
                         <button
@@ -848,7 +872,7 @@
                           <span class="mx-2 flex"
                             ><input
                               type="text"
-                              class="roomquantity__input w-5 mr-1.5"
+                              class="roomquantity__input w-5 mr-1.5 custom_input"
                               value="0"
                             />
                             Room</span
@@ -877,7 +901,7 @@
                           <span class="mx-2 flex"
                             ><input
                               type="text"
-                              class="personquantity__input w-5 mr-1.5"
+                              class="personquantity__input w-5 mr-1.5 custom_input"
                               value="0"
                             />
                             Persion</span
@@ -906,7 +930,7 @@
                           <span class="mx-2 flex"
                             ><input
                               type="text"
-                              class="chilquantity__input w-5 mr-1.5"
+                              class="chilquantity__input w-5 mr-1.5 custom_input"
                               value="0"
                             />
                             Children</span
@@ -3283,7 +3307,7 @@
 
       <!-- subscription part -->
       <section class="visitors_part subscription_part bg005555 py-10">
-        <div class="container mx-auto px-2 px-2">
+        <div class="custom-container mx-auto px-2 px-2">
           <div class="columns-1 lg:columns-2">
             <div class="left">
               <h2
@@ -3310,7 +3334,7 @@
                   <input
                     type="text"
                     id="email-address-icon"
-                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-8 py-3 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    class="border text-sm rounded-lg block w-full pl-8 py-3 custom_input"
                     placeholder="Enter your mail"
                   />
                   <div
