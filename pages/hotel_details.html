@@ -1,35 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hotel-Details</title>
     <link rel="stylesheet" href="../assets/plugin/slick/slick.1.8.1.css" />
-    <link rel="stylesheet" href="../assets/plugin/ShowMore/showMoreItems-theme.min.css" />
+    <link
+      rel="stylesheet"
+      href="../assets/plugin/ShowMore/showMoreItems-theme.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../assets/plugin/aos/aos.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../assets/plugin/daterangepicker/daterangepicker.min.css"
+    />
     <link rel="stylesheet" href="../dist/main.css" />
-</head>
+  </head>
 
-<body class="overscroll-contain" id="main">
+  <body class="overscroll-contain" id="main">
     <!-- preloader section started   -->
     <section id="preloader">
-        <div class="loading loading01">
-            <span>H</span>
-            <span>O</span>
-            <span>T</span>
-            <span>E</span>
-            <span>L</span>
-        </div>
+      <div class="loading loading01">
+        <span>H</span>
+        <span>O</span>
+        <span>T</span>
+        <span>E</span>
+        <span>L</span>
+      </div>
     </section>
     <!-- preloader section ended   -->
 
     <section class="top_nav py-2">
-        <div class="container mx-auto px-2">
-            <div class="flex flex-row justify-between items-center">
-                <div class="md:basis-1 close">
-                    <a href="#" class="w-4">
-                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <div class="container mx-auto px-2">
+        <div class="flex flex-row justify-between items-center">
+          <div class="md:basis-1 close">
+            <a href="#" class="w-4">
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 14 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <path
                   fill-rule="evenodd"
                   clip-rule="evenodd"
@@ -37,13 +55,17 @@
                   fill="#005555"
                 />
               </svg>
-                    </a>
-                </div>
-                <div class="md:basis-auto flex justify-between items-center gap-1">
-                    <p class="text005555 text-xs font-bold">50% OFF ON BLACK FRIDAY</p>
-                    <div class="counting flex flex-row justify-between items-center">
-                        <div class="text-white text-xs font-medium bg005555 px-1 lg:px-2 py0.5 lg:py-1 rounded-sm" id="days"></div>
-                        <span class="text-cyan-900 text-sm not-italic font-normal mx-1">:</span
+            </a>
+          </div>
+          <div class="md:basis-auto flex justify-between items-center gap-1">
+            <p class="text005555 text-xs font-bold">50% OFF ON BLACK FRIDAY</p>
+            <div class="counting flex flex-row justify-between items-center">
+              <div
+                class="text-white text-xs font-medium bg005555 px-1 lg:px-2 py0.5 lg:py-1 rounded-sm"
+                id="days"
+              ></div>
+              <span class="text-cyan-900 text-sm not-italic font-normal mx-1"
+                >:</span
               >
               <div
                 class="text-white text-xs font-medium bg005555 px-1 lg:px-2 py0.5 lg:py-1 rounded-sm"
@@ -379,165 +401,175 @@
             </div>
             <p class="text-white mb-6 lobster text-lg lg:text-4xl font-normal">
               Hotel Grand Prince<span class="text-red-700">.</span>
-                        </p>
-                        <h2 class="text-white font-light text-sm lg:text-4xl">
-                            Save up to 30% on your stay
-                        </h2>
-                        <button class="border-2 px-4 py-3 rounded-sm capitalize font-bold text-base mt-10 mb-28 text-white">
+            </p>
+            <h2 class="text-white font-light text-sm lg:text-4xl">
+              Save up to 30% on your stay
+            </h2>
+            <button
+              class="border-2 px-4 py-3 rounded-sm capitalize font-bold text-base mt-10 mb-28 text-white"
+            >
               View Rooms
             </button>
-                    </div>
-                </div>
-    </section>
-    <!-- search part -->
-    <div class="search_part relative mx-3">
+          </div>
+        </div>
+      </section>
+      <!-- search part -->
+      <div class="search_part relative mx-3">
         <div class="rounded w-full mx-auto mt-4 rounded-lg">
-            <!-- Tab Contents -->
-            <div class="bg-white rounded-r rounded-l shadow-xl p-4">
-                <!-- first tab -->
-                <div class="p-1 lg:p-4">
-                    <div class="flex flex-wrap lg:flex-nowrap">
-                        <div class="m-auto w-full mb-2 lg:mb-0 lg:mx-2">
-                            <label for="email-address-icon" class="block mb-2 text-xs font-normal text-slate-900">CHECK-IN</label
-                  >
-                  <div class="relative">
-                    <input
-                      type="date"
-                      id=""
-                      class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 appearance-none"
-                      placeholder=""
-                    />
-                    <div
-                      class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none"
+          <!-- Tab Contents -->
+          <div class="bg-white rounded-r rounded-l shadow-xl p-4">
+            <!-- first tab -->
+            <div class="p-1 lg:p-4">
+              <div class="flex flex-wrap lg:flex-nowrap">
+                <span
+                  id="double_date_input"
+                  class="m-auto w-full mb-2 lg:mb-0 lg:mx-2 flex flex-wrap lg:flex-nowrap"
+                >
+                  <div class="m-auto w-1/2 lg:w-full lg:mx-2">
+                    <label
+                      for="email-address-icon"
+                      class="block mb-2 text-xs font-normal text-slate-900"
+                      >CHECK-IN</label
                     >
-                      <svg
-                        class="absolute right-2 z-10 bg-white"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
+                    <div class="relative">
+                      <input
+                        id="date-range200"
+                        class="border text-sm rounded-lg block w-full p-2.5 appearance-none custom_input"
+                        type="date"
+                        min="0"
+                      />
+                      <div
+                        class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none"
                       >
-                        <g opacity="0.2">
-                          <path
-                            d="M19.5 3.75H4.5C4.08579 3.75 3.75 4.08579 3.75 4.5V19.5C3.75 19.9142 4.08579 20.25 4.5 20.25H19.5C19.9142 20.25 20.25 19.9142 20.25 19.5V4.5C20.25 4.08579 19.9142 3.75 19.5 3.75Z"
-                            stroke="black"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                          <path
-                            d="M16.5 2.25V5.25"
-                            stroke="black"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                          <path
-                            d="M7.5 2.25V5.25"
-                            stroke="black"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                          <path
-                            d="M3.75 8.25H20.25"
-                            stroke="black"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                          <path
-                            d="M8.625 12H11.25L9.75 13.875C9.99686 13.8746 10.24 13.9351 10.4579 14.0512C10.6757 14.1672 10.8616 14.3353 10.999 14.5404C11.1363 14.7455 11.2209 14.9814 11.2453 15.2271C11.2696 15.4727 11.2329 15.7206 11.1385 15.9487C11.0441 16.1768 10.8949 16.378 10.704 16.5346C10.5132 16.6912 10.2866 16.7983 10.0445 16.8463C9.80236 16.8944 9.5521 16.8819 9.31593 16.81C9.07976 16.7382 8.86497 16.6091 8.69062 16.4344"
-                            stroke="black"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                          <path
-                            d="M13.5 13.125L15 12V16.875"
-                            stroke="black"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                        </g>
-                      </svg>
+                        <svg
+                          class="absolute right-2 z-10 bg-white"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <g opacity="0.2">
+                            <path
+                              d="M19.5 3.75H4.5C4.08579 3.75 3.75 4.08579 3.75 4.5V19.5C3.75 19.9142 4.08579 20.25 4.5 20.25H19.5C19.9142 20.25 20.25 19.9142 20.25 19.5V4.5C20.25 4.08579 19.9142 3.75 19.5 3.75Z"
+                              stroke="black"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M16.5 2.25V5.25"
+                              stroke="black"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M7.5 2.25V5.25"
+                              stroke="black"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M3.75 8.25H20.25"
+                              stroke="black"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M8.625 12H11.25L9.75 13.875C9.99686 13.8746 10.24 13.9351 10.4579 14.0512C10.6757 14.1672 10.8616 14.3353 10.999 14.5404C11.1363 14.7455 11.2209 14.9814 11.2453 15.2271C11.2696 15.4727 11.2329 15.7206 11.1385 15.9487C11.0441 16.1768 10.8949 16.378 10.704 16.5346C10.5132 16.6912 10.2866 16.7983 10.0445 16.8463C9.80236 16.8944 9.5521 16.8819 9.31593 16.81C9.07976 16.7382 8.86497 16.6091 8.69062 16.4344"
+                              stroke="black"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M13.5 13.125L15 12V16.875"
+                              stroke="black"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </g>
+                        </svg>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="m-auto w-full mb-2 lg:mb-0 lg:mx-2">
-                  <label
-                    for="email-address-icon"
-                    class="block mb-2 text-xs font-normal text-slate-900"
-                    >CHECK-OUT</label
-                  >
-                  <div class="relative">
-                    <input
-                      type="date"
-                      id=""
-                      class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 appearance-none"
-                      placeholder=""
-                    />
-                    <div
-                      class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none"
+                  <div class="m-auto w-1/2 pl-1 lg:w-full lg:mx-2">
+                    <label
+                      for="email-address-icon"
+                      class="block mb-2 text-xs font-normal text-slate-900"
+                      >CHECK-OUT</label
                     >
-                      <svg
-                        class="absolute right-2 z-10 bg-white"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
+                    <div class="relative">
+                      <input
+                        type="date"
+                        id="date-range201"
+                        class="border text-sm rounded-lg block w-full p-2.5 appearance-none custom_input"
+                        placeholder=""
+                      />
+                      <div
+                        class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none"
                       >
-                        <g opacity="0.2">
-                          <path
-                            d="M19.5 3.75H4.5C4.08579 3.75 3.75 4.08579 3.75 4.5V19.5C3.75 19.9142 4.08579 20.25 4.5 20.25H19.5C19.9142 20.25 20.25 19.9142 20.25 19.5V4.5C20.25 4.08579 19.9142 3.75 19.5 3.75Z"
-                            stroke="black"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                          <path
-                            d="M16.5 2.25V5.25"
-                            stroke="black"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                          <path
-                            d="M7.5 2.25V5.25"
-                            stroke="black"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                          <path
-                            d="M3.75 8.25H20.25"
-                            stroke="black"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                          <path
-                            d="M8.625 12H11.25L9.75 13.875C9.99686 13.8746 10.24 13.9351 10.4579 14.0512C10.6757 14.1672 10.8616 14.3353 10.999 14.5404C11.1363 14.7455 11.2209 14.9814 11.2453 15.2271C11.2696 15.4727 11.2329 15.7206 11.1385 15.9487C11.0441 16.1768 10.8949 16.378 10.704 16.5346C10.5132 16.6912 10.2866 16.7983 10.0445 16.8463C9.80236 16.8944 9.5521 16.8819 9.31593 16.81C9.07976 16.7382 8.86497 16.6091 8.69062 16.4344"
-                            stroke="black"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                          <path
-                            d="M13.5 13.125L15 12V16.875"
-                            stroke="black"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                        </g>
-                      </svg>
+                        <svg
+                          class="absolute right-2 z-10 bg-white"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <g opacity="0.2">
+                            <path
+                              d="M19.5 3.75H4.5C4.08579 3.75 3.75 4.08579 3.75 4.5V19.5C3.75 19.9142 4.08579 20.25 4.5 20.25H19.5C19.9142 20.25 20.25 19.9142 20.25 19.5V4.5C20.25 4.08579 19.9142 3.75 19.5 3.75Z"
+                              stroke="black"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M16.5 2.25V5.25"
+                              stroke="black"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M7.5 2.25V5.25"
+                              stroke="black"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M3.75 8.25H20.25"
+                              stroke="black"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M8.625 12H11.25L9.75 13.875C9.99686 13.8746 10.24 13.9351 10.4579 14.0512C10.6757 14.1672 10.8616 14.3353 10.999 14.5404C11.1363 14.7455 11.2209 14.9814 11.2453 15.2271C11.2696 15.4727 11.2329 15.7206 11.1385 15.9487C11.0441 16.1768 10.8949 16.378 10.704 16.5346C10.5132 16.6912 10.2866 16.7983 10.0445 16.8463C9.80236 16.8944 9.5521 16.8819 9.31593 16.81C9.07976 16.7382 8.86497 16.6091 8.69062 16.4344"
+                              stroke="black"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M13.5 13.125L15 12V16.875"
+                              stroke="black"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </g>
+                        </svg>
+                      </div>
                     </div>
                   </div>
-                </div>
+                </span>
                 <div class="md:m-auto w-full lg:w-auto">
                   <label
                     for="email-address-icon"
@@ -589,8 +621,10 @@
           class="facilities flex align-middle gap-3 flex-wrap lg:flex-nowrap text-center"
         >
           <div
-            class="facilities_item p-7 border rounded-lg flex justify-center flex-col items-center lg:items-baseline w-full lg:text-left hover:drop-shadow-xl"
-            data-aos="flip-left"
+            class="facilities_item p-7 border hover:border-opacity-0 rounded-lg flex justify-center flex-col items-center lg:items-baseline w-full lg:text-left"
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1000"
           >
             <svg
               width="42"
@@ -618,7 +652,9 @@
                 fill="#005555"
               />
             </svg>
-            <h4 class="font-bold text-base text0F0E0E capitalize">
+            <h4
+              class="font-bold text-base text0F0E0E capitalize mt-3 lg:mt-3 mb-5 lg:mb-5"
+            >
               Get and Drop
             </h4>
             <p class="font-normal text-sm text0F0E0E">
@@ -626,7 +662,10 @@
             </p>
           </div>
           <div
-            class="facilities_item p-7 border rounded-lg flex justify-center lg:items-baseline flex-col items-center text-center w-full lg:text-left"
+            class="facilities_item p-7 border hover:border-opacity-0 rounded-lg flex justify-center lg:items-baseline flex-col items-center text-center w-full lg:text-left"
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1300"
           >
             <svg
               width="40"
@@ -642,7 +681,9 @@
                 fill="#005555"
               />
             </svg>
-            <h4 class="font-bold text-base text0F0E0E capitalize">
+            <h4
+              class="font-bold text-base text0F0E0E capitalize mt-3 lg:mt-3 mb-5 lg:mb-5"
+            >
               Parking spot
             </h4>
             <p class="font-normal text-sm text0F0E0E">
@@ -651,6 +692,9 @@
           </div>
           <div
             class="facilities_item p-7 border rounded-lg flex justify-center lg:items-baseline flex-col items-center text-center lg:text-left w-full"
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1600"
           >
             <svg
               width="40"
@@ -666,7 +710,9 @@
                 fill="#005555"
               />
             </svg>
-            <h4 class="font-bold text-base text0F0E0E capitalize">
+            <h4
+              class="font-bold text-base text0F0E0E capitalize mt-3 lg:mt-3 mb-5 lg:mb-5"
+            >
               Room Service
             </h4>
             <p class="font-normal text-sm text0F0E0E">
@@ -674,7 +720,10 @@
             </p>
           </div>
           <div
-            class="facilities_item p-7 border rounded-lg flex justify-center lg:items-baseline flex-col items-center text-center lg:text-left w-full"
+            class="facilities_item p-7 border hover:border-opacity-0 rounded-lg flex justify-center lg:items-baseline flex-col items-center text-center lg:text-left w-full"
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1800"
           >
             <svg
               width="42"
@@ -709,7 +758,11 @@
                 fill="#005555"
               />
             </svg>
-            <h4 class="font-bold text-base text0F0E0E capitalize">Free WiFi</h4>
+            <h4
+              class="font-bold text-base text0F0E0E capitalize mt-3 lg:mt-3 mb-5 lg:mb-5"
+            >
+              Free WiFi
+            </h4>
             <p class="font-normal text-sm text0F0E0E">
               We have 24/7 Free WiFi service facilities & including all.
             </p>
@@ -730,7 +783,12 @@
 
         <!-- slider part -->
         <div class="room_slider mw986 mx-auto">
-          <div class="slider_item w-64 mx-1">
+          <div
+            class="slider_item w-64 mx-1 mr-6"
+            data-aos="zoom-in"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"
+          >
             <div class="popular_item">
               <div class="img relative mb-3">
                 <img
@@ -864,7 +922,12 @@
               </div>
             </div>
           </div>
-          <div class="slider_item w-64 mx-1">
+          <div
+            class="slider_item w-64 mx-1 mr-6"
+            data-aos="zoom-in"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"
+          >
             <div class="popular_item">
               <div class="img relative mb-3">
                 <img
@@ -998,7 +1061,12 @@
               </div>
             </div>
           </div>
-          <div class="slider_item w-64 mx-1">
+          <div
+            class="slider_item w-64 mx-1 mr-6"
+            data-aos="zoom-in"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"
+          >
             <div class="popular_item">
               <div class="img relative mb-3">
                 <img
@@ -1132,7 +1200,12 @@
               </div>
             </div>
           </div>
-          <div class="slider_item w-64 mx-1">
+          <div
+            class="slider_item w-64 mx-1 mr-6"
+            data-aos="zoom-in"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"
+          >
             <div class="popular_item">
               <div class="img relative mb-3">
                 <img
@@ -1334,9 +1407,9 @@
               </svg>
             </span>
             <h2 class="text-white font-semibold text-2xl">
-              <span class="stat-number">12</span> Years
+              <span class="stat-number">12</span><sup class="text-2xl">+</sup>
             </h2>
-            <p class="text-white font-semibold text-xs">Experience</p>
+            <p class="text-white font-semibold text-xs">Years</p>
           </div>
           <div class="visitor_item">
             <span>
@@ -1435,1062 +1508,1134 @@
           clint’s choice.
         </p>
 
-        <div class="popular_grid grid grid-cols-2 lg:grid-cols-4 gap-3">
-          <div class="popular_item">
-            <div class="img relative mb-3">
-              <img
-                src="../assets/images/popular/1.png"
-                alt=""
-                class="rounded-lg w-full"
-              />
-              <p
-                class="absolute bottom-2 btn p-2 font-medium md:text-sm font10"
-              >
-                $220.0/Night
-              </p>
-            </div>
-            <p
-              class="flex items-center gap-2 font10 text-base opacity-50 mb10 md:text-sm"
-            >
-              <svg
-                class="w-2.5 lg:w-6"
-                width="13"
-                height="16"
-                viewBox="0 0 13 16"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M3.4948 3.4948C4.29183 2.69777 5.37283 2.25 6.5 2.25C7.62717 2.25 8.70817 2.69777 9.5052 3.4948C10.3022 4.29183 10.75 5.37283 10.75 6.5C10.75 8.47996 9.64111 10.3072 8.43405 11.6954C7.83967 12.3789 7.24338 12.9307 6.79551 13.3114C6.68729 13.4033 6.58806 13.4851 6.5 13.556C6.41194 13.4851 6.31271 13.4033 6.20449 13.3114C5.75662 12.9307 5.16033 12.3789 4.56595 11.6954C3.35889 10.3072 2.25 8.47996 2.25 6.5C2.25 5.37283 2.69777 4.29183 3.4948 3.4948ZM8.54582 13.75H11C11.4142 13.75 11.75 14.0858 11.75 14.5C11.75 14.9142 11.4142 15.25 11 15.25H2C1.58579 15.25 1.25 14.9142 1.25 14.5C1.25 14.0858 1.58579 13.75 2 13.75H4.45418C4.13094 13.4394 3.78277 13.0807 3.43405 12.6796C2.14111 11.1928 0.75 9.02004 0.75 6.5C0.75 4.97501 1.3558 3.51247 2.43414 2.43414C3.51247 1.3558 4.97501 0.75 6.5 0.75C8.02499 0.75 9.48753 1.3558 10.5659 2.43414C11.6442 3.51247 12.25 4.97501 12.25 6.5C12.25 9.02004 10.8589 11.1928 9.56595 12.6796C9.21723 13.0807 8.86906 13.4394 8.54582 13.75ZM6.5 5.25C5.80964 5.25 5.25 5.80964 5.25 6.5C5.25 7.19036 5.80964 7.75 6.5 7.75C7.19036 7.75 7.75 7.19036 7.75 6.5C7.75 5.80964 7.19036 5.25 6.5 5.25ZM3.75 6.5C3.75 4.98122 4.98122 3.75 6.5 3.75C8.01878 3.75 9.25 4.98122 9.25 6.5C9.25 8.01878 8.01878 9.25 6.5 9.25C4.98122 9.25 3.75 8.01878 3.75 6.5Z"
-                  fill="#005555"
+        <div class="popular_grid grid grid-cols-2 lg:grid-cols-4 gap-6">
+          <div
+            class="popular_item"
+            data-aos="flip-right"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"
+          >
+            <a href="./home_details.html">
+              <div class="img relative mb-3">
+                <img
+                  src="../assets/images/popular/1.png"
+                  alt=""
+                  class="rounded-lg w-full"
                 />
-              </svg>
-              27/9 downstreet, NewYork, USA
-            </p>
-            <h4 class="font-bold text-sm mb-2 md:text-base">Mecaw Hotel</h4>
-            <div class="bed_feet flex items-center justify-between">
-              <div class="bed flex items-center gap-2">
-                <svg
-                  class="w-2.5 lg:w-6"
-                  width="25"
-                  height="24"
-                  viewBox="0 0 25 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
+                <p
+                  class="absolute bottom-2 btn p-2 font-medium md:text-sm font10"
                 >
-                  <path
-                    d="M10.25 15.75V7.5H20C20.7956 7.5 21.5587 7.81607 22.1213 8.37868C22.6839 8.94129 23 9.70435 23 10.5V15.75"
-                    stroke="#005555"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M2 19.5V4.5"
-                    stroke="#005555"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M2 15.75H23V19.5"
-                    stroke="#005555"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M10.25 7.5H2"
-                    stroke="#005555"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-                <p class="font-normal font8 opacity-50 md:text-sm">2 Beds</p>
-              </div>
-              <div class="bed flex items-center gap-2">
-                <svg
-                  class="w-2.5 lg:w-6"
-                  width="25"
-                  height="24"
-                  viewBox="0 0 25 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g clip-path="url(#clip0_384_16778)">
-                    <path
-                      d="M1.51611 1.82515L1.51611 21.1749C1.51611 21.6306 1.88554 22 2.34126 22H10.0265C10.4822 22 10.8516 21.6306 10.8516 21.1749L10.8516 1.82515C10.8516 1.36943 10.4822 0.999999 10.0265 0.999999H2.34126C1.88554 0.999999 1.51611 1.36943 1.51611 1.82515Z"
-                      stroke="#005555"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M1.53857 6.24219H6.20631"
-                      stroke="#005555"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M21.6963 13.0623L2.34663 13.0175C1.89091 13.0165 1.52063 13.3851 1.51958 13.8408L1.5018 21.526C1.50074 21.9817 1.86932 22.352 2.32503 22.353L21.6747 22.3978C22.1304 22.3988 22.5007 22.0303 22.5017 21.5745L22.5195 13.8893C22.5206 13.4336 22.152 13.0633 21.6963 13.0623Z"
-                      stroke="#005555"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M17.2798 13.0742L17.269 17.7419"
-                      stroke="#005555"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_384_16778">
-                      <rect
-                        width="24"
-                        height="24"
-                        fill="white"
-                        transform="translate(0.5)"
-                      />
-                    </clipPath>
-                  </defs>
-                </svg>
-
-                <p class="font-normal font8 opacity-50 md:text-sm">
-                  150 Sq.feet
+                  $220.0/Night
                 </p>
               </div>
-            </div>
+              <p
+                class="flex items-center gap-2 font10 text-base opacity-50 mb10 md:text-sm"
+              >
+                <svg
+                  class="w-2.5 lg:w-6"
+                  width="13"
+                  height="16"
+                  viewBox="0 0 13 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M3.4948 3.4948C4.29183 2.69777 5.37283 2.25 6.5 2.25C7.62717 2.25 8.70817 2.69777 9.5052 3.4948C10.3022 4.29183 10.75 5.37283 10.75 6.5C10.75 8.47996 9.64111 10.3072 8.43405 11.6954C7.83967 12.3789 7.24338 12.9307 6.79551 13.3114C6.68729 13.4033 6.58806 13.4851 6.5 13.556C6.41194 13.4851 6.31271 13.4033 6.20449 13.3114C5.75662 12.9307 5.16033 12.3789 4.56595 11.6954C3.35889 10.3072 2.25 8.47996 2.25 6.5C2.25 5.37283 2.69777 4.29183 3.4948 3.4948ZM8.54582 13.75H11C11.4142 13.75 11.75 14.0858 11.75 14.5C11.75 14.9142 11.4142 15.25 11 15.25H2C1.58579 15.25 1.25 14.9142 1.25 14.5C1.25 14.0858 1.58579 13.75 2 13.75H4.45418C4.13094 13.4394 3.78277 13.0807 3.43405 12.6796C2.14111 11.1928 0.75 9.02004 0.75 6.5C0.75 4.97501 1.3558 3.51247 2.43414 2.43414C3.51247 1.3558 4.97501 0.75 6.5 0.75C8.02499 0.75 9.48753 1.3558 10.5659 2.43414C11.6442 3.51247 12.25 4.97501 12.25 6.5C12.25 9.02004 10.8589 11.1928 9.56595 12.6796C9.21723 13.0807 8.86906 13.4394 8.54582 13.75ZM6.5 5.25C5.80964 5.25 5.25 5.80964 5.25 6.5C5.25 7.19036 5.80964 7.75 6.5 7.75C7.19036 7.75 7.75 7.19036 7.75 6.5C7.75 5.80964 7.19036 5.25 6.5 5.25ZM3.75 6.5C3.75 4.98122 4.98122 3.75 6.5 3.75C8.01878 3.75 9.25 4.98122 9.25 6.5C9.25 8.01878 8.01878 9.25 6.5 9.25C4.98122 9.25 3.75 8.01878 3.75 6.5Z"
+                    fill="#005555"
+                  />
+                </svg>
+                27/9 downstreet, NewYork, USA
+              </p>
+              <h4 class="font-bold text-sm mb-2 md:text-base">
+                <a href="./home_details.html">Mecaw Hotel</a>
+              </h4>
+              <div class="bed_feet flex items-center justify-between">
+                <div class="bed flex items-center gap-2">
+                  <svg
+                    class="w-2.5 lg:w-6"
+                    width="25"
+                    height="24"
+                    viewBox="0 0 25 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10.25 15.75V7.5H20C20.7956 7.5 21.5587 7.81607 22.1213 8.37868C22.6839 8.94129 23 9.70435 23 10.5V15.75"
+                      stroke="#005555"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M2 19.5V4.5"
+                      stroke="#005555"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M2 15.75H23V19.5"
+                      stroke="#005555"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M10.25 7.5H2"
+                      stroke="#005555"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  <p class="font-normal font8 opacity-50 md:text-sm">2 Beds</p>
+                </div>
+                <div class="bed flex items-center gap-2">
+                  <svg
+                    class="w-2.5 lg:w-6"
+                    width="25"
+                    height="24"
+                    viewBox="0 0 25 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_384_16778)">
+                      <path
+                        d="M1.51611 1.82515L1.51611 21.1749C1.51611 21.6306 1.88554 22 2.34126 22H10.0265C10.4822 22 10.8516 21.6306 10.8516 21.1749L10.8516 1.82515C10.8516 1.36943 10.4822 0.999999 10.0265 0.999999H2.34126C1.88554 0.999999 1.51611 1.36943 1.51611 1.82515Z"
+                        stroke="#005555"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M1.53857 6.24219H6.20631"
+                        stroke="#005555"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M21.6963 13.0623L2.34663 13.0175C1.89091 13.0165 1.52063 13.3851 1.51958 13.8408L1.5018 21.526C1.50074 21.9817 1.86932 22.352 2.32503 22.353L21.6747 22.3978C22.1304 22.3988 22.5007 22.0303 22.5017 21.5745L22.5195 13.8893C22.5206 13.4336 22.152 13.0633 21.6963 13.0623Z"
+                        stroke="#005555"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M17.2798 13.0742L17.269 17.7419"
+                        stroke="#005555"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_384_16778">
+                        <rect
+                          width="24"
+                          height="24"
+                          fill="white"
+                          transform="translate(0.5)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+
+                  <p class="font-normal font8 opacity-50 md:text-sm">
+                    150 Sq.feet
+                  </p>
+                </div>
+              </div>
+            </a>
           </div>
-          <div class="popular_item">
-            <div class="img relative mb-3">
-              <img
-                src="../assets/images/popular/1.png"
-                alt=""
-                class="rounded-lg w-full"
-              />
-              <p
-                class="absolute bottom-2 btn p-2 font-medium md:text-sm font10"
-              >
-                $220.0/Night
-              </p>
-            </div>
-            <p
-              class="flex items-center gap-2 font10 text-base opacity-50 mb10 md:text-sm"
-            >
-              <svg
-                class="w-2.5 lg:w-6"
-                width="13"
-                height="16"
-                viewBox="0 0 13 16"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M3.4948 3.4948C4.29183 2.69777 5.37283 2.25 6.5 2.25C7.62717 2.25 8.70817 2.69777 9.5052 3.4948C10.3022 4.29183 10.75 5.37283 10.75 6.5C10.75 8.47996 9.64111 10.3072 8.43405 11.6954C7.83967 12.3789 7.24338 12.9307 6.79551 13.3114C6.68729 13.4033 6.58806 13.4851 6.5 13.556C6.41194 13.4851 6.31271 13.4033 6.20449 13.3114C5.75662 12.9307 5.16033 12.3789 4.56595 11.6954C3.35889 10.3072 2.25 8.47996 2.25 6.5C2.25 5.37283 2.69777 4.29183 3.4948 3.4948ZM8.54582 13.75H11C11.4142 13.75 11.75 14.0858 11.75 14.5C11.75 14.9142 11.4142 15.25 11 15.25H2C1.58579 15.25 1.25 14.9142 1.25 14.5C1.25 14.0858 1.58579 13.75 2 13.75H4.45418C4.13094 13.4394 3.78277 13.0807 3.43405 12.6796C2.14111 11.1928 0.75 9.02004 0.75 6.5C0.75 4.97501 1.3558 3.51247 2.43414 2.43414C3.51247 1.3558 4.97501 0.75 6.5 0.75C8.02499 0.75 9.48753 1.3558 10.5659 2.43414C11.6442 3.51247 12.25 4.97501 12.25 6.5C12.25 9.02004 10.8589 11.1928 9.56595 12.6796C9.21723 13.0807 8.86906 13.4394 8.54582 13.75ZM6.5 5.25C5.80964 5.25 5.25 5.80964 5.25 6.5C5.25 7.19036 5.80964 7.75 6.5 7.75C7.19036 7.75 7.75 7.19036 7.75 6.5C7.75 5.80964 7.19036 5.25 6.5 5.25ZM3.75 6.5C3.75 4.98122 4.98122 3.75 6.5 3.75C8.01878 3.75 9.25 4.98122 9.25 6.5C9.25 8.01878 8.01878 9.25 6.5 9.25C4.98122 9.25 3.75 8.01878 3.75 6.5Z"
-                  fill="#005555"
+          <div
+            class="popular_item"
+            data-aos="flip-right"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"
+          >
+            <a href="./home_details.html">
+              <div class="img relative mb-3">
+                <img
+                  src="../assets/images/popular/1.png"
+                  alt=""
+                  class="rounded-lg w-full"
                 />
-              </svg>
-              27/9 downstreet, NewYork, USA
-            </p>
-            <h4 class="font-bold text-sm mb-2 md:text-base">Mecaw Hotel</h4>
-            <div class="bed_feet flex items-center justify-between">
-              <div class="bed flex items-center gap-2">
-                <svg
-                  class="w-2.5 lg:w-6"
-                  width="25"
-                  height="24"
-                  viewBox="0 0 25 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
+                <p
+                  class="absolute bottom-2 btn p-2 font-medium md:text-sm font10"
                 >
-                  <path
-                    d="M10.25 15.75V7.5H20C20.7956 7.5 21.5587 7.81607 22.1213 8.37868C22.6839 8.94129 23 9.70435 23 10.5V15.75"
-                    stroke="#005555"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M2 19.5V4.5"
-                    stroke="#005555"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M2 15.75H23V19.5"
-                    stroke="#005555"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M10.25 7.5H2"
-                    stroke="#005555"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-                <p class="font-normal font8 opacity-50 md:text-sm">2 Beds</p>
-              </div>
-              <div class="bed flex items-center gap-2">
-                <svg
-                  class="w-2.5 lg:w-6"
-                  width="25"
-                  height="24"
-                  viewBox="0 0 25 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g clip-path="url(#clip0_384_16778)">
-                    <path
-                      d="M1.51611 1.82515L1.51611 21.1749C1.51611 21.6306 1.88554 22 2.34126 22H10.0265C10.4822 22 10.8516 21.6306 10.8516 21.1749L10.8516 1.82515C10.8516 1.36943 10.4822 0.999999 10.0265 0.999999H2.34126C1.88554 0.999999 1.51611 1.36943 1.51611 1.82515Z"
-                      stroke="#005555"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M1.53857 6.24219H6.20631"
-                      stroke="#005555"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M21.6963 13.0623L2.34663 13.0175C1.89091 13.0165 1.52063 13.3851 1.51958 13.8408L1.5018 21.526C1.50074 21.9817 1.86932 22.352 2.32503 22.353L21.6747 22.3978C22.1304 22.3988 22.5007 22.0303 22.5017 21.5745L22.5195 13.8893C22.5206 13.4336 22.152 13.0633 21.6963 13.0623Z"
-                      stroke="#005555"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M17.2798 13.0742L17.269 17.7419"
-                      stroke="#005555"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_384_16778">
-                      <rect
-                        width="24"
-                        height="24"
-                        fill="white"
-                        transform="translate(0.5)"
-                      />
-                    </clipPath>
-                  </defs>
-                </svg>
-
-                <p class="font-normal font8 opacity-50 md:text-sm">
-                  150 Sq.feet
+                  $220.0/Night
                 </p>
               </div>
-            </div>
+              <p
+                class="flex items-center gap-2 font10 text-base opacity-50 mb10 md:text-sm"
+              >
+                <svg
+                  class="w-2.5 lg:w-6"
+                  width="13"
+                  height="16"
+                  viewBox="0 0 13 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M3.4948 3.4948C4.29183 2.69777 5.37283 2.25 6.5 2.25C7.62717 2.25 8.70817 2.69777 9.5052 3.4948C10.3022 4.29183 10.75 5.37283 10.75 6.5C10.75 8.47996 9.64111 10.3072 8.43405 11.6954C7.83967 12.3789 7.24338 12.9307 6.79551 13.3114C6.68729 13.4033 6.58806 13.4851 6.5 13.556C6.41194 13.4851 6.31271 13.4033 6.20449 13.3114C5.75662 12.9307 5.16033 12.3789 4.56595 11.6954C3.35889 10.3072 2.25 8.47996 2.25 6.5C2.25 5.37283 2.69777 4.29183 3.4948 3.4948ZM8.54582 13.75H11C11.4142 13.75 11.75 14.0858 11.75 14.5C11.75 14.9142 11.4142 15.25 11 15.25H2C1.58579 15.25 1.25 14.9142 1.25 14.5C1.25 14.0858 1.58579 13.75 2 13.75H4.45418C4.13094 13.4394 3.78277 13.0807 3.43405 12.6796C2.14111 11.1928 0.75 9.02004 0.75 6.5C0.75 4.97501 1.3558 3.51247 2.43414 2.43414C3.51247 1.3558 4.97501 0.75 6.5 0.75C8.02499 0.75 9.48753 1.3558 10.5659 2.43414C11.6442 3.51247 12.25 4.97501 12.25 6.5C12.25 9.02004 10.8589 11.1928 9.56595 12.6796C9.21723 13.0807 8.86906 13.4394 8.54582 13.75ZM6.5 5.25C5.80964 5.25 5.25 5.80964 5.25 6.5C5.25 7.19036 5.80964 7.75 6.5 7.75C7.19036 7.75 7.75 7.19036 7.75 6.5C7.75 5.80964 7.19036 5.25 6.5 5.25ZM3.75 6.5C3.75 4.98122 4.98122 3.75 6.5 3.75C8.01878 3.75 9.25 4.98122 9.25 6.5C9.25 8.01878 8.01878 9.25 6.5 9.25C4.98122 9.25 3.75 8.01878 3.75 6.5Z"
+                    fill="#005555"
+                  />
+                </svg>
+                27/9 downstreet, NewYork, USA
+              </p>
+              <h4 class="font-bold text-sm mb-2 md:text-base">
+                <a href="./home_details.html">Mecaw Hotel</a>
+              </h4>
+              <div class="bed_feet flex items-center justify-between">
+                <div class="bed flex items-center gap-2">
+                  <svg
+                    class="w-2.5 lg:w-6"
+                    width="25"
+                    height="24"
+                    viewBox="0 0 25 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10.25 15.75V7.5H20C20.7956 7.5 21.5587 7.81607 22.1213 8.37868C22.6839 8.94129 23 9.70435 23 10.5V15.75"
+                      stroke="#005555"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M2 19.5V4.5"
+                      stroke="#005555"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M2 15.75H23V19.5"
+                      stroke="#005555"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M10.25 7.5H2"
+                      stroke="#005555"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  <p class="font-normal font8 opacity-50 md:text-sm">2 Beds</p>
+                </div>
+                <div class="bed flex items-center gap-2">
+                  <svg
+                    class="w-2.5 lg:w-6"
+                    width="25"
+                    height="24"
+                    viewBox="0 0 25 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_384_16778)">
+                      <path
+                        d="M1.51611 1.82515L1.51611 21.1749C1.51611 21.6306 1.88554 22 2.34126 22H10.0265C10.4822 22 10.8516 21.6306 10.8516 21.1749L10.8516 1.82515C10.8516 1.36943 10.4822 0.999999 10.0265 0.999999H2.34126C1.88554 0.999999 1.51611 1.36943 1.51611 1.82515Z"
+                        stroke="#005555"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M1.53857 6.24219H6.20631"
+                        stroke="#005555"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M21.6963 13.0623L2.34663 13.0175C1.89091 13.0165 1.52063 13.3851 1.51958 13.8408L1.5018 21.526C1.50074 21.9817 1.86932 22.352 2.32503 22.353L21.6747 22.3978C22.1304 22.3988 22.5007 22.0303 22.5017 21.5745L22.5195 13.8893C22.5206 13.4336 22.152 13.0633 21.6963 13.0623Z"
+                        stroke="#005555"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M17.2798 13.0742L17.269 17.7419"
+                        stroke="#005555"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_384_16778">
+                        <rect
+                          width="24"
+                          height="24"
+                          fill="white"
+                          transform="translate(0.5)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+
+                  <p class="font-normal font8 opacity-50 md:text-sm">
+                    150 Sq.feet
+                  </p>
+                </div>
+              </div>
+            </a>
           </div>
-          <div class="popular_item">
-            <div class="img relative mb-3">
-              <img
-                src="../assets/images/popular/1.png"
-                alt=""
-                class="rounded-lg w-full"
-              />
-              <p
-                class="absolute bottom-2 btn p-2 font-medium md:text-sm font10"
-              >
-                $220.0/Night
-              </p>
-            </div>
-            <p
-              class="flex items-center gap-2 font10 text-base opacity-50 mb10 md:text-sm"
-            >
-              <svg
-                class="w-2.5 lg:w-6"
-                width="13"
-                height="16"
-                viewBox="0 0 13 16"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M3.4948 3.4948C4.29183 2.69777 5.37283 2.25 6.5 2.25C7.62717 2.25 8.70817 2.69777 9.5052 3.4948C10.3022 4.29183 10.75 5.37283 10.75 6.5C10.75 8.47996 9.64111 10.3072 8.43405 11.6954C7.83967 12.3789 7.24338 12.9307 6.79551 13.3114C6.68729 13.4033 6.58806 13.4851 6.5 13.556C6.41194 13.4851 6.31271 13.4033 6.20449 13.3114C5.75662 12.9307 5.16033 12.3789 4.56595 11.6954C3.35889 10.3072 2.25 8.47996 2.25 6.5C2.25 5.37283 2.69777 4.29183 3.4948 3.4948ZM8.54582 13.75H11C11.4142 13.75 11.75 14.0858 11.75 14.5C11.75 14.9142 11.4142 15.25 11 15.25H2C1.58579 15.25 1.25 14.9142 1.25 14.5C1.25 14.0858 1.58579 13.75 2 13.75H4.45418C4.13094 13.4394 3.78277 13.0807 3.43405 12.6796C2.14111 11.1928 0.75 9.02004 0.75 6.5C0.75 4.97501 1.3558 3.51247 2.43414 2.43414C3.51247 1.3558 4.97501 0.75 6.5 0.75C8.02499 0.75 9.48753 1.3558 10.5659 2.43414C11.6442 3.51247 12.25 4.97501 12.25 6.5C12.25 9.02004 10.8589 11.1928 9.56595 12.6796C9.21723 13.0807 8.86906 13.4394 8.54582 13.75ZM6.5 5.25C5.80964 5.25 5.25 5.80964 5.25 6.5C5.25 7.19036 5.80964 7.75 6.5 7.75C7.19036 7.75 7.75 7.19036 7.75 6.5C7.75 5.80964 7.19036 5.25 6.5 5.25ZM3.75 6.5C3.75 4.98122 4.98122 3.75 6.5 3.75C8.01878 3.75 9.25 4.98122 9.25 6.5C9.25 8.01878 8.01878 9.25 6.5 9.25C4.98122 9.25 3.75 8.01878 3.75 6.5Z"
-                  fill="#005555"
+          <div
+            class="popular_item"
+            data-aos="flip-right"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"
+          >
+            <a href="./home_details.html">
+              <div class="img relative mb-3">
+                <img
+                  src="../assets/images/popular/1.png"
+                  alt=""
+                  class="rounded-lg w-full"
                 />
-              </svg>
-              27/9 downstreet, NewYork, USA
-            </p>
-            <h4 class="font-bold text-sm mb-2 md:text-base">Mecaw Hotel</h4>
-            <div class="bed_feet flex items-center justify-between">
-              <div class="bed flex items-center gap-2">
-                <svg
-                  class="w-2.5 lg:w-6"
-                  width="25"
-                  height="24"
-                  viewBox="0 0 25 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
+                <p
+                  class="absolute bottom-2 btn p-2 font-medium md:text-sm font10"
                 >
-                  <path
-                    d="M10.25 15.75V7.5H20C20.7956 7.5 21.5587 7.81607 22.1213 8.37868C22.6839 8.94129 23 9.70435 23 10.5V15.75"
-                    stroke="#005555"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M2 19.5V4.5"
-                    stroke="#005555"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M2 15.75H23V19.5"
-                    stroke="#005555"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M10.25 7.5H2"
-                    stroke="#005555"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-                <p class="font-normal font8 opacity-50 md:text-sm">2 Beds</p>
-              </div>
-              <div class="bed flex items-center gap-2">
-                <svg
-                  class="w-2.5 lg:w-6"
-                  width="25"
-                  height="24"
-                  viewBox="0 0 25 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g clip-path="url(#clip0_384_16778)">
-                    <path
-                      d="M1.51611 1.82515L1.51611 21.1749C1.51611 21.6306 1.88554 22 2.34126 22H10.0265C10.4822 22 10.8516 21.6306 10.8516 21.1749L10.8516 1.82515C10.8516 1.36943 10.4822 0.999999 10.0265 0.999999H2.34126C1.88554 0.999999 1.51611 1.36943 1.51611 1.82515Z"
-                      stroke="#005555"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M1.53857 6.24219H6.20631"
-                      stroke="#005555"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M21.6963 13.0623L2.34663 13.0175C1.89091 13.0165 1.52063 13.3851 1.51958 13.8408L1.5018 21.526C1.50074 21.9817 1.86932 22.352 2.32503 22.353L21.6747 22.3978C22.1304 22.3988 22.5007 22.0303 22.5017 21.5745L22.5195 13.8893C22.5206 13.4336 22.152 13.0633 21.6963 13.0623Z"
-                      stroke="#005555"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M17.2798 13.0742L17.269 17.7419"
-                      stroke="#005555"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_384_16778">
-                      <rect
-                        width="24"
-                        height="24"
-                        fill="white"
-                        transform="translate(0.5)"
-                      />
-                    </clipPath>
-                  </defs>
-                </svg>
-
-                <p class="font-normal font8 opacity-50 md:text-sm">
-                  150 Sq.feet
+                  $220.0/Night
                 </p>
               </div>
-            </div>
+              <p
+                class="flex items-center gap-2 font10 text-base opacity-50 mb10 md:text-sm"
+              >
+                <svg
+                  class="w-2.5 lg:w-6"
+                  width="13"
+                  height="16"
+                  viewBox="0 0 13 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M3.4948 3.4948C4.29183 2.69777 5.37283 2.25 6.5 2.25C7.62717 2.25 8.70817 2.69777 9.5052 3.4948C10.3022 4.29183 10.75 5.37283 10.75 6.5C10.75 8.47996 9.64111 10.3072 8.43405 11.6954C7.83967 12.3789 7.24338 12.9307 6.79551 13.3114C6.68729 13.4033 6.58806 13.4851 6.5 13.556C6.41194 13.4851 6.31271 13.4033 6.20449 13.3114C5.75662 12.9307 5.16033 12.3789 4.56595 11.6954C3.35889 10.3072 2.25 8.47996 2.25 6.5C2.25 5.37283 2.69777 4.29183 3.4948 3.4948ZM8.54582 13.75H11C11.4142 13.75 11.75 14.0858 11.75 14.5C11.75 14.9142 11.4142 15.25 11 15.25H2C1.58579 15.25 1.25 14.9142 1.25 14.5C1.25 14.0858 1.58579 13.75 2 13.75H4.45418C4.13094 13.4394 3.78277 13.0807 3.43405 12.6796C2.14111 11.1928 0.75 9.02004 0.75 6.5C0.75 4.97501 1.3558 3.51247 2.43414 2.43414C3.51247 1.3558 4.97501 0.75 6.5 0.75C8.02499 0.75 9.48753 1.3558 10.5659 2.43414C11.6442 3.51247 12.25 4.97501 12.25 6.5C12.25 9.02004 10.8589 11.1928 9.56595 12.6796C9.21723 13.0807 8.86906 13.4394 8.54582 13.75ZM6.5 5.25C5.80964 5.25 5.25 5.80964 5.25 6.5C5.25 7.19036 5.80964 7.75 6.5 7.75C7.19036 7.75 7.75 7.19036 7.75 6.5C7.75 5.80964 7.19036 5.25 6.5 5.25ZM3.75 6.5C3.75 4.98122 4.98122 3.75 6.5 3.75C8.01878 3.75 9.25 4.98122 9.25 6.5C9.25 8.01878 8.01878 9.25 6.5 9.25C4.98122 9.25 3.75 8.01878 3.75 6.5Z"
+                    fill="#005555"
+                  />
+                </svg>
+                27/9 downstreet, NewYork, USA
+              </p>
+              <h4 class="font-bold text-sm mb-2 md:text-base">
+                <a href="./home_details.html">Mecaw Hotel</a>
+              </h4>
+              <div class="bed_feet flex items-center justify-between">
+                <div class="bed flex items-center gap-2">
+                  <svg
+                    class="w-2.5 lg:w-6"
+                    width="25"
+                    height="24"
+                    viewBox="0 0 25 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10.25 15.75V7.5H20C20.7956 7.5 21.5587 7.81607 22.1213 8.37868C22.6839 8.94129 23 9.70435 23 10.5V15.75"
+                      stroke="#005555"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M2 19.5V4.5"
+                      stroke="#005555"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M2 15.75H23V19.5"
+                      stroke="#005555"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M10.25 7.5H2"
+                      stroke="#005555"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  <p class="font-normal font8 opacity-50 md:text-sm">2 Beds</p>
+                </div>
+                <div class="bed flex items-center gap-2">
+                  <svg
+                    class="w-2.5 lg:w-6"
+                    width="25"
+                    height="24"
+                    viewBox="0 0 25 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_384_16778)">
+                      <path
+                        d="M1.51611 1.82515L1.51611 21.1749C1.51611 21.6306 1.88554 22 2.34126 22H10.0265C10.4822 22 10.8516 21.6306 10.8516 21.1749L10.8516 1.82515C10.8516 1.36943 10.4822 0.999999 10.0265 0.999999H2.34126C1.88554 0.999999 1.51611 1.36943 1.51611 1.82515Z"
+                        stroke="#005555"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M1.53857 6.24219H6.20631"
+                        stroke="#005555"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M21.6963 13.0623L2.34663 13.0175C1.89091 13.0165 1.52063 13.3851 1.51958 13.8408L1.5018 21.526C1.50074 21.9817 1.86932 22.352 2.32503 22.353L21.6747 22.3978C22.1304 22.3988 22.5007 22.0303 22.5017 21.5745L22.5195 13.8893C22.5206 13.4336 22.152 13.0633 21.6963 13.0623Z"
+                        stroke="#005555"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M17.2798 13.0742L17.269 17.7419"
+                        stroke="#005555"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_384_16778">
+                        <rect
+                          width="24"
+                          height="24"
+                          fill="white"
+                          transform="translate(0.5)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+
+                  <p class="font-normal font8 opacity-50 md:text-sm">
+                    150 Sq.feet
+                  </p>
+                </div>
+              </div>
+            </a>
           </div>
-          <div class="popular_item">
-            <div class="img relative mb-3">
-              <img
-                src="../assets/images/popular/1.png"
-                alt=""
-                class="rounded-lg w-full"
-              />
-              <p
-                class="absolute bottom-2 btn p-2 font-medium md:text-sm font10"
-              >
-                $220.0/Night
-              </p>
-            </div>
-            <p
-              class="flex items-center gap-2 font10 text-base opacity-50 mb10 md:text-sm"
-            >
-              <svg
-                class="w-2.5 lg:w-6"
-                width="13"
-                height="16"
-                viewBox="0 0 13 16"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M3.4948 3.4948C4.29183 2.69777 5.37283 2.25 6.5 2.25C7.62717 2.25 8.70817 2.69777 9.5052 3.4948C10.3022 4.29183 10.75 5.37283 10.75 6.5C10.75 8.47996 9.64111 10.3072 8.43405 11.6954C7.83967 12.3789 7.24338 12.9307 6.79551 13.3114C6.68729 13.4033 6.58806 13.4851 6.5 13.556C6.41194 13.4851 6.31271 13.4033 6.20449 13.3114C5.75662 12.9307 5.16033 12.3789 4.56595 11.6954C3.35889 10.3072 2.25 8.47996 2.25 6.5C2.25 5.37283 2.69777 4.29183 3.4948 3.4948ZM8.54582 13.75H11C11.4142 13.75 11.75 14.0858 11.75 14.5C11.75 14.9142 11.4142 15.25 11 15.25H2C1.58579 15.25 1.25 14.9142 1.25 14.5C1.25 14.0858 1.58579 13.75 2 13.75H4.45418C4.13094 13.4394 3.78277 13.0807 3.43405 12.6796C2.14111 11.1928 0.75 9.02004 0.75 6.5C0.75 4.97501 1.3558 3.51247 2.43414 2.43414C3.51247 1.3558 4.97501 0.75 6.5 0.75C8.02499 0.75 9.48753 1.3558 10.5659 2.43414C11.6442 3.51247 12.25 4.97501 12.25 6.5C12.25 9.02004 10.8589 11.1928 9.56595 12.6796C9.21723 13.0807 8.86906 13.4394 8.54582 13.75ZM6.5 5.25C5.80964 5.25 5.25 5.80964 5.25 6.5C5.25 7.19036 5.80964 7.75 6.5 7.75C7.19036 7.75 7.75 7.19036 7.75 6.5C7.75 5.80964 7.19036 5.25 6.5 5.25ZM3.75 6.5C3.75 4.98122 4.98122 3.75 6.5 3.75C8.01878 3.75 9.25 4.98122 9.25 6.5C9.25 8.01878 8.01878 9.25 6.5 9.25C4.98122 9.25 3.75 8.01878 3.75 6.5Z"
-                  fill="#005555"
+          <div
+            class="popular_item"
+            data-aos="flip-right"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"
+          >
+            <a href="./home_details.html">
+              <div class="img relative mb-3">
+                <img
+                  src="../assets/images/popular/1.png"
+                  alt=""
+                  class="rounded-lg w-full"
                 />
-              </svg>
-              27/9 downstreet, NewYork, USA
-            </p>
-            <h4 class="font-bold text-sm mb-2 md:text-base">Mecaw Hotel</h4>
-            <div class="bed_feet flex items-center justify-between">
-              <div class="bed flex items-center gap-2">
-                <svg
-                  class="w-2.5 lg:w-6"
-                  width="25"
-                  height="24"
-                  viewBox="0 0 25 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
+                <p
+                  class="absolute bottom-2 btn p-2 font-medium md:text-sm font10"
                 >
-                  <path
-                    d="M10.25 15.75V7.5H20C20.7956 7.5 21.5587 7.81607 22.1213 8.37868C22.6839 8.94129 23 9.70435 23 10.5V15.75"
-                    stroke="#005555"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M2 19.5V4.5"
-                    stroke="#005555"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M2 15.75H23V19.5"
-                    stroke="#005555"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M10.25 7.5H2"
-                    stroke="#005555"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-                <p class="font-normal font8 opacity-50 md:text-sm">2 Beds</p>
-              </div>
-              <div class="bed flex items-center gap-2">
-                <svg
-                  class="w-2.5 lg:w-6"
-                  width="25"
-                  height="24"
-                  viewBox="0 0 25 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g clip-path="url(#clip0_384_16778)">
-                    <path
-                      d="M1.51611 1.82515L1.51611 21.1749C1.51611 21.6306 1.88554 22 2.34126 22H10.0265C10.4822 22 10.8516 21.6306 10.8516 21.1749L10.8516 1.82515C10.8516 1.36943 10.4822 0.999999 10.0265 0.999999H2.34126C1.88554 0.999999 1.51611 1.36943 1.51611 1.82515Z"
-                      stroke="#005555"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M1.53857 6.24219H6.20631"
-                      stroke="#005555"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M21.6963 13.0623L2.34663 13.0175C1.89091 13.0165 1.52063 13.3851 1.51958 13.8408L1.5018 21.526C1.50074 21.9817 1.86932 22.352 2.32503 22.353L21.6747 22.3978C22.1304 22.3988 22.5007 22.0303 22.5017 21.5745L22.5195 13.8893C22.5206 13.4336 22.152 13.0633 21.6963 13.0623Z"
-                      stroke="#005555"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M17.2798 13.0742L17.269 17.7419"
-                      stroke="#005555"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_384_16778">
-                      <rect
-                        width="24"
-                        height="24"
-                        fill="white"
-                        transform="translate(0.5)"
-                      />
-                    </clipPath>
-                  </defs>
-                </svg>
-
-                <p class="font-normal font8 opacity-50 md:text-sm">
-                  150 Sq.feet
+                  $220.0/Night
                 </p>
               </div>
-            </div>
+              <p
+                class="flex items-center gap-2 font10 text-base opacity-50 mb10 md:text-sm"
+              >
+                <svg
+                  class="w-2.5 lg:w-6"
+                  width="13"
+                  height="16"
+                  viewBox="0 0 13 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M3.4948 3.4948C4.29183 2.69777 5.37283 2.25 6.5 2.25C7.62717 2.25 8.70817 2.69777 9.5052 3.4948C10.3022 4.29183 10.75 5.37283 10.75 6.5C10.75 8.47996 9.64111 10.3072 8.43405 11.6954C7.83967 12.3789 7.24338 12.9307 6.79551 13.3114C6.68729 13.4033 6.58806 13.4851 6.5 13.556C6.41194 13.4851 6.31271 13.4033 6.20449 13.3114C5.75662 12.9307 5.16033 12.3789 4.56595 11.6954C3.35889 10.3072 2.25 8.47996 2.25 6.5C2.25 5.37283 2.69777 4.29183 3.4948 3.4948ZM8.54582 13.75H11C11.4142 13.75 11.75 14.0858 11.75 14.5C11.75 14.9142 11.4142 15.25 11 15.25H2C1.58579 15.25 1.25 14.9142 1.25 14.5C1.25 14.0858 1.58579 13.75 2 13.75H4.45418C4.13094 13.4394 3.78277 13.0807 3.43405 12.6796C2.14111 11.1928 0.75 9.02004 0.75 6.5C0.75 4.97501 1.3558 3.51247 2.43414 2.43414C3.51247 1.3558 4.97501 0.75 6.5 0.75C8.02499 0.75 9.48753 1.3558 10.5659 2.43414C11.6442 3.51247 12.25 4.97501 12.25 6.5C12.25 9.02004 10.8589 11.1928 9.56595 12.6796C9.21723 13.0807 8.86906 13.4394 8.54582 13.75ZM6.5 5.25C5.80964 5.25 5.25 5.80964 5.25 6.5C5.25 7.19036 5.80964 7.75 6.5 7.75C7.19036 7.75 7.75 7.19036 7.75 6.5C7.75 5.80964 7.19036 5.25 6.5 5.25ZM3.75 6.5C3.75 4.98122 4.98122 3.75 6.5 3.75C8.01878 3.75 9.25 4.98122 9.25 6.5C9.25 8.01878 8.01878 9.25 6.5 9.25C4.98122 9.25 3.75 8.01878 3.75 6.5Z"
+                    fill="#005555"
+                  />
+                </svg>
+                27/9 downstreet, NewYork, USA
+              </p>
+              <h4 class="font-bold text-sm mb-2 md:text-base">
+                <a href="./home_details.html">Mecaw Hotel</a>
+              </h4>
+              <div class="bed_feet flex items-center justify-between">
+                <div class="bed flex items-center gap-2">
+                  <svg
+                    class="w-2.5 lg:w-6"
+                    width="25"
+                    height="24"
+                    viewBox="0 0 25 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10.25 15.75V7.5H20C20.7956 7.5 21.5587 7.81607 22.1213 8.37868C22.6839 8.94129 23 9.70435 23 10.5V15.75"
+                      stroke="#005555"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M2 19.5V4.5"
+                      stroke="#005555"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M2 15.75H23V19.5"
+                      stroke="#005555"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M10.25 7.5H2"
+                      stroke="#005555"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  <p class="font-normal font8 opacity-50 md:text-sm">2 Beds</p>
+                </div>
+                <div class="bed flex items-center gap-2">
+                  <svg
+                    class="w-2.5 lg:w-6"
+                    width="25"
+                    height="24"
+                    viewBox="0 0 25 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_384_16778)">
+                      <path
+                        d="M1.51611 1.82515L1.51611 21.1749C1.51611 21.6306 1.88554 22 2.34126 22H10.0265C10.4822 22 10.8516 21.6306 10.8516 21.1749L10.8516 1.82515C10.8516 1.36943 10.4822 0.999999 10.0265 0.999999H2.34126C1.88554 0.999999 1.51611 1.36943 1.51611 1.82515Z"
+                        stroke="#005555"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M1.53857 6.24219H6.20631"
+                        stroke="#005555"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M21.6963 13.0623L2.34663 13.0175C1.89091 13.0165 1.52063 13.3851 1.51958 13.8408L1.5018 21.526C1.50074 21.9817 1.86932 22.352 2.32503 22.353L21.6747 22.3978C22.1304 22.3988 22.5007 22.0303 22.5017 21.5745L22.5195 13.8893C22.5206 13.4336 22.152 13.0633 21.6963 13.0623Z"
+                        stroke="#005555"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M17.2798 13.0742L17.269 17.7419"
+                        stroke="#005555"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_384_16778">
+                        <rect
+                          width="24"
+                          height="24"
+                          fill="white"
+                          transform="translate(0.5)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+
+                  <p class="font-normal font8 opacity-50 md:text-sm">
+                    150 Sq.feet
+                  </p>
+                </div>
+              </div>
+            </a>
           </div>
-          <div class="popular_item">
-            <div class="img relative mb-3">
-              <img
-                src="../assets/images/popular/1.png"
-                alt=""
-                class="rounded-lg w-full"
-              />
-              <p
-                class="absolute bottom-2 btn p-2 font-medium md:text-sm font10"
-              >
-                $220.0/Night
-              </p>
-            </div>
-            <p
-              class="flex items-center gap-2 font10 text-base opacity-50 mb10 md:text-sm"
-            >
-              <svg
-                class="w-2.5 lg:w-6"
-                width="13"
-                height="16"
-                viewBox="0 0 13 16"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M3.4948 3.4948C4.29183 2.69777 5.37283 2.25 6.5 2.25C7.62717 2.25 8.70817 2.69777 9.5052 3.4948C10.3022 4.29183 10.75 5.37283 10.75 6.5C10.75 8.47996 9.64111 10.3072 8.43405 11.6954C7.83967 12.3789 7.24338 12.9307 6.79551 13.3114C6.68729 13.4033 6.58806 13.4851 6.5 13.556C6.41194 13.4851 6.31271 13.4033 6.20449 13.3114C5.75662 12.9307 5.16033 12.3789 4.56595 11.6954C3.35889 10.3072 2.25 8.47996 2.25 6.5C2.25 5.37283 2.69777 4.29183 3.4948 3.4948ZM8.54582 13.75H11C11.4142 13.75 11.75 14.0858 11.75 14.5C11.75 14.9142 11.4142 15.25 11 15.25H2C1.58579 15.25 1.25 14.9142 1.25 14.5C1.25 14.0858 1.58579 13.75 2 13.75H4.45418C4.13094 13.4394 3.78277 13.0807 3.43405 12.6796C2.14111 11.1928 0.75 9.02004 0.75 6.5C0.75 4.97501 1.3558 3.51247 2.43414 2.43414C3.51247 1.3558 4.97501 0.75 6.5 0.75C8.02499 0.75 9.48753 1.3558 10.5659 2.43414C11.6442 3.51247 12.25 4.97501 12.25 6.5C12.25 9.02004 10.8589 11.1928 9.56595 12.6796C9.21723 13.0807 8.86906 13.4394 8.54582 13.75ZM6.5 5.25C5.80964 5.25 5.25 5.80964 5.25 6.5C5.25 7.19036 5.80964 7.75 6.5 7.75C7.19036 7.75 7.75 7.19036 7.75 6.5C7.75 5.80964 7.19036 5.25 6.5 5.25ZM3.75 6.5C3.75 4.98122 4.98122 3.75 6.5 3.75C8.01878 3.75 9.25 4.98122 9.25 6.5C9.25 8.01878 8.01878 9.25 6.5 9.25C4.98122 9.25 3.75 8.01878 3.75 6.5Z"
-                  fill="#005555"
+          <div
+            class="popular_item"
+            data-aos="flip-right"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"
+          >
+            <a href="./home_details.html">
+              <div class="img relative mb-3">
+                <img
+                  src="../assets/images/popular/1.png"
+                  alt=""
+                  class="rounded-lg w-full"
                 />
-              </svg>
-              27/9 downstreet, NewYork, USA
-            </p>
-            <h4 class="font-bold text-sm mb-2 md:text-base">Mecaw Hotel</h4>
-            <div class="bed_feet flex items-center justify-between">
-              <div class="bed flex items-center gap-2">
-                <svg
-                  class="w-2.5 lg:w-6"
-                  width="25"
-                  height="24"
-                  viewBox="0 0 25 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
+                <p
+                  class="absolute bottom-2 btn p-2 font-medium md:text-sm font10"
                 >
-                  <path
-                    d="M10.25 15.75V7.5H20C20.7956 7.5 21.5587 7.81607 22.1213 8.37868C22.6839 8.94129 23 9.70435 23 10.5V15.75"
-                    stroke="#005555"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M2 19.5V4.5"
-                    stroke="#005555"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M2 15.75H23V19.5"
-                    stroke="#005555"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M10.25 7.5H2"
-                    stroke="#005555"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-                <p class="font-normal font8 opacity-50 md:text-sm">2 Beds</p>
-              </div>
-              <div class="bed flex items-center gap-2">
-                <svg
-                  class="w-2.5 lg:w-6"
-                  width="25"
-                  height="24"
-                  viewBox="0 0 25 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g clip-path="url(#clip0_384_16778)">
-                    <path
-                      d="M1.51611 1.82515L1.51611 21.1749C1.51611 21.6306 1.88554 22 2.34126 22H10.0265C10.4822 22 10.8516 21.6306 10.8516 21.1749L10.8516 1.82515C10.8516 1.36943 10.4822 0.999999 10.0265 0.999999H2.34126C1.88554 0.999999 1.51611 1.36943 1.51611 1.82515Z"
-                      stroke="#005555"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M1.53857 6.24219H6.20631"
-                      stroke="#005555"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M21.6963 13.0623L2.34663 13.0175C1.89091 13.0165 1.52063 13.3851 1.51958 13.8408L1.5018 21.526C1.50074 21.9817 1.86932 22.352 2.32503 22.353L21.6747 22.3978C22.1304 22.3988 22.5007 22.0303 22.5017 21.5745L22.5195 13.8893C22.5206 13.4336 22.152 13.0633 21.6963 13.0623Z"
-                      stroke="#005555"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M17.2798 13.0742L17.269 17.7419"
-                      stroke="#005555"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_384_16778">
-                      <rect
-                        width="24"
-                        height="24"
-                        fill="white"
-                        transform="translate(0.5)"
-                      />
-                    </clipPath>
-                  </defs>
-                </svg>
-
-                <p class="font-normal font8 opacity-50 md:text-sm">
-                  150 Sq.feet
+                  $220.0/Night
                 </p>
               </div>
-            </div>
+              <p
+                class="flex items-center gap-2 font10 text-base opacity-50 mb10 md:text-sm"
+              >
+                <svg
+                  class="w-2.5 lg:w-6"
+                  width="13"
+                  height="16"
+                  viewBox="0 0 13 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M3.4948 3.4948C4.29183 2.69777 5.37283 2.25 6.5 2.25C7.62717 2.25 8.70817 2.69777 9.5052 3.4948C10.3022 4.29183 10.75 5.37283 10.75 6.5C10.75 8.47996 9.64111 10.3072 8.43405 11.6954C7.83967 12.3789 7.24338 12.9307 6.79551 13.3114C6.68729 13.4033 6.58806 13.4851 6.5 13.556C6.41194 13.4851 6.31271 13.4033 6.20449 13.3114C5.75662 12.9307 5.16033 12.3789 4.56595 11.6954C3.35889 10.3072 2.25 8.47996 2.25 6.5C2.25 5.37283 2.69777 4.29183 3.4948 3.4948ZM8.54582 13.75H11C11.4142 13.75 11.75 14.0858 11.75 14.5C11.75 14.9142 11.4142 15.25 11 15.25H2C1.58579 15.25 1.25 14.9142 1.25 14.5C1.25 14.0858 1.58579 13.75 2 13.75H4.45418C4.13094 13.4394 3.78277 13.0807 3.43405 12.6796C2.14111 11.1928 0.75 9.02004 0.75 6.5C0.75 4.97501 1.3558 3.51247 2.43414 2.43414C3.51247 1.3558 4.97501 0.75 6.5 0.75C8.02499 0.75 9.48753 1.3558 10.5659 2.43414C11.6442 3.51247 12.25 4.97501 12.25 6.5C12.25 9.02004 10.8589 11.1928 9.56595 12.6796C9.21723 13.0807 8.86906 13.4394 8.54582 13.75ZM6.5 5.25C5.80964 5.25 5.25 5.80964 5.25 6.5C5.25 7.19036 5.80964 7.75 6.5 7.75C7.19036 7.75 7.75 7.19036 7.75 6.5C7.75 5.80964 7.19036 5.25 6.5 5.25ZM3.75 6.5C3.75 4.98122 4.98122 3.75 6.5 3.75C8.01878 3.75 9.25 4.98122 9.25 6.5C9.25 8.01878 8.01878 9.25 6.5 9.25C4.98122 9.25 3.75 8.01878 3.75 6.5Z"
+                    fill="#005555"
+                  />
+                </svg>
+                27/9 downstreet, NewYork, USA
+              </p>
+              <h4 class="font-bold text-sm mb-2 md:text-base">
+                <a href="./home_details.html">Mecaw Hotel</a>
+              </h4>
+              <div class="bed_feet flex items-center justify-between">
+                <div class="bed flex items-center gap-2">
+                  <svg
+                    class="w-2.5 lg:w-6"
+                    width="25"
+                    height="24"
+                    viewBox="0 0 25 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10.25 15.75V7.5H20C20.7956 7.5 21.5587 7.81607 22.1213 8.37868C22.6839 8.94129 23 9.70435 23 10.5V15.75"
+                      stroke="#005555"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M2 19.5V4.5"
+                      stroke="#005555"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M2 15.75H23V19.5"
+                      stroke="#005555"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M10.25 7.5H2"
+                      stroke="#005555"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  <p class="font-normal font8 opacity-50 md:text-sm">2 Beds</p>
+                </div>
+                <div class="bed flex items-center gap-2">
+                  <svg
+                    class="w-2.5 lg:w-6"
+                    width="25"
+                    height="24"
+                    viewBox="0 0 25 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_384_16778)">
+                      <path
+                        d="M1.51611 1.82515L1.51611 21.1749C1.51611 21.6306 1.88554 22 2.34126 22H10.0265C10.4822 22 10.8516 21.6306 10.8516 21.1749L10.8516 1.82515C10.8516 1.36943 10.4822 0.999999 10.0265 0.999999H2.34126C1.88554 0.999999 1.51611 1.36943 1.51611 1.82515Z"
+                        stroke="#005555"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M1.53857 6.24219H6.20631"
+                        stroke="#005555"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M21.6963 13.0623L2.34663 13.0175C1.89091 13.0165 1.52063 13.3851 1.51958 13.8408L1.5018 21.526C1.50074 21.9817 1.86932 22.352 2.32503 22.353L21.6747 22.3978C22.1304 22.3988 22.5007 22.0303 22.5017 21.5745L22.5195 13.8893C22.5206 13.4336 22.152 13.0633 21.6963 13.0623Z"
+                        stroke="#005555"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M17.2798 13.0742L17.269 17.7419"
+                        stroke="#005555"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_384_16778">
+                        <rect
+                          width="24"
+                          height="24"
+                          fill="white"
+                          transform="translate(0.5)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+
+                  <p class="font-normal font8 opacity-50 md:text-sm">
+                    150 Sq.feet
+                  </p>
+                </div>
+              </div>
+            </a>
           </div>
-          <div class="popular_item">
-            <div class="img relative mb-3">
-              <img
-                src="../assets/images/popular/1.png"
-                alt=""
-                class="rounded-lg w-full"
-              />
-              <p
-                class="absolute bottom-2 btn p-2 font-medium md:text-sm font10"
-              >
-                $220.0/Night
-              </p>
-            </div>
-            <p
-              class="flex items-center gap-2 font10 text-base opacity-50 mb10 md:text-sm"
-            >
-              <svg
-                class="w-2.5 lg:w-6"
-                width="13"
-                height="16"
-                viewBox="0 0 13 16"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M3.4948 3.4948C4.29183 2.69777 5.37283 2.25 6.5 2.25C7.62717 2.25 8.70817 2.69777 9.5052 3.4948C10.3022 4.29183 10.75 5.37283 10.75 6.5C10.75 8.47996 9.64111 10.3072 8.43405 11.6954C7.83967 12.3789 7.24338 12.9307 6.79551 13.3114C6.68729 13.4033 6.58806 13.4851 6.5 13.556C6.41194 13.4851 6.31271 13.4033 6.20449 13.3114C5.75662 12.9307 5.16033 12.3789 4.56595 11.6954C3.35889 10.3072 2.25 8.47996 2.25 6.5C2.25 5.37283 2.69777 4.29183 3.4948 3.4948ZM8.54582 13.75H11C11.4142 13.75 11.75 14.0858 11.75 14.5C11.75 14.9142 11.4142 15.25 11 15.25H2C1.58579 15.25 1.25 14.9142 1.25 14.5C1.25 14.0858 1.58579 13.75 2 13.75H4.45418C4.13094 13.4394 3.78277 13.0807 3.43405 12.6796C2.14111 11.1928 0.75 9.02004 0.75 6.5C0.75 4.97501 1.3558 3.51247 2.43414 2.43414C3.51247 1.3558 4.97501 0.75 6.5 0.75C8.02499 0.75 9.48753 1.3558 10.5659 2.43414C11.6442 3.51247 12.25 4.97501 12.25 6.5C12.25 9.02004 10.8589 11.1928 9.56595 12.6796C9.21723 13.0807 8.86906 13.4394 8.54582 13.75ZM6.5 5.25C5.80964 5.25 5.25 5.80964 5.25 6.5C5.25 7.19036 5.80964 7.75 6.5 7.75C7.19036 7.75 7.75 7.19036 7.75 6.5C7.75 5.80964 7.19036 5.25 6.5 5.25ZM3.75 6.5C3.75 4.98122 4.98122 3.75 6.5 3.75C8.01878 3.75 9.25 4.98122 9.25 6.5C9.25 8.01878 8.01878 9.25 6.5 9.25C4.98122 9.25 3.75 8.01878 3.75 6.5Z"
-                  fill="#005555"
+          <div
+            class="popular_item"
+            data-aos="flip-right"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"
+          >
+            <a href="./home_details.html">
+              <div class="img relative mb-3">
+                <img
+                  src="../assets/images/popular/1.png"
+                  alt=""
+                  class="rounded-lg w-full"
                 />
-              </svg>
-              27/9 downstreet, NewYork, USA
-            </p>
-            <h4 class="font-bold text-sm mb-2 md:text-base">Mecaw Hotel</h4>
-            <div class="bed_feet flex items-center justify-between">
-              <div class="bed flex items-center gap-2">
-                <svg
-                  class="w-2.5 lg:w-6"
-                  width="25"
-                  height="24"
-                  viewBox="0 0 25 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
+                <p
+                  class="absolute bottom-2 btn p-2 font-medium md:text-sm font10"
                 >
-                  <path
-                    d="M10.25 15.75V7.5H20C20.7956 7.5 21.5587 7.81607 22.1213 8.37868C22.6839 8.94129 23 9.70435 23 10.5V15.75"
-                    stroke="#005555"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M2 19.5V4.5"
-                    stroke="#005555"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M2 15.75H23V19.5"
-                    stroke="#005555"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M10.25 7.5H2"
-                    stroke="#005555"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-                <p class="font-normal font8 opacity-50 md:text-sm">2 Beds</p>
-              </div>
-              <div class="bed flex items-center gap-2">
-                <svg
-                  class="w-2.5 lg:w-6"
-                  width="25"
-                  height="24"
-                  viewBox="0 0 25 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g clip-path="url(#clip0_384_16778)">
-                    <path
-                      d="M1.51611 1.82515L1.51611 21.1749C1.51611 21.6306 1.88554 22 2.34126 22H10.0265C10.4822 22 10.8516 21.6306 10.8516 21.1749L10.8516 1.82515C10.8516 1.36943 10.4822 0.999999 10.0265 0.999999H2.34126C1.88554 0.999999 1.51611 1.36943 1.51611 1.82515Z"
-                      stroke="#005555"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M1.53857 6.24219H6.20631"
-                      stroke="#005555"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M21.6963 13.0623L2.34663 13.0175C1.89091 13.0165 1.52063 13.3851 1.51958 13.8408L1.5018 21.526C1.50074 21.9817 1.86932 22.352 2.32503 22.353L21.6747 22.3978C22.1304 22.3988 22.5007 22.0303 22.5017 21.5745L22.5195 13.8893C22.5206 13.4336 22.152 13.0633 21.6963 13.0623Z"
-                      stroke="#005555"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M17.2798 13.0742L17.269 17.7419"
-                      stroke="#005555"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_384_16778">
-                      <rect
-                        width="24"
-                        height="24"
-                        fill="white"
-                        transform="translate(0.5)"
-                      />
-                    </clipPath>
-                  </defs>
-                </svg>
-
-                <p class="font-normal font8 opacity-50 md:text-sm">
-                  150 Sq.feet
+                  $220.0/Night
                 </p>
               </div>
-            </div>
+              <p
+                class="flex items-center gap-2 font10 text-base opacity-50 mb10 md:text-sm"
+              >
+                <svg
+                  class="w-2.5 lg:w-6"
+                  width="13"
+                  height="16"
+                  viewBox="0 0 13 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M3.4948 3.4948C4.29183 2.69777 5.37283 2.25 6.5 2.25C7.62717 2.25 8.70817 2.69777 9.5052 3.4948C10.3022 4.29183 10.75 5.37283 10.75 6.5C10.75 8.47996 9.64111 10.3072 8.43405 11.6954C7.83967 12.3789 7.24338 12.9307 6.79551 13.3114C6.68729 13.4033 6.58806 13.4851 6.5 13.556C6.41194 13.4851 6.31271 13.4033 6.20449 13.3114C5.75662 12.9307 5.16033 12.3789 4.56595 11.6954C3.35889 10.3072 2.25 8.47996 2.25 6.5C2.25 5.37283 2.69777 4.29183 3.4948 3.4948ZM8.54582 13.75H11C11.4142 13.75 11.75 14.0858 11.75 14.5C11.75 14.9142 11.4142 15.25 11 15.25H2C1.58579 15.25 1.25 14.9142 1.25 14.5C1.25 14.0858 1.58579 13.75 2 13.75H4.45418C4.13094 13.4394 3.78277 13.0807 3.43405 12.6796C2.14111 11.1928 0.75 9.02004 0.75 6.5C0.75 4.97501 1.3558 3.51247 2.43414 2.43414C3.51247 1.3558 4.97501 0.75 6.5 0.75C8.02499 0.75 9.48753 1.3558 10.5659 2.43414C11.6442 3.51247 12.25 4.97501 12.25 6.5C12.25 9.02004 10.8589 11.1928 9.56595 12.6796C9.21723 13.0807 8.86906 13.4394 8.54582 13.75ZM6.5 5.25C5.80964 5.25 5.25 5.80964 5.25 6.5C5.25 7.19036 5.80964 7.75 6.5 7.75C7.19036 7.75 7.75 7.19036 7.75 6.5C7.75 5.80964 7.19036 5.25 6.5 5.25ZM3.75 6.5C3.75 4.98122 4.98122 3.75 6.5 3.75C8.01878 3.75 9.25 4.98122 9.25 6.5C9.25 8.01878 8.01878 9.25 6.5 9.25C4.98122 9.25 3.75 8.01878 3.75 6.5Z"
+                    fill="#005555"
+                  />
+                </svg>
+                27/9 downstreet, NewYork, USA
+              </p>
+              <h4 class="font-bold text-sm mb-2 md:text-base">
+                <a href="./home_details.html">Mecaw Hotel</a>
+              </h4>
+              <div class="bed_feet flex items-center justify-between">
+                <div class="bed flex items-center gap-2">
+                  <svg
+                    class="w-2.5 lg:w-6"
+                    width="25"
+                    height="24"
+                    viewBox="0 0 25 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10.25 15.75V7.5H20C20.7956 7.5 21.5587 7.81607 22.1213 8.37868C22.6839 8.94129 23 9.70435 23 10.5V15.75"
+                      stroke="#005555"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M2 19.5V4.5"
+                      stroke="#005555"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M2 15.75H23V19.5"
+                      stroke="#005555"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M10.25 7.5H2"
+                      stroke="#005555"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  <p class="font-normal font8 opacity-50 md:text-sm">2 Beds</p>
+                </div>
+                <div class="bed flex items-center gap-2">
+                  <svg
+                    class="w-2.5 lg:w-6"
+                    width="25"
+                    height="24"
+                    viewBox="0 0 25 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_384_16778)">
+                      <path
+                        d="M1.51611 1.82515L1.51611 21.1749C1.51611 21.6306 1.88554 22 2.34126 22H10.0265C10.4822 22 10.8516 21.6306 10.8516 21.1749L10.8516 1.82515C10.8516 1.36943 10.4822 0.999999 10.0265 0.999999H2.34126C1.88554 0.999999 1.51611 1.36943 1.51611 1.82515Z"
+                        stroke="#005555"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M1.53857 6.24219H6.20631"
+                        stroke="#005555"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M21.6963 13.0623L2.34663 13.0175C1.89091 13.0165 1.52063 13.3851 1.51958 13.8408L1.5018 21.526C1.50074 21.9817 1.86932 22.352 2.32503 22.353L21.6747 22.3978C22.1304 22.3988 22.5007 22.0303 22.5017 21.5745L22.5195 13.8893C22.5206 13.4336 22.152 13.0633 21.6963 13.0623Z"
+                        stroke="#005555"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M17.2798 13.0742L17.269 17.7419"
+                        stroke="#005555"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_384_16778">
+                        <rect
+                          width="24"
+                          height="24"
+                          fill="white"
+                          transform="translate(0.5)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+
+                  <p class="font-normal font8 opacity-50 md:text-sm">
+                    150 Sq.feet
+                  </p>
+                </div>
+              </div>
+            </a>
           </div>
-          <div class="popular_item">
-            <div class="img relative mb-3">
-              <img
-                src="../assets/images/popular/1.png"
-                alt=""
-                class="rounded-lg w-full"
-              />
-              <p
-                class="absolute bottom-2 btn p-2 font-medium md:text-sm font10"
-              >
-                $220.0/Night
-              </p>
-            </div>
-            <p
-              class="flex items-center gap-2 font10 text-base opacity-50 mb10 md:text-sm"
-            >
-              <svg
-                class="w-2.5 lg:w-6"
-                width="13"
-                height="16"
-                viewBox="0 0 13 16"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M3.4948 3.4948C4.29183 2.69777 5.37283 2.25 6.5 2.25C7.62717 2.25 8.70817 2.69777 9.5052 3.4948C10.3022 4.29183 10.75 5.37283 10.75 6.5C10.75 8.47996 9.64111 10.3072 8.43405 11.6954C7.83967 12.3789 7.24338 12.9307 6.79551 13.3114C6.68729 13.4033 6.58806 13.4851 6.5 13.556C6.41194 13.4851 6.31271 13.4033 6.20449 13.3114C5.75662 12.9307 5.16033 12.3789 4.56595 11.6954C3.35889 10.3072 2.25 8.47996 2.25 6.5C2.25 5.37283 2.69777 4.29183 3.4948 3.4948ZM8.54582 13.75H11C11.4142 13.75 11.75 14.0858 11.75 14.5C11.75 14.9142 11.4142 15.25 11 15.25H2C1.58579 15.25 1.25 14.9142 1.25 14.5C1.25 14.0858 1.58579 13.75 2 13.75H4.45418C4.13094 13.4394 3.78277 13.0807 3.43405 12.6796C2.14111 11.1928 0.75 9.02004 0.75 6.5C0.75 4.97501 1.3558 3.51247 2.43414 2.43414C3.51247 1.3558 4.97501 0.75 6.5 0.75C8.02499 0.75 9.48753 1.3558 10.5659 2.43414C11.6442 3.51247 12.25 4.97501 12.25 6.5C12.25 9.02004 10.8589 11.1928 9.56595 12.6796C9.21723 13.0807 8.86906 13.4394 8.54582 13.75ZM6.5 5.25C5.80964 5.25 5.25 5.80964 5.25 6.5C5.25 7.19036 5.80964 7.75 6.5 7.75C7.19036 7.75 7.75 7.19036 7.75 6.5C7.75 5.80964 7.19036 5.25 6.5 5.25ZM3.75 6.5C3.75 4.98122 4.98122 3.75 6.5 3.75C8.01878 3.75 9.25 4.98122 9.25 6.5C9.25 8.01878 8.01878 9.25 6.5 9.25C4.98122 9.25 3.75 8.01878 3.75 6.5Z"
-                  fill="#005555"
+          <div
+            class="popular_item"
+            data-aos="flip-right"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"
+          >
+            <a href="./home_details.html">
+              <div class="img relative mb-3">
+                <img
+                  src="../assets/images/popular/1.png"
+                  alt=""
+                  class="rounded-lg w-full"
                 />
-              </svg>
-              27/9 downstreet, NewYork, USA
-            </p>
-            <h4 class="font-bold text-sm mb-2 md:text-base">Mecaw Hotel</h4>
-            <div class="bed_feet flex items-center justify-between">
-              <div class="bed flex items-center gap-2">
-                <svg
-                  class="w-2.5 lg:w-6"
-                  width="25"
-                  height="24"
-                  viewBox="0 0 25 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
+                <p
+                  class="absolute bottom-2 btn p-2 font-medium md:text-sm font10"
                 >
-                  <path
-                    d="M10.25 15.75V7.5H20C20.7956 7.5 21.5587 7.81607 22.1213 8.37868C22.6839 8.94129 23 9.70435 23 10.5V15.75"
-                    stroke="#005555"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M2 19.5V4.5"
-                    stroke="#005555"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M2 15.75H23V19.5"
-                    stroke="#005555"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M10.25 7.5H2"
-                    stroke="#005555"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-                <p class="font-normal font8 opacity-50 md:text-sm">2 Beds</p>
-              </div>
-              <div class="bed flex items-center gap-2">
-                <svg
-                  class="w-2.5 lg:w-6"
-                  width="25"
-                  height="24"
-                  viewBox="0 0 25 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g clip-path="url(#clip0_384_16778)">
-                    <path
-                      d="M1.51611 1.82515L1.51611 21.1749C1.51611 21.6306 1.88554 22 2.34126 22H10.0265C10.4822 22 10.8516 21.6306 10.8516 21.1749L10.8516 1.82515C10.8516 1.36943 10.4822 0.999999 10.0265 0.999999H2.34126C1.88554 0.999999 1.51611 1.36943 1.51611 1.82515Z"
-                      stroke="#005555"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M1.53857 6.24219H6.20631"
-                      stroke="#005555"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M21.6963 13.0623L2.34663 13.0175C1.89091 13.0165 1.52063 13.3851 1.51958 13.8408L1.5018 21.526C1.50074 21.9817 1.86932 22.352 2.32503 22.353L21.6747 22.3978C22.1304 22.3988 22.5007 22.0303 22.5017 21.5745L22.5195 13.8893C22.5206 13.4336 22.152 13.0633 21.6963 13.0623Z"
-                      stroke="#005555"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M17.2798 13.0742L17.269 17.7419"
-                      stroke="#005555"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_384_16778">
-                      <rect
-                        width="24"
-                        height="24"
-                        fill="white"
-                        transform="translate(0.5)"
-                      />
-                    </clipPath>
-                  </defs>
-                </svg>
-
-                <p class="font-normal font8 opacity-50 md:text-sm">
-                  150 Sq.feet
+                  $220.0/Night
                 </p>
               </div>
-            </div>
+              <p
+                class="flex items-center gap-2 font10 text-base opacity-50 mb10 md:text-sm"
+              >
+                <svg
+                  class="w-2.5 lg:w-6"
+                  width="13"
+                  height="16"
+                  viewBox="0 0 13 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M3.4948 3.4948C4.29183 2.69777 5.37283 2.25 6.5 2.25C7.62717 2.25 8.70817 2.69777 9.5052 3.4948C10.3022 4.29183 10.75 5.37283 10.75 6.5C10.75 8.47996 9.64111 10.3072 8.43405 11.6954C7.83967 12.3789 7.24338 12.9307 6.79551 13.3114C6.68729 13.4033 6.58806 13.4851 6.5 13.556C6.41194 13.4851 6.31271 13.4033 6.20449 13.3114C5.75662 12.9307 5.16033 12.3789 4.56595 11.6954C3.35889 10.3072 2.25 8.47996 2.25 6.5C2.25 5.37283 2.69777 4.29183 3.4948 3.4948ZM8.54582 13.75H11C11.4142 13.75 11.75 14.0858 11.75 14.5C11.75 14.9142 11.4142 15.25 11 15.25H2C1.58579 15.25 1.25 14.9142 1.25 14.5C1.25 14.0858 1.58579 13.75 2 13.75H4.45418C4.13094 13.4394 3.78277 13.0807 3.43405 12.6796C2.14111 11.1928 0.75 9.02004 0.75 6.5C0.75 4.97501 1.3558 3.51247 2.43414 2.43414C3.51247 1.3558 4.97501 0.75 6.5 0.75C8.02499 0.75 9.48753 1.3558 10.5659 2.43414C11.6442 3.51247 12.25 4.97501 12.25 6.5C12.25 9.02004 10.8589 11.1928 9.56595 12.6796C9.21723 13.0807 8.86906 13.4394 8.54582 13.75ZM6.5 5.25C5.80964 5.25 5.25 5.80964 5.25 6.5C5.25 7.19036 5.80964 7.75 6.5 7.75C7.19036 7.75 7.75 7.19036 7.75 6.5C7.75 5.80964 7.19036 5.25 6.5 5.25ZM3.75 6.5C3.75 4.98122 4.98122 3.75 6.5 3.75C8.01878 3.75 9.25 4.98122 9.25 6.5C9.25 8.01878 8.01878 9.25 6.5 9.25C4.98122 9.25 3.75 8.01878 3.75 6.5Z"
+                    fill="#005555"
+                  />
+                </svg>
+                27/9 downstreet, NewYork, USA
+              </p>
+              <h4 class="font-bold text-sm mb-2 md:text-base">
+                <a href="./home_details.html">Mecaw Hotel</a>
+              </h4>
+              <div class="bed_feet flex items-center justify-between">
+                <div class="bed flex items-center gap-2">
+                  <svg
+                    class="w-2.5 lg:w-6"
+                    width="25"
+                    height="24"
+                    viewBox="0 0 25 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10.25 15.75V7.5H20C20.7956 7.5 21.5587 7.81607 22.1213 8.37868C22.6839 8.94129 23 9.70435 23 10.5V15.75"
+                      stroke="#005555"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M2 19.5V4.5"
+                      stroke="#005555"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M2 15.75H23V19.5"
+                      stroke="#005555"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M10.25 7.5H2"
+                      stroke="#005555"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  <p class="font-normal font8 opacity-50 md:text-sm">2 Beds</p>
+                </div>
+                <div class="bed flex items-center gap-2">
+                  <svg
+                    class="w-2.5 lg:w-6"
+                    width="25"
+                    height="24"
+                    viewBox="0 0 25 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_384_16778)">
+                      <path
+                        d="M1.51611 1.82515L1.51611 21.1749C1.51611 21.6306 1.88554 22 2.34126 22H10.0265C10.4822 22 10.8516 21.6306 10.8516 21.1749L10.8516 1.82515C10.8516 1.36943 10.4822 0.999999 10.0265 0.999999H2.34126C1.88554 0.999999 1.51611 1.36943 1.51611 1.82515Z"
+                        stroke="#005555"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M1.53857 6.24219H6.20631"
+                        stroke="#005555"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M21.6963 13.0623L2.34663 13.0175C1.89091 13.0165 1.52063 13.3851 1.51958 13.8408L1.5018 21.526C1.50074 21.9817 1.86932 22.352 2.32503 22.353L21.6747 22.3978C22.1304 22.3988 22.5007 22.0303 22.5017 21.5745L22.5195 13.8893C22.5206 13.4336 22.152 13.0633 21.6963 13.0623Z"
+                        stroke="#005555"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M17.2798 13.0742L17.269 17.7419"
+                        stroke="#005555"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_384_16778">
+                        <rect
+                          width="24"
+                          height="24"
+                          fill="white"
+                          transform="translate(0.5)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+
+                  <p class="font-normal font8 opacity-50 md:text-sm">
+                    150 Sq.feet
+                  </p>
+                </div>
+              </div>
+            </a>
           </div>
-          <div class="popular_item">
-            <div class="img relative mb-3">
-              <img
-                src="../assets/images/popular/1.png"
-                alt=""
-                class="rounded-lg w-full"
-              />
-              <p
-                class="absolute bottom-2 btn p-2 font-medium md:text-sm font10"
-              >
-                $220.0/Night
-              </p>
-            </div>
-            <p
-              class="flex items-center gap-2 font10 text-base opacity-50 mb10 md:text-sm"
-            >
-              <svg
-                class="w-2.5 lg:w-6"
-                width="13"
-                height="16"
-                viewBox="0 0 13 16"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M3.4948 3.4948C4.29183 2.69777 5.37283 2.25 6.5 2.25C7.62717 2.25 8.70817 2.69777 9.5052 3.4948C10.3022 4.29183 10.75 5.37283 10.75 6.5C10.75 8.47996 9.64111 10.3072 8.43405 11.6954C7.83967 12.3789 7.24338 12.9307 6.79551 13.3114C6.68729 13.4033 6.58806 13.4851 6.5 13.556C6.41194 13.4851 6.31271 13.4033 6.20449 13.3114C5.75662 12.9307 5.16033 12.3789 4.56595 11.6954C3.35889 10.3072 2.25 8.47996 2.25 6.5C2.25 5.37283 2.69777 4.29183 3.4948 3.4948ZM8.54582 13.75H11C11.4142 13.75 11.75 14.0858 11.75 14.5C11.75 14.9142 11.4142 15.25 11 15.25H2C1.58579 15.25 1.25 14.9142 1.25 14.5C1.25 14.0858 1.58579 13.75 2 13.75H4.45418C4.13094 13.4394 3.78277 13.0807 3.43405 12.6796C2.14111 11.1928 0.75 9.02004 0.75 6.5C0.75 4.97501 1.3558 3.51247 2.43414 2.43414C3.51247 1.3558 4.97501 0.75 6.5 0.75C8.02499 0.75 9.48753 1.3558 10.5659 2.43414C11.6442 3.51247 12.25 4.97501 12.25 6.5C12.25 9.02004 10.8589 11.1928 9.56595 12.6796C9.21723 13.0807 8.86906 13.4394 8.54582 13.75ZM6.5 5.25C5.80964 5.25 5.25 5.80964 5.25 6.5C5.25 7.19036 5.80964 7.75 6.5 7.75C7.19036 7.75 7.75 7.19036 7.75 6.5C7.75 5.80964 7.19036 5.25 6.5 5.25ZM3.75 6.5C3.75 4.98122 4.98122 3.75 6.5 3.75C8.01878 3.75 9.25 4.98122 9.25 6.5C9.25 8.01878 8.01878 9.25 6.5 9.25C4.98122 9.25 3.75 8.01878 3.75 6.5Z"
-                  fill="#005555"
+          <div
+            class="popular_item"
+            data-aos="flip-right"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"
+          >
+            <a href="./home_details.html">
+              <div class="img relative mb-3">
+                <img
+                  src="../assets/images/popular/1.png"
+                  alt=""
+                  class="rounded-lg w-full"
                 />
-              </svg>
-              27/9 downstreet, NewYork, USA
-            </p>
-            <h4 class="font-bold text-sm mb-2 md:text-base">Mecaw Hotel</h4>
-            <div class="bed_feet flex items-center justify-between">
-              <div class="bed flex items-center gap-2">
-                <svg
-                  class="w-2.5 lg:w-6"
-                  width="25"
-                  height="24"
-                  viewBox="0 0 25 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
+                <p
+                  class="absolute bottom-2 btn p-2 font-medium md:text-sm font10"
                 >
-                  <path
-                    d="M10.25 15.75V7.5H20C20.7956 7.5 21.5587 7.81607 22.1213 8.37868C22.6839 8.94129 23 9.70435 23 10.5V15.75"
-                    stroke="#005555"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M2 19.5V4.5"
-                    stroke="#005555"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M2 15.75H23V19.5"
-                    stroke="#005555"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M10.25 7.5H2"
-                    stroke="#005555"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-                <p class="font-normal font8 opacity-50 md:text-sm">2 Beds</p>
-              </div>
-              <div class="bed flex items-center gap-2">
-                <svg
-                  class="w-2.5 lg:w-6"
-                  width="25"
-                  height="24"
-                  viewBox="0 0 25 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g clip-path="url(#clip0_384_16778)">
-                    <path
-                      d="M1.51611 1.82515L1.51611 21.1749C1.51611 21.6306 1.88554 22 2.34126 22H10.0265C10.4822 22 10.8516 21.6306 10.8516 21.1749L10.8516 1.82515C10.8516 1.36943 10.4822 0.999999 10.0265 0.999999H2.34126C1.88554 0.999999 1.51611 1.36943 1.51611 1.82515Z"
-                      stroke="#005555"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M1.53857 6.24219H6.20631"
-                      stroke="#005555"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M21.6963 13.0623L2.34663 13.0175C1.89091 13.0165 1.52063 13.3851 1.51958 13.8408L1.5018 21.526C1.50074 21.9817 1.86932 22.352 2.32503 22.353L21.6747 22.3978C22.1304 22.3988 22.5007 22.0303 22.5017 21.5745L22.5195 13.8893C22.5206 13.4336 22.152 13.0633 21.6963 13.0623Z"
-                      stroke="#005555"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M17.2798 13.0742L17.269 17.7419"
-                      stroke="#005555"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_384_16778">
-                      <rect
-                        width="24"
-                        height="24"
-                        fill="white"
-                        transform="translate(0.5)"
-                      />
-                    </clipPath>
-                  </defs>
-                </svg>
-
-                <p class="font-normal font8 opacity-50 md:text-sm">
-                  150 Sq.feet
+                  $220.0/Night
                 </p>
               </div>
-            </div>
+              <p
+                class="flex items-center gap-2 font10 text-base opacity-50 mb10 md:text-sm"
+              >
+                <svg
+                  class="w-2.5 lg:w-6"
+                  width="13"
+                  height="16"
+                  viewBox="0 0 13 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M3.4948 3.4948C4.29183 2.69777 5.37283 2.25 6.5 2.25C7.62717 2.25 8.70817 2.69777 9.5052 3.4948C10.3022 4.29183 10.75 5.37283 10.75 6.5C10.75 8.47996 9.64111 10.3072 8.43405 11.6954C7.83967 12.3789 7.24338 12.9307 6.79551 13.3114C6.68729 13.4033 6.58806 13.4851 6.5 13.556C6.41194 13.4851 6.31271 13.4033 6.20449 13.3114C5.75662 12.9307 5.16033 12.3789 4.56595 11.6954C3.35889 10.3072 2.25 8.47996 2.25 6.5C2.25 5.37283 2.69777 4.29183 3.4948 3.4948ZM8.54582 13.75H11C11.4142 13.75 11.75 14.0858 11.75 14.5C11.75 14.9142 11.4142 15.25 11 15.25H2C1.58579 15.25 1.25 14.9142 1.25 14.5C1.25 14.0858 1.58579 13.75 2 13.75H4.45418C4.13094 13.4394 3.78277 13.0807 3.43405 12.6796C2.14111 11.1928 0.75 9.02004 0.75 6.5C0.75 4.97501 1.3558 3.51247 2.43414 2.43414C3.51247 1.3558 4.97501 0.75 6.5 0.75C8.02499 0.75 9.48753 1.3558 10.5659 2.43414C11.6442 3.51247 12.25 4.97501 12.25 6.5C12.25 9.02004 10.8589 11.1928 9.56595 12.6796C9.21723 13.0807 8.86906 13.4394 8.54582 13.75ZM6.5 5.25C5.80964 5.25 5.25 5.80964 5.25 6.5C5.25 7.19036 5.80964 7.75 6.5 7.75C7.19036 7.75 7.75 7.19036 7.75 6.5C7.75 5.80964 7.19036 5.25 6.5 5.25ZM3.75 6.5C3.75 4.98122 4.98122 3.75 6.5 3.75C8.01878 3.75 9.25 4.98122 9.25 6.5C9.25 8.01878 8.01878 9.25 6.5 9.25C4.98122 9.25 3.75 8.01878 3.75 6.5Z"
+                    fill="#005555"
+                  />
+                </svg>
+                27/9 downstreet, NewYork, USA
+              </p>
+              <h4 class="font-bold text-sm mb-2 md:text-base">
+                <a href="./home_details.html">Mecaw Hotel</a>
+              </h4>
+              <div class="bed_feet flex items-center justify-between">
+                <div class="bed flex items-center gap-2">
+                  <svg
+                    class="w-2.5 lg:w-6"
+                    width="25"
+                    height="24"
+                    viewBox="0 0 25 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10.25 15.75V7.5H20C20.7956 7.5 21.5587 7.81607 22.1213 8.37868C22.6839 8.94129 23 9.70435 23 10.5V15.75"
+                      stroke="#005555"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M2 19.5V4.5"
+                      stroke="#005555"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M2 15.75H23V19.5"
+                      stroke="#005555"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M10.25 7.5H2"
+                      stroke="#005555"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  <p class="font-normal font8 opacity-50 md:text-sm">2 Beds</p>
+                </div>
+                <div class="bed flex items-center gap-2">
+                  <svg
+                    class="w-2.5 lg:w-6"
+                    width="25"
+                    height="24"
+                    viewBox="0 0 25 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_384_16778)">
+                      <path
+                        d="M1.51611 1.82515L1.51611 21.1749C1.51611 21.6306 1.88554 22 2.34126 22H10.0265C10.4822 22 10.8516 21.6306 10.8516 21.1749L10.8516 1.82515C10.8516 1.36943 10.4822 0.999999 10.0265 0.999999H2.34126C1.88554 0.999999 1.51611 1.36943 1.51611 1.82515Z"
+                        stroke="#005555"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M1.53857 6.24219H6.20631"
+                        stroke="#005555"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M21.6963 13.0623L2.34663 13.0175C1.89091 13.0165 1.52063 13.3851 1.51958 13.8408L1.5018 21.526C1.50074 21.9817 1.86932 22.352 2.32503 22.353L21.6747 22.3978C22.1304 22.3988 22.5007 22.0303 22.5017 21.5745L22.5195 13.8893C22.5206 13.4336 22.152 13.0633 21.6963 13.0623Z"
+                        stroke="#005555"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M17.2798 13.0742L17.269 17.7419"
+                        stroke="#005555"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_384_16778">
+                        <rect
+                          width="24"
+                          height="24"
+                          fill="white"
+                          transform="translate(0.5)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+
+                  <p class="font-normal font8 opacity-50 md:text-sm">
+                    150 Sq.feet
+                  </p>
+                </div>
+              </div>
+            </a>
           </div>
         </div>
       </div>
@@ -3436,7 +3581,7 @@
                 <input
                   type="text"
                   id="email-address-icon"
-                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-8 py-3 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  class="border text-sm rounded-lg block w-full pl-8 py-3 custom_input"
                   placeholder="Enter your mail"
                 />
                 <div
@@ -3866,6 +4011,18 @@
     <script src="../assets/plugin/ShowMore/showMoreItems.min.js"></script>
     <script src="../assets/plugin/smooth_scroll/smooth_scroll.js"></script>
     <script src="../assets/plugin/aos/aos.js"></script>
+    <script
+      type="text/javascript"
+      src="../assets/plugin/daterangepicker/moment.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../assets/plugin/daterangepicker/jquery.daterangepicker.min.js"
+    ></script>
     <script src="../assets/js/main.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
