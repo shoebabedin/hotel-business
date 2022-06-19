@@ -232,11 +232,6 @@ body {
   outline: none;
   background: #fff;
   color: rgb(15, 14, 14);
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -o-appearance: none;
-  -ms-appearance: none;
 }
 
 /* custom input feild */
@@ -277,6 +272,11 @@ input::-webkit-calendar-picker-indicator {
 
 input[type="date"]::-webkit-input-placeholder {
   visibility: hidden !important;
+}
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
 }
 
 /* preloader */
