@@ -439,7 +439,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .bg_banner .nav svg path {
-  fill: #fff;
+  stroke: #fff;
 }
 
 .bg_banner .slick-dots {
@@ -964,13 +964,28 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 /* hotel details */
 
+/* custom calender */
+.caleran-start,
+.caleran-end {
+  background: #005555 !important;
+}
+.caleran-start span,
+.caleran-end span {
+  background: #005555 !important;
+}
+
+/* custom calender */
+
 /* responsive */
 
 @media (max-width: 600px) {
   nav {
-    width: calc(100% - 1rem);
+    width: calc(100% - 1rem) !important;
     border-radius: 0px 0px 0px 10px;
     margin-left: auto;
+    position: absolute;
+    right: 0;
+    top: calc(51% - 0px);
   }
   .sticky nav {
     position: absolute;

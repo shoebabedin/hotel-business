@@ -16,12 +16,14 @@
       href="./assets/plugin/ShowMore/showMoreItems-theme.min.css"
     />
     <link rel="stylesheet" type="text/css" href="./assets/plugin/aos/aos.css" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="./assets/plugin/daterangepicker/daterangepicker.min.css"
-    />
+    <link href="./assets/plugin/date-picker/caleran.min.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="./dist/main.css" />
+
+    <style>
+      [x-cloak] {
+        display: none;
+      }
+    </style>
   </head>
 
   <body class="overscroll-contain">
@@ -168,7 +170,7 @@
         <section class="nav backdrop-blur-sm">
           <div
             x-data="{ open: false }"
-            class="flex flex-col container mx-auto px-2 items-center justify-between md:flex-row py-2"
+            class="flex flex-col container mx-auto px-2 items-center justify-between md:flex-row py-2 relative"
           >
             <div
               class="md:basis-auto flex flex-row items-center justify-between w-full lg:w-1/3"
@@ -685,11 +687,16 @@
                             >CHECK-IN</label
                           >
                           <div class="relative">
-                            <input
+                            <!-- <input
                               id="date-range200"
                               class="border text-sm rounded-lg block w-full p-2.5 appearance-none custom_input"
-                              type="date"
-                              min="0"
+                              type="text"
+                              placeholder="Check-In"
+                            /> -->
+                            <input
+                              type="text"
+                              id="caleran-ex-6-5-start"
+                              class="border text-sm rounded-lg block w-full p-2.5 appearance-none custom_input"
                             />
                             <div
                               class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none"
@@ -757,12 +764,18 @@
                             >CHECK-OUT</label
                           >
                           <div class="relative">
-                            <input
-                              type="date"
+                            <!-- <input
+                              type="text"
+                              placeholder="Check-In"
                               id="date-range201"
                               class="border text-sm rounded-lg block w-full p-2.5 appearance-none custom_input"
-                              placeholder=""
+                            /> -->
+                            <input
+                              type="text"
+                              id="caleran-ex-6-5-end"
+                              class="border text-sm rounded-lg block w-full p-2.5 appearance-none custom_input"
                             />
+
                             <div
                               class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none"
                             >
@@ -3779,14 +3792,9 @@
       src="./assets/plugin/smooth_scroll/smooth_scroll.js"
     ></script>
     <script type="text/javascript" src="./assets/plugin/aos/aos.js"></script>
-    <script
-      type="text/javascript"
-      src="./assets/plugin/daterangepicker/moment.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="./assets/plugin/daterangepicker/jquery.daterangepicker.min.js"
-    ></script>
+    <script src="./assets/plugin/date-picker/moment.min.js"></script>
+    <script src="./assets/plugin/date-picker/caleran.min.js"></script>
+
     <script type="text/javascript" src="./assets/js/main.js"></script>
 
     <script>
