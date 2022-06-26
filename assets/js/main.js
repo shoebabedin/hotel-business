@@ -118,7 +118,7 @@ $(document).ready(function () {
     infinite: true,
     speed: 300,
     // fade: true,
-    autoplay: false,
+    autoplay: true,
     slidesToShow: 3,
     slidesToScroll: 1,
     responsive: [
