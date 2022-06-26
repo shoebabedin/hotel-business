@@ -743,6 +743,10 @@ html {
   margin-right: 0.75rem;
 }
 
+.mr-0 {
+  margin-right: 0px;
+}
+
 .block {
   display: block;
 }
@@ -3321,6 +3325,10 @@ nav #dropdown svg path {
 
   .lg\:mr-auto {
     margin-right: auto;
+  }
+
+  .lg\:mr-6 {
+    margin-right: 1.5rem;
   }
 
   .lg\:block {
