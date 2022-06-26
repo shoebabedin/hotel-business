@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @layer base {
   html {
     font-family: "Inter", sans-serif;
@@ -32,13 +33,13 @@ body {
 }
 
 .btn {
-  background: #005555;
+  background: #009dae;
   border-radius: 6px;
   color: #ffffff;
 }
 
 .rounded-btn {
-  background: #005555;
+  background: #009dae;
   border-radius: 100%;
   color: #ffffff;
   -webkit-border-radius: 100%;
@@ -53,7 +54,7 @@ body {
 /* btn color */
 
 .bt-color {
-  border-color: #005555;
+  border-color: #009dae;
 }
 
 /* btn color */
@@ -93,7 +94,7 @@ body {
 }
 
 .bg005555 {
-  background-color: #005555 !important;
+  background-color: #009dae !important;
 }
 
 .bg1E1E1E {
@@ -110,6 +111,9 @@ body {
 
 .bg222222 {
   background: #222222;
+}
+.bg0F0E0E02 {
+  background: rgba(84, 140, 168, 0.02);
 }
 
 /* background colro */
@@ -173,6 +177,8 @@ body {
   width: 100%;
 }
 
+/* margin-y */
+
 .my87 {
   padding-top: 87px;
   padding-bottom: 87px;
@@ -183,16 +189,10 @@ body {
   padding-bottom: 30px;
 }
 
+/* margin-bottom */
+
 .mb18 {
   margin-bottom: 18px;
-}
-
-.mt89 {
-  margin-top: 89px;
-}
-
-.mt60 {
-  margin-top: 60px;
 }
 
 .mb50 {
@@ -203,6 +203,13 @@ body {
   margin-bottom: 10px;
 }
 
+.mt89 {
+  margin-top: 89px;
+}
+
+.mt60 {
+  margin-top: 60px;
+}
 /* margin */
 
 /* padding */
@@ -258,8 +265,8 @@ body {
     linear,
     40% 0%,
     75% 84%,
-    from(#005555),
-    to(#005555),
+    from(#009dae),
+    to(#009dae),
     color-stop(0.6, #028a8a)
   );
 }
@@ -369,19 +376,69 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   left: 0;
   width: 100%;
   z-index: 999;
-  background: #005555 !important;
+  background: #009dae !important;
   transition: all linear 0.3s;
 }
 
-.sticky nav a {
-  opacity: 0.6;
-}
-
-.sticky nav a.active {
-  opacity: 1;
-}
-
 /* sticky nav */
+
+/* nav */
+
+nav a:hover::after {
+  content: "";
+  width: 15px;
+  height: 3px;
+  background: #ffffff;
+  border-radius: 5px;
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%);
+}
+nav a:hover::after {
+  content: "";
+  width: 15px;
+  height: 3px;
+  background: #ffffff;
+  border-radius: 5px;
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%);
+}
+nav a.hov_effect:hover::after {
+  content: "";
+  width: 0px;
+  height: 0px;
+  background: #ffffff;
+  border-radius: 5px;
+  position: unset;
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%);
+}
+
+nav .dropdown-menu {
+  cursor: pointer;
+}
+
+nav .dropdown-menu #dropdown {
+  top: calc(100% - -1.5rem);
+  left: 0;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(80px);
+  border-radius: 20px;
+  overflow: hidden;
+  text-align: center;
+}
+nav .dropdown-menu #dropdown li a {
+  text-align: center;
+}
+nav #dropdown svg path {
+  stroke: #009dae;
+}
+
+/* nav */
 
 /* others page sticky page */
 
@@ -409,6 +466,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   border-radius: 50%;
   margin-right: 9px;
   transition: all 0.3s ease;
+  background: rgba(231, 231, 231, 0.75);
 }
 
 .slick-dots li:last-child {
@@ -422,6 +480,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .slick-dots li.slick-active {
   width: 30px;
   height: 9px;
+  border-radius: 5px;
+  background: #009dae;
   border-radius: 5px;
 }
 
@@ -438,9 +498,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   background: rgba(77, 77, 78, 0.26);
 }
 
-.bg_banner .nav svg path {
+/* .bg_banner .nav svg path {
   stroke: #fff;
-}
+} */
 
 .bg_banner .slick-dots {
   margin-top: 120px;
@@ -451,7 +511,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .bg_banner .slick-dots li.slick-active {
-  background: #005555;
+  background: #009dae;
 }
 
 /* destination part */
@@ -465,9 +525,63 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .top-destination .slick-dots li.slick-active {
-  background: #005555;
+  background: #009dae;
 }
 
+.top-destination .popular_item .img,
+.popular_part .popular_item .img,
+.destination_slider .popular_item .img,
+.destination_slider .slider_item {
+  overflow: hidden;
+}
+
+.top-destination .popular_item .img img,
+.popular_part .popular_item .img img,
+.destination_slider .popular_item img,
+.destination_slider .slider_item img {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+}
+
+.top-destination .popular_item:hover .img img,
+.popular_part .popular_item:hover .img img,
+.destination_slider .popular_item:hover img,
+.destination_slider .slider_item:hover img {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
+.destination_slider .slider_item .overlay {
+  position: absolute;
+  left: 0;
+  bottom: -50%;
+  transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -ms-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+}
+.destination_slider .slider_item:hover .overlay {
+  position: absolute;
+  bottom: 0%;
+  transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -ms-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+}
+.destination_slider .slick-dots {
+  margin-top: 24px;
+}
+
+.destination_slider .popular_item .button {
+  cursor: pointer;
+}
 /* destination part */
 
 /* visitors part */
@@ -501,7 +615,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   left: 50%;
   width: 29px;
   height: 21px;
-  background: #005555;
+  background: #009dae;
   transform: rotate(-180deg) translateX(50%);
   clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 }
@@ -588,7 +702,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .totop svg path {
-  fill: #005555;
+  fill: #009dae;
 }
 
 /* scroll to top */
@@ -635,7 +749,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 /* delux part */
 
 .delux_part ul li::marker {
-  color: #005555;
+  color: #069a8e;
   font-size: 30px;
   line-height: 20px;
 }
@@ -661,6 +775,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 /* Hotel Location */
 
 /* Hotel Destination */
+.delux_part .event_part .events-item:nth-child(even) .event-img {
+  order: 2;
+}
 
 .delux_part .isotop .pagination li:hover {
   background: #151515;
@@ -861,7 +978,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .contact_part .map .overlay {
   position: absolute;
-  background: #005555;
+  background: #009dae;
   top: -8%;
   right: -8%;
   width: 100%;
@@ -874,7 +991,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 /* hotel part */
 
-.hotel_item .hotel_slider_item.slick-slide.slick-current img {
+/* .hotel_item .hotel_slider_item.slick-slide.slick-current img {
   border: 2px solid #005555;
   padding: 8px;
   object-fit: cover;
@@ -883,9 +1000,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
-}
+} */
 
-.hotel_item .hotel_slider_item.slick-slide img {
+/* .hotel_item .hotel_slider_item.slick-slide img {
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -896,7 +1013,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   -moz-transition: all linear 0.3s;
   -ms-transition: all linear 0.3s;
   -o-transition: all linear 0.3s;
-}
+} */
 
 /* hotel part */
 
@@ -943,7 +1060,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .additional_part .additional_item.hover:hover svg path {
-  fill: #000;
   stroke: #000;
   transition: all linear 0.3s;
   -webkit-transition: all linear 0.3s;
@@ -979,33 +1095,69 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 /* responsive */
 
 @media (max-width: 600px) {
-  nav {
+  .nav.bg005555 nav a {
+    opacity: 1;
+  }
+  .bg_banner .nav svg path {
+    stroke: #009dae;
+  }
+  nav .mob_nav {
+    width: calc(100% - 1rem) !important;
+    right: 0;
+    top: auto !important;
+  }
+  /* nav {
     width: calc(100% - 1rem) !important;
     border-radius: 0px 0px 0px 10px;
     margin-left: auto;
-    position: absolute;
+    position: unset;
     right: 0;
-    top: calc(51% - 0px);
+    top: calc(70% - 0px) !important;
+  } */
+  .bg_banner .nav.sticky .nav_icon path {
+    stroke: #fff;
   }
-  .sticky nav {
+  /* .sticky nav {
     position: absolute;
     right: 0;
     width: calc(100% - 1rem);
-    top: 20px;
+    top: 70%;
     transform: translateY(0px);
     -webkit-transform: translateY(0px);
     -moz-transform: translateY(0px);
     -ms-transform: translateY(0px);
     -o-transform: translateY(0px);
+  } */
+  nav .dropdown-menu #dropdown {
+    top: calc(100% - -0.5rem);
   }
   .nav .share a {
     opacity: 1 !important;
   }
+  nav a.active::after {
+    height: 0px;
+  }
   .slider_item {
     width: 100%;
   }
-  .slider_item img {
-    width: 100%;
+  /* .slider_item img {
+    width: 168px;
+    height: 168px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+  } */
+  .destination_slider .slider_item .overlay {
+    position: absolute;
+    left: 0;
+    bottom: -0%;
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
   }
   .hotel_banner button.arrows.prev {
     left: 12px;
@@ -1073,6 +1225,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     font-size: 6.51572px;
     line-height: 8px;
   }
+
   .details_banner .search_part {
     top: -0rem;
   }
@@ -1087,6 +1240,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   .visitors_part {
     background-position: inherit;
     background-size: cover;
+  }
+  .delux_part .event_part .events-item:nth-child(even) .event-img {
+    order: 0;
   }
 }
 
@@ -1125,7 +1281,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 @media (max-width: 1024px) {
   .details_banner .search_part {
-    top: -0rem !important;
+    top: -7rem !important;
   }
   .hotel_item .hotel_slider_item.slick-slide img {
     padding: 10px;

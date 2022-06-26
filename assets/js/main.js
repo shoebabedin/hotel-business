@@ -9,6 +9,14 @@ $(document).ready(function () {
   });
 
   // preloader
+  
+  $(".dropdown-menu").click(function(){
+    $("#dropdown").toggleClass("invisible");
+  });
+
+  $(".dropdown-menu").click(function(){
+    $(".dropdown-menu").toggleClass("opacity-60");
+  });
 
   // top nav close button
   $(".close").click(function () {
@@ -108,7 +116,7 @@ $(document).ready(function () {
     infinite: true,
     speed: 300,
     // fade: true,
-    autoplay: true,
+    autoplay: false,
     slidesToShow: 3,
     slidesToScroll: 1,
     responsive: [
@@ -133,8 +141,8 @@ $(document).ready(function () {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          centerMode: true,
-          centerPadding: "20px",
+          // centerMode: true,
+          // centerPadding: "20px",
         },
       },
     ],
@@ -295,22 +303,22 @@ $(document).ready(function () {
 
   // /product item
   $(".popular_grid").showMoreItems({
-    startNum: 4,
-    afterNum: 4,
+    startNum: 6,
+    afterNum: 3,
     original: true,
     responsive: [
       {
         breakpoint: 1280,
         settings: {
-          startNum: 4,
-          afterNum: 4,
+          startNum: 3,
+          afterNum: 3,
         },
       },
       {
         breakpoint: 600,
         settings: {
-          startNum: 2,
-          afterNum: 2,
+          startNum: 3,
+          afterNum: 3,
         },
       },
     ],
