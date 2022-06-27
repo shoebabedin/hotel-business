@@ -80,6 +80,7 @@ consectetur adipiscing elit."
     />
     <link rel="stylesheet" type="text/css" href="./assets/plugin/aos/aos.css" />
     <link href="./assets/plugin/date-picker/caleran.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/plugin/jquery-ui/jquery-ui.css" />
     <link rel="stylesheet" type="text/css" href="./dist/main.css" />
 
     <style>
@@ -1076,7 +1077,7 @@ consectetur adipiscing elit."
                 </p>
                 <a
                   class="text-white text-xs font-normal capitalize mt-8 inline-block border-solid border-2 py-4 px-10 border-white rounded lg:text-base"
-                  href="#"
+                  href="./pages/room.html"
                   >View Rooms</a
                 >
               </div>
@@ -1092,11 +1093,11 @@ consectetur adipiscing elit."
                   class="bg-white/[.09] p-2 lg:p-5 backdrop-blur-md rounded-lg"
                 >
                   <!-- first tab -->
-                  <div id="first" class="p-5 lg:p-8 bg-white rounded-lg">
+                  <div id="first" class="p-5 bg-white rounded-lg">
                     <div class="flex flex-wrap lg:flex-nowrap">
                       <span
                         id="double_date_input"
-                        class="m-auto w-full mb-2 lg:mb-0 lg:mx-2 flex flex-wrap lg:flex-nowrap"
+                        class="m-auto w-full mb-2 lg:mb-0 flex flex-wrap lg:flex-nowrap"
                       >
                         <div class="m-auto w-1/2 lg:w-full lg:mx-2">
                           <label
@@ -1105,12 +1106,17 @@ consectetur adipiscing elit."
                             >CHECK-IN</label
                           >
                           <div class="relative">
-                            <input
+                            <!-- <input
                               type="text"
                               id="caleran-ex-6-5-start"
-                              class="border text-sm rounded-lg block w-full p-2.5 appearance-none custom_input"
+                              class="border text-sm rounded-lg block w-full p-2.5 appearance-none custom_input count fromdate"
+                              placeholder="Check-In"
+                            /> -->
+                            <input
+                              class="border text-sm rounded-lg block w-full p-2.5 appearance-none custom_input fromdate"
                               placeholder="Check-In"
                             />
+
                             <div
                               class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none"
                             >
@@ -1183,11 +1189,17 @@ consectetur adipiscing elit."
                             >CHECK-OUT</label
                           >
                           <div class="relative">
-                            <input
+                            <!-- <input
                               type="text"
                               id="caleran-ex-6-5-end"
-                              class="border text-sm rounded-lg block w-full p-2.5 appearance-none custom_input"
+                              class="border text-sm rounded-lg block w-full p-2.5 appearance-none custom_input count todate"
                               placeholder="Check-Out"
+                            />
+                            -->
+
+                            <input
+                              placeholder="Check-Out"
+                              class="border text-sm rounded-lg block w-full p-2.5 appearance-none custom_input todate"
                             />
 
                             <div
@@ -1342,6 +1354,21 @@ consectetur adipiscing elit."
                         </button>
                       </div>
                     </div>
+                    <h6
+                      class="hidden lg:block pt-7 pl-[20px] font-normal text-xs text-[#0F0E0E]/20 date"
+                    >
+                      Total:
+                      <span
+                        class="font-medium text-base text-[#009DAE] afterCount"
+                      >
+                        <input
+                          class="calculated w-5 mx-1 roomquantity__input custom_input"
+                          value="0" /></span
+                      ><span class="font-medium text-base text-[#009DAE]"
+                        >Days</span
+                      >
+                      <!-- <div id="Nomber_de_jours"></div> -->
+                    </h6>
                   </div>
                   <!-- second tab -->
                 </div>
@@ -3650,6 +3677,13 @@ consectetur adipiscing elit."
       </p>
       <!-- scroll top -->
     </section>
+    <!-- 
+    From Date:<br />
+    <input class="fromdate" /><br />
+    To Date:<br />
+    <input class="todate" /><br /><br />
+    Calculated Date:<br />
+    <input class="calculated" /><br /> -->
 
     <script
       type="text/javascript"
@@ -3675,6 +3709,7 @@ consectetur adipiscing elit."
       type="text/javascript"
       src="./assets/plugin/hammer-js/hammer.min.js"
     ></script>
+    <script src="./assets/plugin/jquery-ui/jquery-ui.js"></script>
     <script type="text/javascript" src="./assets/js/main.js"></script>
 
     <script>
