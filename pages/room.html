@@ -294,12 +294,14 @@ consectetur adipiscing elit."
                       x-transition:leave="transition ease-in duration-75"
                       x-transition:leave-start="transform opacity-100 scale-100"
                       x-transition:leave-end="transform opacity-0 scale-95"
-                      class="absolute right-0 w-48 mt-6 origin-top-right rounded-md shadow-lg"
+                      class="absolute right-0 mt-6 w-max origin-top-right rounded-md shadow-lg"
                     >
-                      <div class="py-1 bg-white rounded-md shadow-xs">
+                      <div
+                        class="py-10 bg-white/80 backdrop-blur-md rounded-md shadow-xs"
+                      >
                         <a
                           href="./hotel_foodCorner.html"
-                          class="flex flex-row items-center px-3 py-2 mt-1 t rounded-md text-[#0F0E0E] text-sm font-semibold capitalize hov_effect"
+                          class="flex flex-row items-center px-16 py-2 mt-1 t rounded-md text-[#0F0E0E] text-sm font-bold capitalize hov_effect"
                           role="menuitem"
                         >
                           <svg
@@ -357,7 +359,7 @@ consectetur adipiscing elit."
                         </a>
                         <a
                           href="./hotel_fitness_part.html"
-                          class="flex flex-row items-center px-3 py-2 mt-1 t rounded-md text-[#0F0E0E] text-sm font-semibold capitalize hov_effect"
+                          class="flex flex-row items-center px-16 py-2 mt-1 t rounded-md text-[#0F0E0E] text-sm font-bold capitalize hov_effect"
                           role="menuitem"
                         >
                           <svg
@@ -422,7 +424,7 @@ consectetur adipiscing elit."
                         </a>
                         <a
                           href="./hotel_pool.html"
-                          class="flex flex-row items-center px-3 py-2 mt-1 t rounded-md text-[#0F0E0E] text-sm font-semibold capitalize hov_effect"
+                          class="flex flex-row items-center px-16 py-2 mt-1 t rounded-md text-[#0F0E0E] text-sm font-bold capitalize hov_effect"
                           role="menuitem"
                         >
                           <svg
@@ -474,7 +476,7 @@ consectetur adipiscing elit."
                         </a>
                         <a
                           href="./hotel_bar.html"
-                          class="flex flex-row items-center px-3 py-2 mt-1 rounded-md text-[#0F0E0E] text-sm font-semibold capitalize hov_effect"
+                          class="flex flex-row items-center px-16 py-2 mt-1 t rounded-md text-[#0F0E0E] text-sm font-bold capitalize hov_effect"
                           role="menuitem"
                         >
                           <svg
@@ -1066,12 +1068,17 @@ consectetur adipiscing elit."
                       >CHECK-IN</label
                     >
                     <div class="relative">
-                      <input
+                      <!-- <input
                         type="text"
                         id="caleran-ex-6-5-start"
                         class="border text-sm rounded-lg block w-full p-2.5 appearance-none custom_input"
                         placeholder="Check-In"
+                      /> -->
+                      <input
+                        class="border text-sm rounded-lg block w-full p-2.5 appearance-none custom_input fromdate"
+                        placeholder="Check-In"
                       />
+
                       <div
                         class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none"
                       >
@@ -1144,11 +1151,15 @@ consectetur adipiscing elit."
                       >CHECK-OUT</label
                     >
                     <div class="relative">
-                      <input
+                      <!-- <input
                         type="text"
                         id="caleran-ex-6-5-end"
                         class="border text-sm rounded-lg block w-full p-2.5 appearance-none custom_input"
                         placeholder="Check-Out"
+                      /> -->
+                      <input
+                        placeholder="Check-Out"
+                        class="border text-sm rounded-lg block w-full p-2.5 appearance-none custom_input todate"
                       />
                       <div
                         class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none"
@@ -1266,14 +1277,17 @@ consectetur adipiscing elit."
                   </button>
                 </div>
               </div>
-              <p
-                class="hidden lg:block pt-7 pl-[20px] font-normal text-sm text-[#0F0E0E]/20"
+              <h6
+                class="hidden lg:block pt-7 pl-[20px] font-normal text-sm text-[#0F0E0E]/20 date"
               >
                 Total:
-                <span class="font-medium text-base text-[#009DAE]"
-                  >10 Days</span
-                >
-              </p>
+                <span class="font-medium text-base text-[#009DAE] afterCount">
+                  <input
+                    class="calculated w-5 mx-1 roomquantity__input custom_input"
+                    value="0" /></span
+                ><span class="font-medium text-base text-[#009DAE]">Days</span>
+                <!-- <div id="Nomber_de_jours"></div> -->
+              </h6>
             </div>
           </div>
         </div>
@@ -1319,7 +1333,7 @@ consectetur adipiscing elit."
                 >
                   <div class="bed flex items-center gap-2">
                     <svg
-                      class="w-2.5 lg:w-6"
+                      class="w-4 lg:w-6"
                       width="24"
                       height="24"
                       viewBox="0 0 24 24"
@@ -1364,7 +1378,7 @@ consectetur adipiscing elit."
                   </div>
                   <div class="bed flex items-center gap-2">
                     <svg
-                      class="w-2.5 lg:w-6"
+                      class="w-4 lg:w-6"
                       width="24"
                       height="24"
                       viewBox="0 0 24 24"
@@ -1439,7 +1453,7 @@ consectetur adipiscing elit."
                 >
                   <div class="bed flex items-center gap-2">
                     <svg
-                      class="w-2.5 lg:w-6"
+                      class="w-4 lg:w-6"
                       width="24"
                       height="24"
                       viewBox="0 0 24 24"
@@ -1484,7 +1498,7 @@ consectetur adipiscing elit."
                   </div>
                   <div class="bed flex items-center gap-2">
                     <svg
-                      class="w-2.5 lg:w-6"
+                      class="w-4 lg:w-6"
                       width="24"
                       height="24"
                       viewBox="0 0 24 24"
@@ -1559,7 +1573,7 @@ consectetur adipiscing elit."
                 >
                   <div class="bed flex items-center gap-2">
                     <svg
-                      class="w-2.5 lg:w-6"
+                      class="w-4 lg:w-6"
                       width="24"
                       height="24"
                       viewBox="0 0 24 24"
@@ -1604,7 +1618,7 @@ consectetur adipiscing elit."
                   </div>
                   <div class="bed flex items-center gap-2">
                     <svg
-                      class="w-2.5 lg:w-6"
+                      class="w-4 lg:w-6"
                       width="24"
                       height="24"
                       viewBox="0 0 24 24"
@@ -1679,7 +1693,7 @@ consectetur adipiscing elit."
                 >
                   <div class="bed flex items-center gap-2">
                     <svg
-                      class="w-2.5 lg:w-6"
+                      class="w-4 lg:w-6"
                       width="24"
                       height="24"
                       viewBox="0 0 24 24"
@@ -1724,7 +1738,7 @@ consectetur adipiscing elit."
                   </div>
                   <div class="bed flex items-center gap-2">
                     <svg
-                      class="w-2.5 lg:w-6"
+                      class="w-4 lg:w-6"
                       width="24"
                       height="24"
                       viewBox="0 0 24 24"
@@ -1799,7 +1813,7 @@ consectetur adipiscing elit."
                 >
                   <div class="bed flex items-center gap-2">
                     <svg
-                      class="w-2.5 lg:w-6"
+                      class="w-4 lg:w-6"
                       width="24"
                       height="24"
                       viewBox="0 0 24 24"
@@ -1844,7 +1858,7 @@ consectetur adipiscing elit."
                   </div>
                   <div class="bed flex items-center gap-2">
                     <svg
-                      class="w-2.5 lg:w-6"
+                      class="w-4 lg:w-6"
                       width="24"
                       height="24"
                       viewBox="0 0 24 24"
@@ -1919,7 +1933,7 @@ consectetur adipiscing elit."
                 >
                   <div class="bed flex items-center gap-2">
                     <svg
-                      class="w-2.5 lg:w-6"
+                      class="w-4 lg:w-6"
                       width="24"
                       height="24"
                       viewBox="0 0 24 24"
@@ -1964,7 +1978,7 @@ consectetur adipiscing elit."
                   </div>
                   <div class="bed flex items-center gap-2">
                     <svg
-                      class="w-2.5 lg:w-6"
+                      class="w-4 lg:w-6"
                       width="24"
                       height="24"
                       viewBox="0 0 24 24"
@@ -2039,7 +2053,7 @@ consectetur adipiscing elit."
                 >
                   <div class="bed flex items-center gap-2">
                     <svg
-                      class="w-2.5 lg:w-6"
+                      class="w-4 lg:w-6"
                       width="24"
                       height="24"
                       viewBox="0 0 24 24"
@@ -2084,7 +2098,7 @@ consectetur adipiscing elit."
                   </div>
                   <div class="bed flex items-center gap-2">
                     <svg
-                      class="w-2.5 lg:w-6"
+                      class="w-4 lg:w-6"
                       width="24"
                       height="24"
                       viewBox="0 0 24 24"
@@ -2159,7 +2173,7 @@ consectetur adipiscing elit."
                 >
                   <div class="bed flex items-center gap-2">
                     <svg
-                      class="w-2.5 lg:w-6"
+                      class="w-4 lg:w-6"
                       width="24"
                       height="24"
                       viewBox="0 0 24 24"
@@ -2204,7 +2218,7 @@ consectetur adipiscing elit."
                   </div>
                   <div class="bed flex items-center gap-2">
                     <svg
-                      class="w-2.5 lg:w-6"
+                      class="w-4 lg:w-6"
                       width="24"
                       height="24"
                       viewBox="0 0 24 24"
@@ -2279,7 +2293,7 @@ consectetur adipiscing elit."
                 >
                   <div class="bed flex items-center gap-2">
                     <svg
-                      class="w-2.5 lg:w-6"
+                      class="w-4 lg:w-6"
                       width="24"
                       height="24"
                       viewBox="0 0 24 24"
@@ -2324,7 +2338,7 @@ consectetur adipiscing elit."
                   </div>
                   <div class="bed flex items-center gap-2">
                     <svg
-                      class="w-2.5 lg:w-6"
+                      class="w-4 lg:w-6"
                       width="24"
                       height="24"
                       viewBox="0 0 24 24"

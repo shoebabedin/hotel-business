@@ -284,12 +284,14 @@ consectetur adipiscing elit."
                       x-transition:leave="transition ease-in duration-75"
                       x-transition:leave-start="transform opacity-100 scale-100"
                       x-transition:leave-end="transform opacity-0 scale-95"
-                      class="absolute right-0 w-48 mt-6 origin-top-right rounded-md shadow-lg"
+                      class="absolute right-0 mt-6 w-max origin-top-right rounded-md shadow-lg z-10"
                     >
-                      <div class="py-1 bg-white rounded-md shadow-xs">
+                      <div
+                        class="py-10 bg-white/80 backdrop-blur-md rounded-md shadow-xs"
+                      >
                         <a
                           href="./hotel_foodCorner.html"
-                          class="flex flex-row items-center px-3 py-2 mt-1 t rounded-md text-[#0F0E0E] text-sm font-semibold capitalize hov_effect"
+                          class="flex flex-row items-center px-16 py-2 mt-1 t rounded-md text-[#0F0E0E] text-sm font-bold capitalize hov_effect"
                           role="menuitem"
                         >
                           <svg
@@ -347,7 +349,7 @@ consectetur adipiscing elit."
                         </a>
                         <a
                           href="./hotel_fitness_part.html"
-                          class="flex flex-row items-center px-3 py-2 mt-1 t rounded-md text-[#0F0E0E] text-sm font-semibold capitalize hov_effect"
+                          class="flex flex-row items-center px-16 py-2 mt-1 t rounded-md text-[#0F0E0E] text-sm font-bold capitalize hov_effect"
                           role="menuitem"
                         >
                           <svg
@@ -412,7 +414,7 @@ consectetur adipiscing elit."
                         </a>
                         <a
                           href="./hotel_pool.html"
-                          class="flex flex-row items-center px-3 py-2 mt-1 t rounded-md text-[#0F0E0E] text-sm font-semibold capitalize hov_effect"
+                          class="flex flex-row items-center px-16 py-2 mt-1 t rounded-md text-[#0F0E0E] text-sm font-bold capitalize hov_effect"
                           role="menuitem"
                         >
                           <svg
@@ -464,7 +466,7 @@ consectetur adipiscing elit."
                         </a>
                         <a
                           href="./hotel_bar.html"
-                          class="flex flex-row items-center px-3 py-2 mt-1 rounded-md text-[#0F0E0E] text-sm font-semibold capitalize hov_effect"
+                          class="flex flex-row items-center px-16 py-2 mt-1 t rounded-md text-[#0F0E0E] text-sm font-bold capitalize hov_effect"
                           role="menuitem"
                         >
                           <svg
@@ -1013,7 +1015,7 @@ consectetur adipiscing elit."
       <!-- nav part -->
 
       <!-- banner part -->
-      <section class="hotel_banner">
+      <section class="hotel_banner mt-6">
         <div class="container mx-auto px-2 pb-2">
           <div class="grid grid-cols-12 gap-4">
             <div class="col-span-12 lg:col-span-10">
@@ -1093,22 +1095,22 @@ consectetur adipiscing elit."
             </div>
             <div class="col-span-12 lg:col-span-2">
               <div class="hotel_item flex flex-row lg:flex-col gap-4">
-                <div class="hotel_slider_item w-full">
+                <div class="hotel_slider_item w-full mb-4">
                   <img src="../assets/images/hotel_food/slider1.png" alt="" />
                 </div>
-                <div class="hotel_slider_item w-full">
+                <div class="hotel_slider_item w-full mb-4">
                   <img src="../assets/images/hotel_food/slider2.png" alt="" />
                 </div>
-                <div class="hotel_slider_item w-full">
+                <div class="hotel_slider_item w-full mb-4">
                   <img src="../assets/images/hotel_food/slider3.png" alt="" />
                 </div>
-                <div class="hotel_slider_item w-full">
+                <div class="hotel_slider_item w-full mb-4">
                   <img src="../assets/images/hotel_food/slider1.png" alt="" />
                 </div>
-                <div class="hotel_slider_item w-full">
+                <div class="hotel_slider_item w-full mb-4">
                   <img src="../assets/images/hotel_food/slider2.png" alt="" />
                 </div>
-                <div class="hotel_slider_item w-full">
+                <div class="hotel_slider_item w-full mb-4">
                   <img src="../assets/images/hotel_food/slider3.png" alt="" />
                 </div>
               </div>
@@ -1259,9 +1261,9 @@ consectetur adipiscing elit."
                 </p>
               </li>
             </ul>
-            <div class="question lg:basis-auto btn w-44 mt-8 lg:mt-16">
+            <div class="question lg:basis-auto btn w-[180px] mt-8 lg:mt-16">
               <div class="shadow rounded-md px-4 max-w-sm mx-auto">
-                <div class="flex items-center space-x-4">
+                <div class="flex items-center space-x-4 py-2">
                   <div class="">
                     <svg
                       width="20"
@@ -1606,7 +1608,7 @@ consectetur adipiscing elit."
     <!-- delux part -->
 
     <!-- delux part -->
-    <div class="delux_part py42 bg222222">
+    <div class="delux_part py-20 bg222222">
       <div class="container mx-auto px-2 max-w-7xl">
         <div class="grid grid-cols-12 gap-4">
           <div class="col-span-12 mb-3 lg:mb-10">
@@ -1618,300 +1620,1084 @@ consectetur adipiscing elit."
           </div>
 
           <div class="col-span-12">
-            <!-- Isotop Dom started  -->
-            <section class="">
-              <div
-                class="button_and_heading flex items-center justify-center mb-5 flex-col lg:flex-row"
+            <div
+              class="basis-full w-full md:basis-5/12 case_study element-item asia col-span-12 lg:col-span-6 pb-6 -mb-8 border-b-neutral-200 border-opacity-10"
+            >
+              <!-- Tabs -->
+              <ul
+                id="tabs"
+                class="inline-flex items-center flex-row w-full button-group filters-button-group mb-5 lg:mb-24 flex-wrap items-center justify-center gap-8 md:gap-20"
               >
-                <div
-                  class="button-group filters-button-group mb-5 lg:mb-6 flex flex-wrap items-center justify-center gap-8 md:gap-20"
+                <li
+                  class="button is-checked lg:text-base text-sm font-semibold text-white opacity-50 !opacity-100 border-b"
                 >
-                  <button
-                    class="button is-checked lg:text-base text-sm font-semibold text-white"
-                  >
-                    STARTERS
-                  </button>
-                  <button
-                    class="button lg:text-base text-sm font-semibold text-white opacity-50"
-                  >
-                    MAIN COURSE
-                  </button>
-                  <button
-                    class="button lg:text-base text-sm font-semibold text-white opacity-50"
-                  >
-                    SOUPS
-                  </button>
-                  <button
-                    class="button lg:text-base text-sm font-semibold text-white opacity-50"
-                  >
-                    DESSERTS
-                  </button>
-                </div>
-              </div>
+                  <a id="default-tab" href="#first">STARTERS</a>
+                </li>
+                <li
+                  class="button lg:text-base text-sm font-semibold text-white opacity-50"
+                >
+                  <a href="#second">MAIN COURSE</a>
+                </li>
+                <li
+                  class="button lg:text-base text-sm font-semibold text-white opacity-50"
+                >
+                  <a href="#third">SOUPS</a>
+                </li>
+                <li
+                  class="button lg:text-base text-sm font-semibold text-white opacity-50"
+                >
+                  <a href="#fourth">DESSERTS</a>
+                </li>
+              </ul>
 
-              <div
-                class="content flex items-center justify-center flex-wrap gap-4 flex-col md:flex-row"
-              >
+              <!-- Tab Contents -->
+              <div id="tab-contents">
                 <div
-                  class="basis-full w-full md:basis-5/12 case_study element-item asia col-span-12 lg:col-span-6 pb-6 mb-8 border-b border-b-neutral-200 border-opacity-10"
+                  id="first"
+                  class="content grid gap-16 grid-cols-1 lg:grid-cols-2"
                 >
-                  <div class="flex items-center flex-row w-full">
-                    <div class="img w-8 md:w-14 mr-3 lg:mr-5">
-                      <img
-                        class="img-fluid"
-                        src="../assets/images/hotel_food/food_item.png"
-                        alt="Case 1"
-                      />
-                    </div>
-                    <div class="details w-full">
-                      <div class="flex items-center justify-between mb-2">
-                        <div class="view_btn">
-                          <h3
-                            class="heading_3 font-bold text-sm lg:text-lg capitalize text-white"
-                          >
-                            Terrific Turkey Chili
-                          </h3>
-                        </div>
-                        <div class="call">
-                          <p class="text-white">$10.00</p>
-                        </div>
+                  <div
+                    class="basis-full case_study element-item asia pb-6 border-b border-b-neutral-200 border-opacity-10"
+                  >
+                    <div class="flex items-center flex-row w-full">
+                      <div class="img w-8 md:w-14 mr-3 lg:mr-5">
+                        <img
+                          class="img-fluid"
+                          src="../assets/images/hotel_food/food_item.png"
+                          alt="Case 1"
+                        />
                       </div>
-                      <p
-                        class="title flex items-center italic font-normal text-base text-white capitalize"
-                      >
-                        Turkey, oregano, tomato paste, peppers
-                      </p>
+                      <div class="details w-full">
+                        <div class="flex items-center justify-between mb-2">
+                          <div class="view_btn">
+                            <h3
+                              class="heading_3 font-bold text-sm lg:text-lg capitalize text-white"
+                            >
+                              Terrific Turkey Chili
+                            </h3>
+                          </div>
+                          <div class="call">
+                            <p class="text-white">$10.00</p>
+                          </div>
+                        </div>
+                        <p
+                          class="title flex items-center italic font-normal text-base text-white capitalize"
+                        >
+                          Turkey, oregano, tomato paste, peppers
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="basis-full case_study element-item asia pb-6 border-b border-b-neutral-200 border-opacity-10"
+                  >
+                    <div class="flex items-center flex-row w-full">
+                      <div class="img w-8 md:w-14 mr-3 lg:mr-5">
+                        <img
+                          class="img-fluid"
+                          src="../assets/images/hotel_food/food_item.png"
+                          alt="Case 1"
+                        />
+                      </div>
+                      <div class="details w-full">
+                        <div class="flex items-center justify-between mb-2">
+                          <div class="view_btn">
+                            <h3
+                              class="heading_3 font-bold text-sm lg:text-lg capitalize text-white"
+                            >
+                              Terrific Turkey Chili
+                            </h3>
+                          </div>
+                          <div class="call">
+                            <p class="text-white">$10.00</p>
+                          </div>
+                        </div>
+                        <p
+                          class="title flex items-center italic font-normal text-base text-white capitalize"
+                        >
+                          Turkey, oregano, tomato paste, peppers
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="basis-full case_study element-item asia pb-6 border-b border-b-neutral-200 border-opacity-10"
+                  >
+                    <div class="flex items-center flex-row w-full">
+                      <div class="img w-8 md:w-14 mr-3 lg:mr-5">
+                        <img
+                          class="img-fluid"
+                          src="../assets/images/hotel_food/food_item.png"
+                          alt="Case 1"
+                        />
+                      </div>
+                      <div class="details w-full">
+                        <div class="flex items-center justify-between mb-2">
+                          <div class="view_btn">
+                            <h3
+                              class="heading_3 font-bold text-sm lg:text-lg capitalize text-white"
+                            >
+                              Terrific Turkey Chili
+                            </h3>
+                          </div>
+                          <div class="call">
+                            <p class="text-white">$10.00</p>
+                          </div>
+                        </div>
+                        <p
+                          class="title flex items-center italic font-normal text-base text-white capitalize"
+                        >
+                          Turkey, oregano, tomato paste, peppers
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="basis-full case_study element-item asia pb-6 border-b border-b-neutral-200 border-opacity-10"
+                  >
+                    <div class="flex items-center flex-row w-full">
+                      <div class="img w-8 md:w-14 mr-3 lg:mr-5">
+                        <img
+                          class="img-fluid"
+                          src="../assets/images/hotel_food/food_item.png"
+                          alt="Case 1"
+                        />
+                      </div>
+                      <div class="details w-full">
+                        <div class="flex items-center justify-between mb-2">
+                          <div class="view_btn">
+                            <h3
+                              class="heading_3 font-bold text-sm lg:text-lg capitalize text-white"
+                            >
+                              Terrific Turkey Chili
+                            </h3>
+                          </div>
+                          <div class="call">
+                            <p class="text-white">$10.00</p>
+                          </div>
+                        </div>
+                        <p
+                          class="title flex items-center italic font-normal text-base text-white capitalize"
+                        >
+                          Turkey, oregano, tomato paste, peppers
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="basis-full case_study element-item asia pb-6 border-b border-b-neutral-200 border-opacity-10"
+                  >
+                    <div class="flex items-center flex-row w-full">
+                      <div class="img w-8 md:w-14 mr-3 lg:mr-5">
+                        <img
+                          class="img-fluid"
+                          src="../assets/images/hotel_food/food_item.png"
+                          alt="Case 1"
+                        />
+                      </div>
+                      <div class="details w-full">
+                        <div class="flex items-center justify-between mb-2">
+                          <div class="view_btn">
+                            <h3
+                              class="heading_3 font-bold text-sm lg:text-lg capitalize text-white"
+                            >
+                              Terrific Turkey Chili
+                            </h3>
+                          </div>
+                          <div class="call">
+                            <p class="text-white">$10.00</p>
+                          </div>
+                        </div>
+                        <p
+                          class="title flex items-center italic font-normal text-base text-white capitalize"
+                        >
+                          Turkey, oregano, tomato paste, peppers
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="basis-full case_study element-item asia pb-6 border-b border-b-neutral-200 border-opacity-10"
+                  >
+                    <div class="flex items-center flex-row w-full">
+                      <div class="img w-8 md:w-14 mr-3 lg:mr-5">
+                        <img
+                          class="img-fluid"
+                          src="../assets/images/hotel_food/food_item.png"
+                          alt="Case 1"
+                        />
+                      </div>
+                      <div class="details w-full">
+                        <div class="flex items-center justify-between mb-2">
+                          <div class="view_btn">
+                            <h3
+                              class="heading_3 font-bold text-sm lg:text-lg capitalize text-white"
+                            >
+                              Terrific Turkey Chili
+                            </h3>
+                          </div>
+                          <div class="call">
+                            <p class="text-white">$10.00</p>
+                          </div>
+                        </div>
+                        <p
+                          class="title flex items-center italic font-normal text-base text-white capitalize"
+                        >
+                          Turkey, oregano, tomato paste, peppers
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="basis-full case_study element-item asia pb-6 border-b border-b-neutral-200 border-opacity-10"
+                  >
+                    <div class="flex items-center flex-row w-full">
+                      <div class="img w-8 md:w-14 mr-3 lg:mr-5">
+                        <img
+                          class="img-fluid"
+                          src="../assets/images/hotel_food/food_item.png"
+                          alt="Case 1"
+                        />
+                      </div>
+                      <div class="details w-full">
+                        <div class="flex items-center justify-between mb-2">
+                          <div class="view_btn">
+                            <h3
+                              class="heading_3 font-bold text-sm lg:text-lg capitalize text-white"
+                            >
+                              Terrific Turkey Chili
+                            </h3>
+                          </div>
+                          <div class="call">
+                            <p class="text-white">$10.00</p>
+                          </div>
+                        </div>
+                        <p
+                          class="title flex items-center italic font-normal text-base text-white capitalize"
+                        >
+                          Turkey, oregano, tomato paste, peppers
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="basis-full case_study element-item asia pb-6 border-b border-b-neutral-200 border-opacity-10"
+                  >
+                    <div class="flex items-center flex-row w-full">
+                      <div class="img w-8 md:w-14 mr-3 lg:mr-5">
+                        <img
+                          class="img-fluid"
+                          src="../assets/images/hotel_food/food_item.png"
+                          alt="Case 1"
+                        />
+                      </div>
+                      <div class="details w-full">
+                        <div class="flex items-center justify-between mb-2">
+                          <div class="view_btn">
+                            <h3
+                              class="heading_3 font-bold text-sm lg:text-lg capitalize text-white"
+                            >
+                              Terrific Turkey Chili
+                            </h3>
+                          </div>
+                          <div class="call">
+                            <p class="text-white">$10.00</p>
+                          </div>
+                        </div>
+                        <p
+                          class="title flex items-center italic font-normal text-base text-white capitalize"
+                        >
+                          Turkey, oregano, tomato paste, peppers
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
                 <div
-                  class="basis-full w-full md:basis-5/12 case_study element-item asia col-span-12 lg:col-span-6 pb-6 mb-8 border-b border-b-neutral-200 border-opacity-10"
+                  id="second"
+                  class="hidden content grid gap-16 grid-cols-1 lg:grid-cols-2"
                 >
-                  <div class="flex items-center flex-row w-full">
-                    <div class="img w-8 md:w-14 mr-3 lg:mr-5">
-                      <img
-                        class="img-fluid"
-                        src="../assets/images/hotel_food/food_item.png"
-                        alt="Case 1"
-                      />
-                    </div>
-                    <div class="details w-full">
-                      <div class="flex items-center justify-between mb-2">
-                        <div class="view_btn">
-                          <h3
-                            class="heading_3 font-bold text-sm lg:text-lg capitalize text-white"
-                          >
-                            Terrific Turkey Chili
-                          </h3>
-                        </div>
-                        <div class="call">
-                          <p class="text-white">$10.00</p>
-                        </div>
+                  <div
+                    class="basis-full case_study element-item asia pb-6 border-b border-b-neutral-200 border-opacity-10"
+                  >
+                    <div class="flex items-center flex-row w-full">
+                      <div class="img w-8 md:w-14 mr-3 lg:mr-5">
+                        <img
+                          class="img-fluid"
+                          src="../assets/images/hotel_food/food_item.png"
+                          alt="Case 1"
+                        />
                       </div>
-                      <p
-                        class="title flex items-center italic font-normal text-base text-white capitalize"
-                      >
-                        Turkey, oregano, tomato paste, peppers
-                      </p>
+                      <div class="details w-full">
+                        <div class="flex items-center justify-between mb-2">
+                          <div class="view_btn">
+                            <h3
+                              class="heading_3 font-bold text-sm lg:text-lg capitalize text-white"
+                            >
+                              Terrific Turkey Chili
+                            </h3>
+                          </div>
+                          <div class="call">
+                            <p class="text-white">$20.00</p>
+                          </div>
+                        </div>
+                        <p
+                          class="title flex items-center italic font-normal text-base text-white capitalize"
+                        >
+                          Turkey, oregano, tomato paste, peppers
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="basis-full case_study element-item asia pb-6 border-b border-b-neutral-200 border-opacity-10"
+                  >
+                    <div class="flex items-center flex-row w-full">
+                      <div class="img w-8 md:w-14 mr-3 lg:mr-5">
+                        <img
+                          class="img-fluid"
+                          src="../assets/images/hotel_food/food_item.png"
+                          alt="Case 1"
+                        />
+                      </div>
+                      <div class="details w-full">
+                        <div class="flex items-center justify-between mb-2">
+                          <div class="view_btn">
+                            <h3
+                              class="heading_3 font-bold text-sm lg:text-lg capitalize text-white"
+                            >
+                              Terrific Turkey Chili
+                            </h3>
+                          </div>
+                          <div class="call">
+                            <p class="text-white">$20.00</p>
+                          </div>
+                        </div>
+                        <p
+                          class="title flex items-center italic font-normal text-base text-white capitalize"
+                        >
+                          Turkey, oregano, tomato paste, peppers
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="basis-full case_study element-item asia pb-6 border-b border-b-neutral-200 border-opacity-10"
+                  >
+                    <div class="flex items-center flex-row w-full">
+                      <div class="img w-8 md:w-14 mr-3 lg:mr-5">
+                        <img
+                          class="img-fluid"
+                          src="../assets/images/hotel_food/food_item.png"
+                          alt="Case 1"
+                        />
+                      </div>
+                      <div class="details w-full">
+                        <div class="flex items-center justify-between mb-2">
+                          <div class="view_btn">
+                            <h3
+                              class="heading_3 font-bold text-sm lg:text-lg capitalize text-white"
+                            >
+                              Terrific Turkey Chili
+                            </h3>
+                          </div>
+                          <div class="call">
+                            <p class="text-white">$20.00</p>
+                          </div>
+                        </div>
+                        <p
+                          class="title flex items-center italic font-normal text-base text-white capitalize"
+                        >
+                          Turkey, oregano, tomato paste, peppers
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="basis-full case_study element-item asia pb-6 border-b border-b-neutral-200 border-opacity-10"
+                  >
+                    <div class="flex items-center flex-row w-full">
+                      <div class="img w-8 md:w-14 mr-3 lg:mr-5">
+                        <img
+                          class="img-fluid"
+                          src="../assets/images/hotel_food/food_item.png"
+                          alt="Case 1"
+                        />
+                      </div>
+                      <div class="details w-full">
+                        <div class="flex items-center justify-between mb-2">
+                          <div class="view_btn">
+                            <h3
+                              class="heading_3 font-bold text-sm lg:text-lg capitalize text-white"
+                            >
+                              Terrific Turkey Chili
+                            </h3>
+                          </div>
+                          <div class="call">
+                            <p class="text-white">$20.00</p>
+                          </div>
+                        </div>
+                        <p
+                          class="title flex items-center italic font-normal text-base text-white capitalize"
+                        >
+                          Turkey, oregano, tomato paste, peppers
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="basis-full case_study element-item asia pb-6 border-b border-b-neutral-200 border-opacity-10"
+                  >
+                    <div class="flex items-center flex-row w-full">
+                      <div class="img w-8 md:w-14 mr-3 lg:mr-5">
+                        <img
+                          class="img-fluid"
+                          src="../assets/images/hotel_food/food_item.png"
+                          alt="Case 1"
+                        />
+                      </div>
+                      <div class="details w-full">
+                        <div class="flex items-center justify-between mb-2">
+                          <div class="view_btn">
+                            <h3
+                              class="heading_3 font-bold text-sm lg:text-lg capitalize text-white"
+                            >
+                              Terrific Turkey Chili
+                            </h3>
+                          </div>
+                          <div class="call">
+                            <p class="text-white">$20.00</p>
+                          </div>
+                        </div>
+                        <p
+                          class="title flex items-center italic font-normal text-base text-white capitalize"
+                        >
+                          Turkey, oregano, tomato paste, peppers
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="basis-full case_study element-item asia pb-6 border-b border-b-neutral-200 border-opacity-10"
+                  >
+                    <div class="flex items-center flex-row w-full">
+                      <div class="img w-8 md:w-14 mr-3 lg:mr-5">
+                        <img
+                          class="img-fluid"
+                          src="../assets/images/hotel_food/food_item.png"
+                          alt="Case 1"
+                        />
+                      </div>
+                      <div class="details w-full">
+                        <div class="flex items-center justify-between mb-2">
+                          <div class="view_btn">
+                            <h3
+                              class="heading_3 font-bold text-sm lg:text-lg capitalize text-white"
+                            >
+                              Terrific Turkey Chili
+                            </h3>
+                          </div>
+                          <div class="call">
+                            <p class="text-white">$20.00</p>
+                          </div>
+                        </div>
+                        <p
+                          class="title flex items-center italic font-normal text-base text-white capitalize"
+                        >
+                          Turkey, oregano, tomato paste, peppers
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="basis-full case_study element-item asia pb-6 border-b border-b-neutral-200 border-opacity-10"
+                  >
+                    <div class="flex items-center flex-row w-full">
+                      <div class="img w-8 md:w-14 mr-3 lg:mr-5">
+                        <img
+                          class="img-fluid"
+                          src="../assets/images/hotel_food/food_item.png"
+                          alt="Case 1"
+                        />
+                      </div>
+                      <div class="details w-full">
+                        <div class="flex items-center justify-between mb-2">
+                          <div class="view_btn">
+                            <h3
+                              class="heading_3 font-bold text-sm lg:text-lg capitalize text-white"
+                            >
+                              Terrific Turkey Chili
+                            </h3>
+                          </div>
+                          <div class="call">
+                            <p class="text-white">$20.00</p>
+                          </div>
+                        </div>
+                        <p
+                          class="title flex items-center italic font-normal text-base text-white capitalize"
+                        >
+                          Turkey, oregano, tomato paste, peppers
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="basis-full case_study element-item asia pb-6 border-b border-b-neutral-200 border-opacity-10"
+                  >
+                    <div class="flex items-center flex-row w-full">
+                      <div class="img w-8 md:w-14 mr-3 lg:mr-5">
+                        <img
+                          class="img-fluid"
+                          src="../assets/images/hotel_food/food_item.png"
+                          alt="Case 1"
+                        />
+                      </div>
+                      <div class="details w-full">
+                        <div class="flex items-center justify-between mb-2">
+                          <div class="view_btn">
+                            <h3
+                              class="heading_3 font-bold text-sm lg:text-lg capitalize text-white"
+                            >
+                              Terrific Turkey Chili
+                            </h3>
+                          </div>
+                          <div class="call">
+                            <p class="text-white">$20.00</p>
+                          </div>
+                        </div>
+                        <p
+                          class="title flex items-center italic font-normal text-base text-white capitalize"
+                        >
+                          Turkey, oregano, tomato paste, peppers
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
                 <div
-                  class="basis-full w-full md:basis-5/12 case_study element-item asia col-span-12 lg:col-span-6 pb-6 mb-8 border-b border-b-neutral-200 border-opacity-10"
+                  id="third"
+                  class="hidden content grid gap-16 grid-cols-1 lg:grid-cols-2"
                 >
-                  <div class="flex items-center flex-row w-full">
-                    <div class="img w-8 md:w-14 mr-3 lg:mr-5">
-                      <img
-                        class="img-fluid"
-                        src="../assets/images/hotel_food/food_item.png"
-                        alt="Case 1"
-                      />
-                    </div>
-                    <div class="details w-full">
-                      <div class="flex items-center justify-between mb-2">
-                        <div class="view_btn">
-                          <h3
-                            class="heading_3 font-bold text-sm lg:text-lg capitalize text-white"
-                          >
-                            Terrific Turkey Chili
-                          </h3>
-                        </div>
-                        <div class="call">
-                          <p class="text-white">$10.00</p>
-                        </div>
+                  <div
+                    class="basis-full case_study element-item asia pb-6 border-b border-b-neutral-200 border-opacity-10"
+                  >
+                    <div class="flex items-center flex-row w-full">
+                      <div class="img w-8 md:w-14 mr-3 lg:mr-5">
+                        <img
+                          class="img-fluid"
+                          src="../assets/images/hotel_food/food_item.png"
+                          alt="Case 1"
+                        />
                       </div>
-                      <p
-                        class="title flex items-center italic font-normal text-base text-white capitalize"
-                      >
-                        Turkey, oregano, tomato paste, peppers
-                      </p>
+                      <div class="details w-full">
+                        <div class="flex items-center justify-between mb-2">
+                          <div class="view_btn">
+                            <h3
+                              class="heading_3 font-bold text-sm lg:text-lg capitalize text-white"
+                            >
+                              Terrific Turkey Chili
+                            </h3>
+                          </div>
+                          <div class="call">
+                            <p class="text-white">$30.00</p>
+                          </div>
+                        </div>
+                        <p
+                          class="title flex items-center italic font-normal text-base text-white capitalize"
+                        >
+                          Turkey, oregano, tomato paste, peppers
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="basis-full case_study element-item asia pb-6 border-b border-b-neutral-200 border-opacity-10"
+                  >
+                    <div class="flex items-center flex-row w-full">
+                      <div class="img w-8 md:w-14 mr-3 lg:mr-5">
+                        <img
+                          class="img-fluid"
+                          src="../assets/images/hotel_food/food_item.png"
+                          alt="Case 1"
+                        />
+                      </div>
+                      <div class="details w-full">
+                        <div class="flex items-center justify-between mb-2">
+                          <div class="view_btn">
+                            <h3
+                              class="heading_3 font-bold text-sm lg:text-lg capitalize text-white"
+                            >
+                              Terrific Turkey Chili
+                            </h3>
+                          </div>
+                          <div class="call">
+                            <p class="text-white">$30.00</p>
+                          </div>
+                        </div>
+                        <p
+                          class="title flex items-center italic font-normal text-base text-white capitalize"
+                        >
+                          Turkey, oregano, tomato paste, peppers
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="basis-full case_study element-item asia pb-6 border-b border-b-neutral-200 border-opacity-10"
+                  >
+                    <div class="flex items-center flex-row w-full">
+                      <div class="img w-8 md:w-14 mr-3 lg:mr-5">
+                        <img
+                          class="img-fluid"
+                          src="../assets/images/hotel_food/food_item.png"
+                          alt="Case 1"
+                        />
+                      </div>
+                      <div class="details w-full">
+                        <div class="flex items-center justify-between mb-2">
+                          <div class="view_btn">
+                            <h3
+                              class="heading_3 font-bold text-sm lg:text-lg capitalize text-white"
+                            >
+                              Terrific Turkey Chili
+                            </h3>
+                          </div>
+                          <div class="call">
+                            <p class="text-white">$30.00</p>
+                          </div>
+                        </div>
+                        <p
+                          class="title flex items-center italic font-normal text-base text-white capitalize"
+                        >
+                          Turkey, oregano, tomato paste, peppers
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="basis-full case_study element-item asia pb-6 border-b border-b-neutral-200 border-opacity-10"
+                  >
+                    <div class="flex items-center flex-row w-full">
+                      <div class="img w-8 md:w-14 mr-3 lg:mr-5">
+                        <img
+                          class="img-fluid"
+                          src="../assets/images/hotel_food/food_item.png"
+                          alt="Case 1"
+                        />
+                      </div>
+                      <div class="details w-full">
+                        <div class="flex items-center justify-between mb-2">
+                          <div class="view_btn">
+                            <h3
+                              class="heading_3 font-bold text-sm lg:text-lg capitalize text-white"
+                            >
+                              Terrific Turkey Chili
+                            </h3>
+                          </div>
+                          <div class="call">
+                            <p class="text-white">$30.00</p>
+                          </div>
+                        </div>
+                        <p
+                          class="title flex items-center italic font-normal text-base text-white capitalize"
+                        >
+                          Turkey, oregano, tomato paste, peppers
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="basis-full case_study element-item asia pb-6 border-b border-b-neutral-200 border-opacity-10"
+                  >
+                    <div class="flex items-center flex-row w-full">
+                      <div class="img w-8 md:w-14 mr-3 lg:mr-5">
+                        <img
+                          class="img-fluid"
+                          src="../assets/images/hotel_food/food_item.png"
+                          alt="Case 1"
+                        />
+                      </div>
+                      <div class="details w-full">
+                        <div class="flex items-center justify-between mb-2">
+                          <div class="view_btn">
+                            <h3
+                              class="heading_3 font-bold text-sm lg:text-lg capitalize text-white"
+                            >
+                              Terrific Turkey Chili
+                            </h3>
+                          </div>
+                          <div class="call">
+                            <p class="text-white">$30.00</p>
+                          </div>
+                        </div>
+                        <p
+                          class="title flex items-center italic font-normal text-base text-white capitalize"
+                        >
+                          Turkey, oregano, tomato paste, peppers
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="basis-full case_study element-item asia pb-6 border-b border-b-neutral-200 border-opacity-10"
+                  >
+                    <div class="flex items-center flex-row w-full">
+                      <div class="img w-8 md:w-14 mr-3 lg:mr-5">
+                        <img
+                          class="img-fluid"
+                          src="../assets/images/hotel_food/food_item.png"
+                          alt="Case 1"
+                        />
+                      </div>
+                      <div class="details w-full">
+                        <div class="flex items-center justify-between mb-2">
+                          <div class="view_btn">
+                            <h3
+                              class="heading_3 font-bold text-sm lg:text-lg capitalize text-white"
+                            >
+                              Terrific Turkey Chili
+                            </h3>
+                          </div>
+                          <div class="call">
+                            <p class="text-white">$30.00</p>
+                          </div>
+                        </div>
+                        <p
+                          class="title flex items-center italic font-normal text-base text-white capitalize"
+                        >
+                          Turkey, oregano, tomato paste, peppers
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="basis-full case_study element-item asia pb-6 border-b border-b-neutral-200 border-opacity-10"
+                  >
+                    <div class="flex items-center flex-row w-full">
+                      <div class="img w-8 md:w-14 mr-3 lg:mr-5">
+                        <img
+                          class="img-fluid"
+                          src="../assets/images/hotel_food/food_item.png"
+                          alt="Case 1"
+                        />
+                      </div>
+                      <div class="details w-full">
+                        <div class="flex items-center justify-between mb-2">
+                          <div class="view_btn">
+                            <h3
+                              class="heading_3 font-bold text-sm lg:text-lg capitalize text-white"
+                            >
+                              Terrific Turkey Chili
+                            </h3>
+                          </div>
+                          <div class="call">
+                            <p class="text-white">$30.00</p>
+                          </div>
+                        </div>
+                        <p
+                          class="title flex items-center italic font-normal text-base text-white capitalize"
+                        >
+                          Turkey, oregano, tomato paste, peppers
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="basis-full case_study element-item asia pb-6 border-b border-b-neutral-200 border-opacity-10"
+                  >
+                    <div class="flex items-center flex-row w-full">
+                      <div class="img w-8 md:w-14 mr-3 lg:mr-5">
+                        <img
+                          class="img-fluid"
+                          src="../assets/images/hotel_food/food_item.png"
+                          alt="Case 1"
+                        />
+                      </div>
+                      <div class="details w-full">
+                        <div class="flex items-center justify-between mb-2">
+                          <div class="view_btn">
+                            <h3
+                              class="heading_3 font-bold text-sm lg:text-lg capitalize text-white"
+                            >
+                              Terrific Turkey Chili
+                            </h3>
+                          </div>
+                          <div class="call">
+                            <p class="text-white">$30.00</p>
+                          </div>
+                        </div>
+                        <p
+                          class="title flex items-center italic font-normal text-base text-white capitalize"
+                        >
+                          Turkey, oregano, tomato paste, peppers
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
                 <div
-                  class="basis-full w-full md:basis-5/12 case_study element-item asia col-span-12 lg:col-span-6 pb-6 mb-8 border-b border-b-neutral-200 border-opacity-10"
+                  id="fourth"
+                  class="hidden content grid gap-16 grid-cols-1 lg:grid-cols-2"
                 >
-                  <div class="flex items-center flex-row w-full">
-                    <div class="img w-8 md:w-14 mr-3 lg:mr-5">
-                      <img
-                        class="img-fluid"
-                        src="../assets/images/hotel_food/food_item.png"
-                        alt="Case 1"
-                      />
-                    </div>
-                    <div class="details w-full">
-                      <div class="flex items-center justify-between mb-2">
-                        <div class="view_btn">
-                          <h3
-                            class="heading_3 font-bold text-sm lg:text-lg capitalize text-white"
-                          >
-                            Terrific Turkey Chili
-                          </h3>
-                        </div>
-                        <div class="call">
-                          <p class="text-white">$10.00</p>
-                        </div>
+                  <div
+                    class="basis-full case_study element-item asia pb-6 border-b border-b-neutral-200 border-opacity-10"
+                  >
+                    <div class="flex items-center flex-row w-full">
+                      <div class="img w-8 md:w-14 mr-3 lg:mr-5">
+                        <img
+                          class="img-fluid"
+                          src="../assets/images/hotel_food/food_item.png"
+                          alt="Case 1"
+                        />
                       </div>
-                      <p
-                        class="title flex items-center italic font-normal text-base text-white capitalize"
-                      >
-                        Turkey, oregano, tomato paste, peppers
-                      </p>
+                      <div class="details w-full">
+                        <div class="flex items-center justify-between mb-2">
+                          <div class="view_btn">
+                            <h3
+                              class="heading_3 font-bold text-sm lg:text-lg capitalize text-white"
+                            >
+                              Terrific Turkey Chili
+                            </h3>
+                          </div>
+                          <div class="call">
+                            <p class="text-white">$40.00</p>
+                          </div>
+                        </div>
+                        <p
+                          class="title flex items-center italic font-normal text-base text-white capitalize"
+                        >
+                          Turkey, oregano, tomato paste, peppers
+                        </p>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div
-                  class="basis-full w-full md:basis-5/12 case_study element-item asia col-span-12 lg:col-span-6 pb-6 mb-8 border-b border-b-neutral-200 border-opacity-10"
-                >
-                  <div class="flex items-center flex-row w-full">
-                    <div class="img w-8 md:w-14 mr-3 lg:mr-5">
-                      <img
-                        class="img-fluid"
-                        src="../assets/images/hotel_food/food_item.png"
-                        alt="Case 1"
-                      />
-                    </div>
-                    <div class="details w-full">
-                      <div class="flex items-center justify-between mb-2">
-                        <div class="view_btn">
-                          <h3
-                            class="heading_3 font-bold text-sm lg:text-lg capitalize text-white"
-                          >
-                            Terrific Turkey Chili
-                          </h3>
-                        </div>
-                        <div class="call">
-                          <p class="text-white">$10.00</p>
-                        </div>
+                  <div
+                    class="basis-full case_study element-item asia pb-6 border-b border-b-neutral-200 border-opacity-10"
+                  >
+                    <div class="flex items-center flex-row w-full">
+                      <div class="img w-8 md:w-14 mr-3 lg:mr-5">
+                        <img
+                          class="img-fluid"
+                          src="../assets/images/hotel_food/food_item.png"
+                          alt="Case 1"
+                        />
                       </div>
-                      <p
-                        class="title flex items-center italic font-normal text-base text-white capitalize"
-                      >
-                        Turkey, oregano, tomato paste, peppers
-                      </p>
+                      <div class="details w-full">
+                        <div class="flex items-center justify-between mb-2">
+                          <div class="view_btn">
+                            <h3
+                              class="heading_3 font-bold text-sm lg:text-lg capitalize text-white"
+                            >
+                              Terrific Turkey Chili
+                            </h3>
+                          </div>
+                          <div class="call">
+                            <p class="text-white">$40.00</p>
+                          </div>
+                        </div>
+                        <p
+                          class="title flex items-center italic font-normal text-base text-white capitalize"
+                        >
+                          Turkey, oregano, tomato paste, peppers
+                        </p>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div
-                  class="basis-full w-full md:basis-5/12 case_study element-item asia col-span-12 lg:col-span-6 pb-6 mb-8 border-b border-b-neutral-200 border-opacity-10"
-                >
-                  <div class="flex items-center flex-row w-full">
-                    <div class="img w-8 md:w-14 mr-3 lg:mr-5">
-                      <img
-                        class="img-fluid"
-                        src="../assets/images/hotel_food/food_item.png"
-                        alt="Case 1"
-                      />
-                    </div>
-                    <div class="details w-full">
-                      <div class="flex items-center justify-between mb-2">
-                        <div class="view_btn">
-                          <h3
-                            class="heading_3 font-bold text-sm lg:text-lg capitalize text-white"
-                          >
-                            Terrific Turkey Chili
-                          </h3>
-                        </div>
-                        <div class="call">
-                          <p class="text-white">$10.00</p>
-                        </div>
+                  <div
+                    class="basis-full case_study element-item asia pb-6 border-b border-b-neutral-200 border-opacity-10"
+                  >
+                    <div class="flex items-center flex-row w-full">
+                      <div class="img w-8 md:w-14 mr-3 lg:mr-5">
+                        <img
+                          class="img-fluid"
+                          src="../assets/images/hotel_food/food_item.png"
+                          alt="Case 1"
+                        />
                       </div>
-                      <p
-                        class="title flex items-center italic font-normal text-base text-white capitalize"
-                      >
-                        Turkey, oregano, tomato paste, peppers
-                      </p>
+                      <div class="details w-full">
+                        <div class="flex items-center justify-between mb-2">
+                          <div class="view_btn">
+                            <h3
+                              class="heading_3 font-bold text-sm lg:text-lg capitalize text-white"
+                            >
+                              Terrific Turkey Chili
+                            </h3>
+                          </div>
+                          <div class="call">
+                            <p class="text-white">$40.00</p>
+                          </div>
+                        </div>
+                        <p
+                          class="title flex items-center italic font-normal text-base text-white capitalize"
+                        >
+                          Turkey, oregano, tomato paste, peppers
+                        </p>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div
-                  class="basis-full w-full md:basis-5/12 case_study element-item asia col-span-12 lg:col-span-6 pb-6 mb-8 border-b border-b-neutral-200 border-opacity-10"
-                >
-                  <div class="flex items-center flex-row w-full">
-                    <div class="img w-8 md:w-14 mr-3 lg:mr-5">
-                      <img
-                        class="img-fluid"
-                        src="../assets/images/hotel_food/food_item.png"
-                        alt="Case 1"
-                      />
-                    </div>
-                    <div class="details w-full">
-                      <div class="flex items-center justify-between mb-2">
-                        <div class="view_btn">
-                          <h3
-                            class="heading_3 font-bold text-sm lg:text-lg capitalize text-white"
-                          >
-                            Terrific Turkey Chili
-                          </h3>
-                        </div>
-                        <div class="call">
-                          <p class="text-white">$10.00</p>
-                        </div>
+                  <div
+                    class="basis-full case_study element-item asia pb-6 border-b border-b-neutral-200 border-opacity-10"
+                  >
+                    <div class="flex items-center flex-row w-full">
+                      <div class="img w-8 md:w-14 mr-3 lg:mr-5">
+                        <img
+                          class="img-fluid"
+                          src="../assets/images/hotel_food/food_item.png"
+                          alt="Case 1"
+                        />
                       </div>
-                      <p
-                        class="title flex items-center italic font-normal text-base text-white capitalize"
-                      >
-                        Turkey, oregano, tomato paste, peppers
-                      </p>
+                      <div class="details w-full">
+                        <div class="flex items-center justify-between mb-2">
+                          <div class="view_btn">
+                            <h3
+                              class="heading_3 font-bold text-sm lg:text-lg capitalize text-white"
+                            >
+                              Terrific Turkey Chili
+                            </h3>
+                          </div>
+                          <div class="call">
+                            <p class="text-white">$40.00</p>
+                          </div>
+                        </div>
+                        <p
+                          class="title flex items-center italic font-normal text-base text-white capitalize"
+                        >
+                          Turkey, oregano, tomato paste, peppers
+                        </p>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div
-                  class="basis-full w-full md:basis-5/12 case_study element-item asia col-span-12 lg:col-span-6 pb-6 lg:mb-8 border-b border-b-neutral-200 border-opacity-10"
-                >
-                  <div class="flex items-center flex-row w-full">
-                    <div class="img w-8 md:w-14 mr-3 lg:mr-5">
-                      <img
-                        class="img-fluid"
-                        src="../assets/images/hotel_food/food_item.png"
-                        alt="Case 1"
-                      />
-                    </div>
-                    <div class="details w-full">
-                      <div class="flex items-center justify-between mb-2">
-                        <div class="view_btn">
-                          <h3
-                            class="heading_3 font-bold text-sm lg:text-lg capitalize text-white"
-                          >
-                            Terrific Turkey Chili
-                          </h3>
-                        </div>
-                        <div class="call">
-                          <p class="text-white">$10.00</p>
-                        </div>
+                  <div
+                    class="basis-full case_study element-item asia pb-6 border-b border-b-neutral-200 border-opacity-10"
+                  >
+                    <div class="flex items-center flex-row w-full">
+                      <div class="img w-8 md:w-14 mr-3 lg:mr-5">
+                        <img
+                          class="img-fluid"
+                          src="../assets/images/hotel_food/food_item.png"
+                          alt="Case 1"
+                        />
                       </div>
-                      <p
-                        class="title flex items-center italic font-normal text-base text-white capitalize"
-                      >
-                        Turkey, oregano, tomato paste, peppers
-                      </p>
+                      <div class="details w-full">
+                        <div class="flex items-center justify-between mb-2">
+                          <div class="view_btn">
+                            <h3
+                              class="heading_3 font-bold text-sm lg:text-lg capitalize text-white"
+                            >
+                              Terrific Turkey Chili
+                            </h3>
+                          </div>
+                          <div class="call">
+                            <p class="text-white">$40.00</p>
+                          </div>
+                        </div>
+                        <p
+                          class="title flex items-center italic font-normal text-base text-white capitalize"
+                        >
+                          Turkey, oregano, tomato paste, peppers
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="basis-full case_study element-item asia pb-6 border-b border-b-neutral-200 border-opacity-10"
+                  >
+                    <div class="flex items-center flex-row w-full">
+                      <div class="img w-8 md:w-14 mr-3 lg:mr-5">
+                        <img
+                          class="img-fluid"
+                          src="../assets/images/hotel_food/food_item.png"
+                          alt="Case 1"
+                        />
+                      </div>
+                      <div class="details w-full">
+                        <div class="flex items-center justify-between mb-2">
+                          <div class="view_btn">
+                            <h3
+                              class="heading_3 font-bold text-sm lg:text-lg capitalize text-white"
+                            >
+                              Terrific Turkey Chili
+                            </h3>
+                          </div>
+                          <div class="call">
+                            <p class="text-white">$40.00</p>
+                          </div>
+                        </div>
+                        <p
+                          class="title flex items-center italic font-normal text-base text-white capitalize"
+                        >
+                          Turkey, oregano, tomato paste, peppers
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="basis-full case_study element-item asia pb-6 border-b border-b-neutral-200 border-opacity-10"
+                  >
+                    <div class="flex items-center flex-row w-full">
+                      <div class="img w-8 md:w-14 mr-3 lg:mr-5">
+                        <img
+                          class="img-fluid"
+                          src="../assets/images/hotel_food/food_item.png"
+                          alt="Case 1"
+                        />
+                      </div>
+                      <div class="details w-full">
+                        <div class="flex items-center justify-between mb-2">
+                          <div class="view_btn">
+                            <h3
+                              class="heading_3 font-bold text-sm lg:text-lg capitalize text-white"
+                            >
+                              Terrific Turkey Chili
+                            </h3>
+                          </div>
+                          <div class="call">
+                            <p class="text-white">$40.00</p>
+                          </div>
+                        </div>
+                        <p
+                          class="title flex items-center italic font-normal text-base text-white capitalize"
+                        >
+                          Turkey, oregano, tomato paste, peppers
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="basis-full case_study element-item asia pb-6 border-b border-b-neutral-200 border-opacity-10"
+                  >
+                    <div class="flex items-center flex-row w-full">
+                      <div class="img w-8 md:w-14 mr-3 lg:mr-5">
+                        <img
+                          class="img-fluid"
+                          src="../assets/images/hotel_food/food_item.png"
+                          alt="Case 1"
+                        />
+                      </div>
+                      <div class="details w-full">
+                        <div class="flex items-center justify-between mb-2">
+                          <div class="view_btn">
+                            <h3
+                              class="heading_3 font-bold text-sm lg:text-lg capitalize text-white"
+                            >
+                              Terrific Turkey Chili
+                            </h3>
+                          </div>
+                          <div class="call">
+                            <p class="text-white">$40.00</p>
+                          </div>
+                        </div>
+                        <p
+                          class="title flex items-center italic font-normal text-base text-white capitalize"
+                        >
+                          Turkey, oregano, tomato paste, peppers
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <!-- /content -->
-            </section>
-            <!-- Isotop Dom ended  -->
+            </div>
           </div>
         </div>
       </div>
@@ -2067,7 +2853,7 @@ consectetur adipiscing elit."
             >
               Marten couper
             </h3>
-            <ul class="flex items-center gap-1 justify-center">
+            <ul class="flex items-center gap-1 justify-center my-2">
               <li>
                 <svg
                   class="w-2 lg:w-4"
@@ -2145,7 +2931,96 @@ consectetur adipiscing elit."
               </li>
             </ul>
             <p
-              class="mt-px text0F0E0E capitalize font-normal font10 xl:text-sm"
+              class="mt-px text-[#009DAE] capitalize font-normal font10 xl:text-sm"
+            >
+              CEO,Red Bull
+            </p>
+          </div>
+          <div class="opacity-50">
+            <h3
+              class="text-sm font-bold capitalize text-[#0F0E0E] mb-px xl:text-lg"
+            >
+              Marten couper
+            </h3>
+            <ul class="flex items-center gap-1 justify-center my-2">
+              <li>
+                <svg
+                  class="w-2 lg:w-4"
+                  width="17"
+                  height="16"
+                  viewBox="0 0 17 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.58844 13.3356L12.4651 15.8945C12.965 16.2224 13.5804 15.7346 13.4342 15.1348L12.3112 10.5447C12.2809 10.4175 12.2857 10.2839 12.3252 10.1594C12.3646 10.0349 12.4371 9.92454 12.5343 9.84101L16.011 6.82624C16.4648 6.4344 16.234 5.64272 15.6418 5.60274L11.1036 5.29886C10.9798 5.29137 10.8608 5.24654 10.7611 5.16985C10.6613 5.09317 10.5853 4.98794 10.5421 4.86704L8.84996 0.436842C8.80516 0.308816 8.72356 0.198222 8.61623 0.120071C8.5089 0.0419207 8.38104 0 8.25 0C8.11896 0 7.9911 0.0419207 7.88377 0.120071C7.77644 0.198222 7.69484 0.308816 7.65004 0.436842L5.95786 4.86704C5.91474 4.98794 5.83867 5.09317 5.73895 5.16985C5.63923 5.24654 5.52019 5.29137 5.39637 5.29886L0.858244 5.60274C0.265981 5.64272 0.0352291 6.4344 0.489041 6.82624L3.9657 9.84101C4.06288 9.92454 4.13537 10.0349 4.17484 10.1594C4.2143 10.2839 4.21913 10.4175 4.18877 10.5447L3.15038 14.799C2.97347 15.5187 3.71188 16.1025 4.30414 15.7106L7.91156 13.3356C8.01272 13.2687 8.13012 13.2332 8.25 13.2332C8.36988 13.2332 8.48728 13.2687 8.58844 13.3356Z"
+                    fill="#FDCE1A"
+                  />
+                </svg>
+              </li>
+              <li>
+                <svg
+                  class="w-2 lg:w-4"
+                  width="17"
+                  height="16"
+                  viewBox="0 0 17 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.58844 13.3356L12.4651 15.8945C12.965 16.2224 13.5804 15.7346 13.4342 15.1348L12.3112 10.5447C12.2809 10.4175 12.2857 10.2839 12.3252 10.1594C12.3646 10.0349 12.4371 9.92454 12.5343 9.84101L16.011 6.82624C16.4648 6.4344 16.234 5.64272 15.6418 5.60274L11.1036 5.29886C10.9798 5.29137 10.8608 5.24654 10.7611 5.16985C10.6613 5.09317 10.5853 4.98794 10.5421 4.86704L8.84996 0.436842C8.80516 0.308816 8.72356 0.198222 8.61623 0.120071C8.5089 0.0419207 8.38104 0 8.25 0C8.11896 0 7.9911 0.0419207 7.88377 0.120071C7.77644 0.198222 7.69484 0.308816 7.65004 0.436842L5.95786 4.86704C5.91474 4.98794 5.83867 5.09317 5.73895 5.16985C5.63923 5.24654 5.52019 5.29137 5.39637 5.29886L0.858244 5.60274C0.265981 5.64272 0.0352291 6.4344 0.489041 6.82624L3.9657 9.84101C4.06288 9.92454 4.13537 10.0349 4.17484 10.1594C4.2143 10.2839 4.21913 10.4175 4.18877 10.5447L3.15038 14.799C2.97347 15.5187 3.71188 16.1025 4.30414 15.7106L7.91156 13.3356C8.01272 13.2687 8.13012 13.2332 8.25 13.2332C8.36988 13.2332 8.48728 13.2687 8.58844 13.3356Z"
+                    fill="#FDCE1A"
+                  />
+                </svg>
+              </li>
+              <li>
+                <svg
+                  class="w-2 lg:w-4"
+                  width="17"
+                  height="16"
+                  viewBox="0 0 17 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.58844 13.3356L12.4651 15.8945C12.965 16.2224 13.5804 15.7346 13.4342 15.1348L12.3112 10.5447C12.2809 10.4175 12.2857 10.2839 12.3252 10.1594C12.3646 10.0349 12.4371 9.92454 12.5343 9.84101L16.011 6.82624C16.4648 6.4344 16.234 5.64272 15.6418 5.60274L11.1036 5.29886C10.9798 5.29137 10.8608 5.24654 10.7611 5.16985C10.6613 5.09317 10.5853 4.98794 10.5421 4.86704L8.84996 0.436842C8.80516 0.308816 8.72356 0.198222 8.61623 0.120071C8.5089 0.0419207 8.38104 0 8.25 0C8.11896 0 7.9911 0.0419207 7.88377 0.120071C7.77644 0.198222 7.69484 0.308816 7.65004 0.436842L5.95786 4.86704C5.91474 4.98794 5.83867 5.09317 5.73895 5.16985C5.63923 5.24654 5.52019 5.29137 5.39637 5.29886L0.858244 5.60274C0.265981 5.64272 0.0352291 6.4344 0.489041 6.82624L3.9657 9.84101C4.06288 9.92454 4.13537 10.0349 4.17484 10.1594C4.2143 10.2839 4.21913 10.4175 4.18877 10.5447L3.15038 14.799C2.97347 15.5187 3.71188 16.1025 4.30414 15.7106L7.91156 13.3356C8.01272 13.2687 8.13012 13.2332 8.25 13.2332C8.36988 13.2332 8.48728 13.2687 8.58844 13.3356Z"
+                    fill="#FDCE1A"
+                  />
+                </svg>
+              </li>
+              <li>
+                <svg
+                  class="w-2 lg:w-4"
+                  width="17"
+                  height="16"
+                  viewBox="0 0 17 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.58844 13.3356L12.4651 15.8945C12.965 16.2224 13.5804 15.7346 13.4342 15.1348L12.3112 10.5447C12.2809 10.4175 12.2857 10.2839 12.3252 10.1594C12.3646 10.0349 12.4371 9.92454 12.5343 9.84101L16.011 6.82624C16.4648 6.4344 16.234 5.64272 15.6418 5.60274L11.1036 5.29886C10.9798 5.29137 10.8608 5.24654 10.7611 5.16985C10.6613 5.09317 10.5853 4.98794 10.5421 4.86704L8.84996 0.436842C8.80516 0.308816 8.72356 0.198222 8.61623 0.120071C8.5089 0.0419207 8.38104 0 8.25 0C8.11896 0 7.9911 0.0419207 7.88377 0.120071C7.77644 0.198222 7.69484 0.308816 7.65004 0.436842L5.95786 4.86704C5.91474 4.98794 5.83867 5.09317 5.73895 5.16985C5.63923 5.24654 5.52019 5.29137 5.39637 5.29886L0.858244 5.60274C0.265981 5.64272 0.0352291 6.4344 0.489041 6.82624L3.9657 9.84101C4.06288 9.92454 4.13537 10.0349 4.17484 10.1594C4.2143 10.2839 4.21913 10.4175 4.18877 10.5447L3.15038 14.799C2.97347 15.5187 3.71188 16.1025 4.30414 15.7106L7.91156 13.3356C8.01272 13.2687 8.13012 13.2332 8.25 13.2332C8.36988 13.2332 8.48728 13.2687 8.58844 13.3356Z"
+                    fill="#FDCE1A"
+                  />
+                </svg>
+              </li>
+              <li>
+                <svg
+                  class="w-2 lg:w-4"
+                  width="17"
+                  height="16"
+                  viewBox="0 0 17 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.58844 13.3356L12.4651 15.8945C12.965 16.2224 13.5804 15.7346 13.4342 15.1348L12.3112 10.5447C12.2809 10.4175 12.2857 10.2839 12.3252 10.1594C12.3646 10.0349 12.4371 9.92454 12.5343 9.84101L16.011 6.82624C16.4648 6.4344 16.234 5.64272 15.6418 5.60274L11.1036 5.29886C10.9798 5.29137 10.8608 5.24654 10.7611 5.16985C10.6613 5.09317 10.5853 4.98794 10.5421 4.86704L8.84996 0.436842C8.80516 0.308816 8.72356 0.198222 8.61623 0.120071C8.5089 0.0419207 8.38104 0 8.25 0C8.11896 0 7.9911 0.0419207 7.88377 0.120071C7.77644 0.198222 7.69484 0.308816 7.65004 0.436842L5.95786 4.86704C5.91474 4.98794 5.83867 5.09317 5.73895 5.16985C5.63923 5.24654 5.52019 5.29137 5.39637 5.29886L0.858244 5.60274C0.265981 5.64272 0.0352291 6.4344 0.489041 6.82624L3.9657 9.84101C4.06288 9.92454 4.13537 10.0349 4.17484 10.1594C4.2143 10.2839 4.21913 10.4175 4.18877 10.5447L3.15038 14.799C2.97347 15.5187 3.71188 16.1025 4.30414 15.7106L7.91156 13.3356C8.01272 13.2687 8.13012 13.2332 8.25 13.2332C8.36988 13.2332 8.48728 13.2687 8.58844 13.3356Z"
+                    fill="#FDCE1A"
+                  />
+                </svg>
+              </li>
+            </ul>
+            <p
+              class="mt-px text-[#009DAE] capitalize font-normal font10 xl:text-sm"
             >
               CEO,Red Bull
             </p>
@@ -2156,7 +3031,7 @@ consectetur adipiscing elit."
             >
               Marten couper
             </h3>
-            <ul class="flex items-center gap-1 justify-center">
+            <ul class="flex items-center gap-1 justify-center my-2">
               <li>
                 <svg
                   class="w-2 lg:w-4"
@@ -2234,7 +3109,7 @@ consectetur adipiscing elit."
               </li>
             </ul>
             <p
-              class="mt-px text0F0E0E capitalize font-normal font10 xl:text-sm"
+              class="mt-px text-[#009DAE] capitalize font-normal font10 xl:text-sm"
             >
               CEO,Red Bull
             </p>
@@ -2245,7 +3120,7 @@ consectetur adipiscing elit."
             >
               Marten couper
             </h3>
-            <ul class="flex items-center gap-1 justify-center">
+            <ul class="flex items-center gap-1 justify-center my-2">
               <li>
                 <svg
                   class="w-2 lg:w-4"
@@ -2323,7 +3198,7 @@ consectetur adipiscing elit."
               </li>
             </ul>
             <p
-              class="mt-px text0F0E0E capitalize font-normal font10 xl:text-sm"
+              class="mt-px text-[#009DAE] capitalize font-normal font10 xl:text-sm"
             >
               CEO,Red Bull
             </p>
@@ -2334,7 +3209,7 @@ consectetur adipiscing elit."
             >
               Marten couper
             </h3>
-            <ul class="flex items-center gap-1 justify-center">
+            <ul class="flex items-center gap-1 justify-center my-2">
               <li>
                 <svg
                   class="w-2 lg:w-4"
@@ -2412,7 +3287,7 @@ consectetur adipiscing elit."
               </li>
             </ul>
             <p
-              class="mt-px text0F0E0E capitalize font-normal font10 xl:text-sm"
+              class="mt-px text-[#009DAE] capitalize font-normal font10 xl:text-sm"
             >
               CEO,Red Bull
             </p>
@@ -2423,7 +3298,7 @@ consectetur adipiscing elit."
             >
               Marten couper
             </h3>
-            <ul class="flex items-center gap-1 justify-center">
+            <ul class="flex items-center gap-1 justify-center my-2">
               <li>
                 <svg
                   class="w-2 lg:w-4"
@@ -2501,96 +3376,7 @@ consectetur adipiscing elit."
               </li>
             </ul>
             <p
-              class="mt-px text0F0E0E capitalize font-normal font10 xl:text-sm"
-            >
-              CEO,Red Bull
-            </p>
-          </div>
-          <div class="opacity-50">
-            <h3
-              class="text-sm font-bold capitalize text0F0E0E mb-px xl:text-lg"
-            >
-              Marten couper
-            </h3>
-            <ul class="flex items-center gap-1 justify-center">
-              <li>
-                <svg
-                  class="w-2 lg:w-4"
-                  width="17"
-                  height="16"
-                  viewBox="0 0 17 16"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M8.58844 13.3356L12.4651 15.8945C12.965 16.2224 13.5804 15.7346 13.4342 15.1348L12.3112 10.5447C12.2809 10.4175 12.2857 10.2839 12.3252 10.1594C12.3646 10.0349 12.4371 9.92454 12.5343 9.84101L16.011 6.82624C16.4648 6.4344 16.234 5.64272 15.6418 5.60274L11.1036 5.29886C10.9798 5.29137 10.8608 5.24654 10.7611 5.16985C10.6613 5.09317 10.5853 4.98794 10.5421 4.86704L8.84996 0.436842C8.80516 0.308816 8.72356 0.198222 8.61623 0.120071C8.5089 0.0419207 8.38104 0 8.25 0C8.11896 0 7.9911 0.0419207 7.88377 0.120071C7.77644 0.198222 7.69484 0.308816 7.65004 0.436842L5.95786 4.86704C5.91474 4.98794 5.83867 5.09317 5.73895 5.16985C5.63923 5.24654 5.52019 5.29137 5.39637 5.29886L0.858244 5.60274C0.265981 5.64272 0.0352291 6.4344 0.489041 6.82624L3.9657 9.84101C4.06288 9.92454 4.13537 10.0349 4.17484 10.1594C4.2143 10.2839 4.21913 10.4175 4.18877 10.5447L3.15038 14.799C2.97347 15.5187 3.71188 16.1025 4.30414 15.7106L7.91156 13.3356C8.01272 13.2687 8.13012 13.2332 8.25 13.2332C8.36988 13.2332 8.48728 13.2687 8.58844 13.3356Z"
-                    fill="#FDCE1A"
-                  />
-                </svg>
-              </li>
-              <li>
-                <svg
-                  class="w-2 lg:w-4"
-                  width="17"
-                  height="16"
-                  viewBox="0 0 17 16"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M8.58844 13.3356L12.4651 15.8945C12.965 16.2224 13.5804 15.7346 13.4342 15.1348L12.3112 10.5447C12.2809 10.4175 12.2857 10.2839 12.3252 10.1594C12.3646 10.0349 12.4371 9.92454 12.5343 9.84101L16.011 6.82624C16.4648 6.4344 16.234 5.64272 15.6418 5.60274L11.1036 5.29886C10.9798 5.29137 10.8608 5.24654 10.7611 5.16985C10.6613 5.09317 10.5853 4.98794 10.5421 4.86704L8.84996 0.436842C8.80516 0.308816 8.72356 0.198222 8.61623 0.120071C8.5089 0.0419207 8.38104 0 8.25 0C8.11896 0 7.9911 0.0419207 7.88377 0.120071C7.77644 0.198222 7.69484 0.308816 7.65004 0.436842L5.95786 4.86704C5.91474 4.98794 5.83867 5.09317 5.73895 5.16985C5.63923 5.24654 5.52019 5.29137 5.39637 5.29886L0.858244 5.60274C0.265981 5.64272 0.0352291 6.4344 0.489041 6.82624L3.9657 9.84101C4.06288 9.92454 4.13537 10.0349 4.17484 10.1594C4.2143 10.2839 4.21913 10.4175 4.18877 10.5447L3.15038 14.799C2.97347 15.5187 3.71188 16.1025 4.30414 15.7106L7.91156 13.3356C8.01272 13.2687 8.13012 13.2332 8.25 13.2332C8.36988 13.2332 8.48728 13.2687 8.58844 13.3356Z"
-                    fill="#FDCE1A"
-                  />
-                </svg>
-              </li>
-              <li>
-                <svg
-                  class="w-2 lg:w-4"
-                  width="17"
-                  height="16"
-                  viewBox="0 0 17 16"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M8.58844 13.3356L12.4651 15.8945C12.965 16.2224 13.5804 15.7346 13.4342 15.1348L12.3112 10.5447C12.2809 10.4175 12.2857 10.2839 12.3252 10.1594C12.3646 10.0349 12.4371 9.92454 12.5343 9.84101L16.011 6.82624C16.4648 6.4344 16.234 5.64272 15.6418 5.60274L11.1036 5.29886C10.9798 5.29137 10.8608 5.24654 10.7611 5.16985C10.6613 5.09317 10.5853 4.98794 10.5421 4.86704L8.84996 0.436842C8.80516 0.308816 8.72356 0.198222 8.61623 0.120071C8.5089 0.0419207 8.38104 0 8.25 0C8.11896 0 7.9911 0.0419207 7.88377 0.120071C7.77644 0.198222 7.69484 0.308816 7.65004 0.436842L5.95786 4.86704C5.91474 4.98794 5.83867 5.09317 5.73895 5.16985C5.63923 5.24654 5.52019 5.29137 5.39637 5.29886L0.858244 5.60274C0.265981 5.64272 0.0352291 6.4344 0.489041 6.82624L3.9657 9.84101C4.06288 9.92454 4.13537 10.0349 4.17484 10.1594C4.2143 10.2839 4.21913 10.4175 4.18877 10.5447L3.15038 14.799C2.97347 15.5187 3.71188 16.1025 4.30414 15.7106L7.91156 13.3356C8.01272 13.2687 8.13012 13.2332 8.25 13.2332C8.36988 13.2332 8.48728 13.2687 8.58844 13.3356Z"
-                    fill="#FDCE1A"
-                  />
-                </svg>
-              </li>
-              <li>
-                <svg
-                  class="w-2 lg:w-4"
-                  width="17"
-                  height="16"
-                  viewBox="0 0 17 16"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M8.58844 13.3356L12.4651 15.8945C12.965 16.2224 13.5804 15.7346 13.4342 15.1348L12.3112 10.5447C12.2809 10.4175 12.2857 10.2839 12.3252 10.1594C12.3646 10.0349 12.4371 9.92454 12.5343 9.84101L16.011 6.82624C16.4648 6.4344 16.234 5.64272 15.6418 5.60274L11.1036 5.29886C10.9798 5.29137 10.8608 5.24654 10.7611 5.16985C10.6613 5.09317 10.5853 4.98794 10.5421 4.86704L8.84996 0.436842C8.80516 0.308816 8.72356 0.198222 8.61623 0.120071C8.5089 0.0419207 8.38104 0 8.25 0C8.11896 0 7.9911 0.0419207 7.88377 0.120071C7.77644 0.198222 7.69484 0.308816 7.65004 0.436842L5.95786 4.86704C5.91474 4.98794 5.83867 5.09317 5.73895 5.16985C5.63923 5.24654 5.52019 5.29137 5.39637 5.29886L0.858244 5.60274C0.265981 5.64272 0.0352291 6.4344 0.489041 6.82624L3.9657 9.84101C4.06288 9.92454 4.13537 10.0349 4.17484 10.1594C4.2143 10.2839 4.21913 10.4175 4.18877 10.5447L3.15038 14.799C2.97347 15.5187 3.71188 16.1025 4.30414 15.7106L7.91156 13.3356C8.01272 13.2687 8.13012 13.2332 8.25 13.2332C8.36988 13.2332 8.48728 13.2687 8.58844 13.3356Z"
-                    fill="#FDCE1A"
-                  />
-                </svg>
-              </li>
-              <li>
-                <svg
-                  class="w-2 lg:w-4"
-                  width="17"
-                  height="16"
-                  viewBox="0 0 17 16"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M8.58844 13.3356L12.4651 15.8945C12.965 16.2224 13.5804 15.7346 13.4342 15.1348L12.3112 10.5447C12.2809 10.4175 12.2857 10.2839 12.3252 10.1594C12.3646 10.0349 12.4371 9.92454 12.5343 9.84101L16.011 6.82624C16.4648 6.4344 16.234 5.64272 15.6418 5.60274L11.1036 5.29886C10.9798 5.29137 10.8608 5.24654 10.7611 5.16985C10.6613 5.09317 10.5853 4.98794 10.5421 4.86704L8.84996 0.436842C8.80516 0.308816 8.72356 0.198222 8.61623 0.120071C8.5089 0.0419207 8.38104 0 8.25 0C8.11896 0 7.9911 0.0419207 7.88377 0.120071C7.77644 0.198222 7.69484 0.308816 7.65004 0.436842L5.95786 4.86704C5.91474 4.98794 5.83867 5.09317 5.73895 5.16985C5.63923 5.24654 5.52019 5.29137 5.39637 5.29886L0.858244 5.60274C0.265981 5.64272 0.0352291 6.4344 0.489041 6.82624L3.9657 9.84101C4.06288 9.92454 4.13537 10.0349 4.17484 10.1594C4.2143 10.2839 4.21913 10.4175 4.18877 10.5447L3.15038 14.799C2.97347 15.5187 3.71188 16.1025 4.30414 15.7106L7.91156 13.3356C8.01272 13.2687 8.13012 13.2332 8.25 13.2332C8.36988 13.2332 8.48728 13.2687 8.58844 13.3356Z"
-                    fill="#FDCE1A"
-                  />
-                </svg>
-              </li>
-            </ul>
-            <p
-              class="mt-px text0F0E0E capitalize font-normal font10 xl:text-sm"
+              class="mt-px text-[#009DAE] capitalize font-normal font10 xl:text-sm"
             >
               CEO,Red Bull
             </p>
@@ -3087,6 +3873,38 @@ consectetur adipiscing elit."
     <script src="../assets/js/main.js"></script>
     <script>
       AOS.init();
+
+      // tab for food corner
+      let tabsContainer = document.querySelector("#tabs");
+
+      let tabTogglers = tabsContainer.querySelectorAll("#tabs a");
+
+      console.log(tabTogglers);
+
+      tabTogglers.forEach(function (toggler) {
+        toggler.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          let tabName = this.getAttribute("href");
+
+          let tabContents = document.querySelector("#tab-contents");
+
+          for (let i = 0; i < tabContents.children.length; i++) {
+            tabTogglers[i].parentElement.classList.remove(
+              "!opacity-100",
+              "border-b"
+            );
+            tabContents.children[i].classList.remove("hidden");
+            if ("#" + tabContents.children[i].id === tabName) {
+              continue;
+            }
+            tabContents.children[i].classList.add("hidden");
+          }
+          e.target.parentElement.classList.add("!opacity-100", "border-b");
+        });
+      });
+
+      // tab for food corner
     </script>
   </body>
 </html>

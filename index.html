@@ -328,12 +328,14 @@ consectetur adipiscing elit."
                         x-transition:leave="transition ease-in duration-75"
                         x-transition:leave-start="transform opacity-100 scale-100"
                         x-transition:leave-end="transform opacity-0 scale-95"
-                        class="absolute right-0 w-48 mt-6 origin-top-right rounded-md shadow-lg"
+                        class="absolute right-0 mt-6 w-max origin-top-right rounded-md shadow-lg"
                       >
-                        <div class="py-1 bg-white rounded-md shadow-xs">
+                        <div
+                          class="py-10 bg-white/80 backdrop-blur-md rounded-md shadow-xs"
+                        >
                           <a
                             href="./pages/hotel_foodCorner.html"
-                            class="flex flex-row items-center px-3 py-2 mt-1 t rounded-md text-[#0F0E0E] text-sm font-semibold capitalize hov_effect"
+                            class="flex flex-row items-center px-16 py-2 mt-1 t rounded-md text-[#0F0E0E] text-sm font-bold capitalize hov_effect"
                             role="menuitem"
                           >
                             <svg
@@ -391,7 +393,7 @@ consectetur adipiscing elit."
                           </a>
                           <a
                             href="./pages/hotel_fitness_part.html"
-                            class="flex flex-row items-center px-3 py-2 mt-1 t rounded-md text-[#0F0E0E] text-sm font-semibold capitalize hov_effect"
+                            class="flex flex-row items-center px-16 py-2 mt-1 t rounded-md text-[#0F0E0E] text-sm font-bold capitalize hov_effect"
                             role="menuitem"
                           >
                             <svg
@@ -456,7 +458,7 @@ consectetur adipiscing elit."
                           </a>
                           <a
                             href="./pages/hotel_pool.html"
-                            class="flex flex-row items-center px-3 py-2 mt-1 t rounded-md text-[#0F0E0E] text-sm font-semibold capitalize hov_effect"
+                            class="flex flex-row items-center px-16 py-2 mt-1 t rounded-md text-[#0F0E0E] text-sm font-bold capitalize hov_effect"
                             role="menuitem"
                           >
                             <svg
@@ -508,7 +510,7 @@ consectetur adipiscing elit."
                           </a>
                           <a
                             href="./pages/hotel_bar.html"
-                            class="flex flex-row items-center px-3 py-2 mt-1 rounded-md text-[#0F0E0E] text-sm font-semibold capitalize hov_effect"
+                            class="flex flex-row items-center px-16 py-2 mt-1 rounded-md text-[#0F0E0E] text-sm font-bold capitalize hov_effect"
                             role="menuitem"
                           >
                             <svg
@@ -1383,7 +1385,7 @@ consectetur adipiscing elit."
       <!-- facilities part -->
       <section class="our_facilities py-10">
         <div class="container mx-auto px-2">
-          <h2
+          <!-- <h2
             class="text-center text-2xl lg:text-3xl font-bold uppercase mb-4 text0F0E0E"
           >
             OUR fACILITIES
@@ -1393,7 +1395,7 @@ consectetur adipiscing elit."
           >
             We Provive the uniq facilites.that’s why you should choose our
             hotel.
-          </p>
+          </p> -->
           <div
             class="facilities flex align-middle gap-3 flex-wrap lg:flex-nowrap text-center"
           >
@@ -1593,7 +1595,7 @@ consectetur adipiscing elit."
                 >
                   <div class="bed flex items-center gap-2">
                     <svg
-                      class="w-2.5 lg:w-6"
+                      class="w-4 lg:w-6"
                       width="24"
                       height="24"
                       viewBox="0 0 24 24"
@@ -1638,7 +1640,7 @@ consectetur adipiscing elit."
                   </div>
                   <div class="bed flex items-center gap-2">
                     <svg
-                      class="w-2.5 lg:w-6"
+                      class="w-4 lg:w-6"
                       width="24"
                       height="24"
                       viewBox="0 0 24 24"
@@ -1720,7 +1722,7 @@ consectetur adipiscing elit."
                 >
                   <div class="bed flex items-center gap-2">
                     <svg
-                      class="w-2.5 lg:w-6"
+                      class="w-4 lg:w-6"
                       width="24"
                       height="24"
                       viewBox="0 0 24 24"
@@ -1765,7 +1767,7 @@ consectetur adipiscing elit."
                   </div>
                   <div class="bed flex items-center gap-2">
                     <svg
-                      class="w-2.5 lg:w-6"
+                      class="w-4 lg:w-6"
                       width="24"
                       height="24"
                       viewBox="0 0 24 24"
@@ -1847,7 +1849,7 @@ consectetur adipiscing elit."
                 >
                   <div class="bed flex items-center gap-2">
                     <svg
-                      class="w-2.5 lg:w-6"
+                      class="w-4 lg:w-6"
                       width="24"
                       height="24"
                       viewBox="0 0 24 24"
@@ -1892,7 +1894,7 @@ consectetur adipiscing elit."
                   </div>
                   <div class="bed flex items-center gap-2">
                     <svg
-                      class="w-2.5 lg:w-6"
+                      class="w-4 lg:w-6"
                       width="24"
                       height="24"
                       viewBox="0 0 24 24"
@@ -1974,7 +1976,7 @@ consectetur adipiscing elit."
                 >
                   <div class="bed flex items-center gap-2">
                     <svg
-                      class="w-2.5 lg:w-6"
+                      class="w-4 lg:w-6"
                       width="24"
                       height="24"
                       viewBox="0 0 24 24"
@@ -2019,7 +2021,7 @@ consectetur adipiscing elit."
                   </div>
                   <div class="bed flex items-center gap-2">
                     <svg
-                      class="w-2.5 lg:w-6"
+                      class="w-4 lg:w-6"
                       width="24"
                       height="24"
                       viewBox="0 0 24 24"
@@ -2202,8 +2204,9 @@ consectetur adipiscing elit."
                   >
                     <a href="./pages/hotel_foodCorner.html">Food Corner</a>
                   </h2>
-                  <p
-                    class="font-normal text-sm lg:text-base text-white opacity-50 flex justify-center lg:justify-start items-center gap-2"
+                  <a
+                    href="./pages/hotel_foodCorner.html"
+                    class="font-normal text-sm lg:text-base text-white opacity-50 flex justify-center lg:justify-start items-center gap-2 block capitalize see_details"
                   >
                     see Details
 
@@ -2229,7 +2232,7 @@ consectetur adipiscing elit."
                         stroke-linejoin="round"
                       />
                     </svg>
-                  </p>
+                  </a>
                 </a>
               </div>
               <div
@@ -2302,8 +2305,9 @@ consectetur adipiscing elit."
                   >
                     <a href="./pages/hotel_fitness_part.html">Fitness Center</a>
                   </h2>
-                  <p
-                    class="font-normal text-sm lg:text-base text-white opacity-50 flex justify-center lg:justify-start items-center gap-2"
+                  <a
+                    href="./pages/hotel_foodCorner.html"
+                    class="font-normal text-sm lg:text-base text-white opacity-50 flex justify-center lg:justify-start items-center gap-2 block capitalize see_details"
                   >
                     see Details
 
@@ -2329,7 +2333,7 @@ consectetur adipiscing elit."
                         stroke-linejoin="round"
                       />
                     </svg>
-                  </p>
+                  </a>
                 </a>
               </div>
               <div
@@ -2359,8 +2363,9 @@ consectetur adipiscing elit."
                   >
                     <a href="./pages/hotel_pool.html">Pool</a>
                   </h2>
-                  <p
-                    class="font-normal text-sm lg:text-base text-white opacity-50 flex justify-center lg:justify-start items-center gap-2"
+                  <a
+                    href="./pages/hotel_foodCorner.html"
+                    class="font-normal text-sm lg:text-base text-white opacity-50 flex justify-center lg:justify-start items-center gap-2 block capitalize see_details"
                   >
                     see Details
 
@@ -2386,7 +2391,7 @@ consectetur adipiscing elit."
                         stroke-linejoin="round"
                       />
                     </svg>
-                  </p>
+                  </a>
                 </a>
               </div>
               <div
@@ -2445,8 +2450,9 @@ consectetur adipiscing elit."
                   >
                     <a href="./pages/hotel_bar.html">Lounge bar</a>
                   </h2>
-                  <p
-                    class="font-normal text-sm lg:text-base text-white opacity-50 flex justify-center lg:justify-start items-center gap-2"
+                  <a
+                    href="./pages/hotel_foodCorner.html"
+                    class="font-normal text-sm lg:text-base text-white opacity-50 flex justify-center lg:justify-start items-center gap-2 block capitalize see_details"
                   >
                     see Details
 
@@ -2472,7 +2478,7 @@ consectetur adipiscing elit."
                         stroke-linejoin="round"
                       />
                     </svg>
-                  </p>
+                  </a>
                 </a>
               </div>
             </div>
@@ -2987,7 +2993,7 @@ consectetur adipiscing elit."
                 </li>
               </ul>
               <p
-                class="mt-px text0F0E0E capitalize font-normal font10 xl:text-sm"
+                class="mt-px text-[#009DAE] capitalize font-normal font10 xl:text-sm"
               >
                 CEO,Red Bull
               </p>
@@ -3076,7 +3082,7 @@ consectetur adipiscing elit."
                 </li>
               </ul>
               <p
-                class="mt-px text0F0E0E capitalize font-normal font10 xl:text-sm"
+                class="mt-px text-[#009DAE] capitalize font-normal font10 xl:text-sm"
               >
                 CEO,Red Bull
               </p>
@@ -3165,7 +3171,7 @@ consectetur adipiscing elit."
                 </li>
               </ul>
               <p
-                class="mt-px text0F0E0E capitalize font-normal font10 xl:text-sm"
+                class="mt-px text-[#009DAE] capitalize font-normal font10 xl:text-sm"
               >
                 CEO,Red Bull
               </p>
@@ -3254,7 +3260,7 @@ consectetur adipiscing elit."
                 </li>
               </ul>
               <p
-                class="mt-px text0F0E0E capitalize font-normal font10 xl:text-sm"
+                class="mt-px text-[#009DAE] capitalize font-normal font10 xl:text-sm"
               >
                 CEO,Red Bull
               </p>
@@ -3343,7 +3349,7 @@ consectetur adipiscing elit."
                 </li>
               </ul>
               <p
-                class="mt-px text0F0E0E capitalize font-normal font10 xl:text-sm"
+                class="mt-px text-[#009DAE] capitalize font-normal font10 xl:text-sm"
               >
                 CEO,Red Bull
               </p>
@@ -3432,7 +3438,7 @@ consectetur adipiscing elit."
                 </li>
               </ul>
               <p
-                class="mt-px text0F0E0E capitalize font-normal font10 xl:text-sm"
+                class="mt-px text-[#009DAE] capitalize font-normal font10 xl:text-sm"
               >
                 CEO,Red Bull
               </p>

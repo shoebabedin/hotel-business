@@ -220,7 +220,7 @@ consectetur adipiscing elit."
         <nav
           x-data="{ open: false }"
           @keydown.window.escape="open = false"
-          class="bg-[#009dae] nav"
+          class="bg-[#009dae] nav z-10"
         >
           <div class="container mx-auto px-2">
             <div class="flex items-center justify-between h-16">
@@ -283,12 +283,14 @@ consectetur adipiscing elit."
                         x-transition:leave="transition ease-in duration-75"
                         x-transition:leave-start="transform opacity-100 scale-100"
                         x-transition:leave-end="transform opacity-0 scale-95"
-                        class="absolute right-0 w-48 mt-6 origin-top-right rounded-md shadow-lg z-10"
+                        class="absolute right-0 mt-6 w-max origin-top-right rounded-md shadow-lg z-10"
                       >
-                        <div class="py-1 bg-white rounded-md shadow-xs">
+                        <div
+                          class="py-10 bg-white/80 backdrop-blur-md rounded-md shadow-xs"
+                        >
                           <a
                             href="./hotel_foodCorner.html"
-                            class="flex flex-row items-center px-3 py-2 mt-1 t rounded-md text-[#0F0E0E] text-sm font-semibold capitalize hov_effect"
+                            class="flex flex-row items-center px-16 py-2 mt-1 t rounded-md text-[#0F0E0E] text-sm font-bold capitalize hov_effect"
                             role="menuitem"
                           >
                             <svg
@@ -346,7 +348,7 @@ consectetur adipiscing elit."
                           </a>
                           <a
                             href="./hotel_fitness_part.html"
-                            class="flex flex-row items-center px-3 py-2 mt-1 t rounded-md text-[#0F0E0E] text-sm font-semibold capitalize hov_effect"
+                            class="flex flex-row items-center px-16 py-2 mt-1 t rounded-md text-[#0F0E0E] text-sm font-bold capitalize hov_effect"
                             role="menuitem"
                           >
                             <svg
@@ -411,7 +413,7 @@ consectetur adipiscing elit."
                           </a>
                           <a
                             href="./hotel_pool.html"
-                            class="flex flex-row items-center px-3 py-2 mt-1 t rounded-md text-[#0F0E0E] text-sm font-semibold capitalize hov_effect"
+                            class="flex flex-row items-center px-16 py-2 mt-1 t rounded-md text-[#0F0E0E] text-sm font-bold capitalize hov_effect"
                             role="menuitem"
                           >
                             <svg
@@ -463,7 +465,7 @@ consectetur adipiscing elit."
                           </a>
                           <a
                             href="./hotel_bar.html"
-                            class="flex flex-row items-center px-3 py-2 mt-1 rounded-md text-[#0F0E0E] text-sm font-semibold capitalize hov_effect"
+                            class="flex flex-row items-center px-16 py-2 mt-1 t rounded-md text-[#0F0E0E] text-sm font-bold capitalize hov_effect"
                             role="menuitem"
                           >
                             <svg
@@ -619,7 +621,7 @@ consectetur adipiscing elit."
             <div class="container mx-auto">
               <div class="pt-2 pb-3">
                 <a
-                  href="../dist/index.html"
+                  href="../index.html"
                   class="flex flex-row items-center px-3 py-2 t rounded-md text-[#009DAE] lg:text-white text-base font-semibold capitalize md:border-0 border-b"
                 >
                   <span class="ml-2">Home</span>
@@ -1283,13 +1285,24 @@ consectetur adipiscing elit."
       <!-- scroll top -->
     </section>
 
-    <script src="../assets/js/jquery-1.11.0.min.js"></script>
-    <script src="../assets/js/alpine.js" defer></script>
-    <script src="../assets/plugin/slick/slick.1.8.1.js"></script>
-    <script src="../assets/plugin/ShowMore/showMoreItems.min.js"></script>
-    <script src="../assets/plugin/smooth_scroll/smooth_scroll.js"></script>
+    <script
+      type="text/javascript"
+      src="../assets/js/jquery-1.11.0.min.js"
+    ></script>
+    <script type="text/javascript" src="../assets/js/alpine.js" defer></script>
+    <script
+      type="text/javascript"
+      src="../assets/plugin/slick/slick.1.8.1.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../assets/plugin/ShowMore/showMoreItems.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../assets/plugin/smooth_scroll/smooth_scroll.js"
+    ></script>
     <script type="text/javascript" src="../assets/plugin/aos/aos.js"></script>
-    <script src="../assets/plugin/aos/aos.js"></script>
-    <script src="../assets/js/main.js"></script>
+    <script type="text/javascript" src="../assets/js/main.js"></script>
   </body>
 </html>

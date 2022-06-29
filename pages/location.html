@@ -280,12 +280,14 @@ consectetur adipiscing elit."
                       x-transition:leave="transition ease-in duration-75"
                       x-transition:leave-start="transform opacity-100 scale-100"
                       x-transition:leave-end="transform opacity-0 scale-95"
-                      class="absolute right-0 w-48 mt-6 origin-top-right rounded-md shadow-lg"
+                      class="absolute right-0 mt-6 w-max origin-top-right rounded-md shadow-lg z-10"
                     >
-                      <div class="py-1 bg-white rounded-md shadow-xs">
+                      <div
+                        class="py-10 bg-white/80 backdrop-blur-md rounded-md shadow-xs"
+                      >
                         <a
                           href="./hotel_foodCorner.html"
-                          class="flex flex-row items-center px-3 py-2 mt-1 t rounded-md text-[#0F0E0E] text-sm font-semibold capitalize hov_effect"
+                          class="flex flex-row items-center px-16 py-2 mt-1 t rounded-md text-[#0F0E0E] text-sm font-bold capitalize hov_effect"
                           role="menuitem"
                         >
                           <svg
@@ -343,7 +345,7 @@ consectetur adipiscing elit."
                         </a>
                         <a
                           href="./hotel_fitness_part.html"
-                          class="flex flex-row items-center px-3 py-2 mt-1 t rounded-md text-[#0F0E0E] text-sm font-semibold capitalize hov_effect"
+                          class="flex flex-row items-center px-16 py-2 mt-1 t rounded-md text-[#0F0E0E] text-sm font-bold capitalize hov_effect"
                           role="menuitem"
                         >
                           <svg
@@ -408,7 +410,7 @@ consectetur adipiscing elit."
                         </a>
                         <a
                           href="./hotel_pool.html"
-                          class="flex flex-row items-center px-3 py-2 mt-1 t rounded-md text-[#0F0E0E] text-sm font-semibold capitalize hov_effect"
+                          class="flex flex-row items-center px-16 py-2 mt-1 t rounded-md text-[#0F0E0E] text-sm font-bold capitalize hov_effect"
                           role="menuitem"
                         >
                           <svg
@@ -460,7 +462,7 @@ consectetur adipiscing elit."
                         </a>
                         <a
                           href="./hotel_bar.html"
-                          class="flex flex-row items-center px-3 py-2 mt-1 rounded-md text-[#0F0E0E] text-sm font-semibold capitalize hov_effect"
+                          class="flex flex-row items-center px-16 py-2 mt-1 t rounded-md text-[#0F0E0E] text-sm font-bold capitalize hov_effect"
                           role="menuitem"
                         >
                           <svg
@@ -564,11 +566,7 @@ consectetur adipiscing elit."
                         </div>
                       </a>
                       <div class="flex-1 space-y-6 py-3 px-4">
-                        <a href="tel:3104372766">
-                          <!-- <p class="font-normal text-sm text-white leading-4">
-                        Have a question?
-                      </p> --> </a
-                        ><a
+                        <a
                           class="text-white font-bold text-sm"
                           href="tel:3104372766"
                           >310-437-2766</a
@@ -637,19 +635,7 @@ consectetur adipiscing elit."
                   class="flex flex-row items-center px-3 py-2 mt-1 rounded-md text-[#009DAE] lg:text-white text-base font-semibold capitalize md:border-0 border-b w-full justify-between"
                 >
                   <span class="mx-2">Services</span>
-                  <!-- <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    :class="{'rotate-180': open, 'rotate-0': !open}"
-                    class="w-4 h-4 mt-1 transform feather feather-chevron-down"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <polyline points="6 9 12 15 18 9"></polyline>
-                  </svg> -->
+
                   <svg
                     :class="{'rotate-180': open, 'rotate-0': !open}"
                     class="w-4 h-4 mt-1 transform feather feather-chevron-down"
