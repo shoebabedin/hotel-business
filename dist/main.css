@@ -1477,6 +1477,14 @@ html {
   padding-left: 20px;
 }
 
+.pt-\[93px\] {
+  padding-top: 93px;
+}
+
+.pb-\[79px\] {
+  padding-bottom: 79px;
+}
+
 .text-left {
   text-align: left;
 }
@@ -3033,6 +3041,12 @@ nav #dropdown svg path {
   .details_banner .search_part {
     max-width: 746px;
     margin: 0 auto;
+  }
+
+  .details_banner .room_search {
+    max-width: 1116px;
+    margin: 0 auto;
+    margin-top: -6%;
   }
 
   .footer_bottom_part .footer_bottom_item .icon {

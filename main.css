@@ -1251,6 +1251,11 @@ nav #dropdown svg path {
     max-width: 746px;
     margin: 0 auto;
   }
+  .details_banner .room_search {
+    max-width: 1116px;
+    margin: 0 auto;
+    margin-top: -6%;
+  }
   .footer_bottom_part .footer_bottom_item .icon {
     background: #1e1e1e;
   }
