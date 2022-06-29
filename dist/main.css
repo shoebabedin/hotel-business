@@ -808,6 +808,10 @@ html {
   height: 2rem;
 }
 
+.h-\[512px\] {
+  height: 512px;
+}
+
 .w-4 {
   width: 1rem;
 }
