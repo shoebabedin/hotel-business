@@ -824,6 +824,10 @@ html {
   height: 2rem;
 }
 
+.h-9 {
+  height: 2.25rem;
+}
+
 .w-4 {
   width: 1rem;
 }
@@ -896,6 +900,10 @@ html {
 
 .w-auto {
   width: auto;
+}
+
+.w-10 {
+  width: 2.5rem;
 }
 
 .max-w-sm {
@@ -3673,6 +3681,10 @@ nav #dropdown svg path {
 
   .lg\:w-3 {
     width: 0.75rem;
+  }
+
+  .lg\:w-10 {
+    width: 2.5rem;
   }
 
   .lg\:max-w-md {
