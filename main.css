@@ -33,13 +33,13 @@ body {
 }
 
 .btn {
-  background: #009dae;
-  border-radius: 6px;
+  background: linear-gradient(91.84deg, #be9e57 37.97%, #ddba52 97.54%);
+  border-radius: 10px;
   color: #ffffff;
 }
 
 .rounded-btn {
-  background: #009dae;
+  background: #be9e57;
   border-radius: 100%;
   color: #ffffff;
   -webkit-border-radius: 100%;
@@ -54,7 +54,7 @@ body {
 /* btn color */
 
 .bt-color {
-  border-color: #009dae;
+  border-color: #be9e57;
 }
 
 /* btn color */
@@ -94,7 +94,7 @@ body {
 }
 
 .bg005555 {
-  background-color: #009dae !important;
+  background-color: #be9e57 !important;
 }
 
 .bg1E1E1E {
@@ -265,9 +265,9 @@ body {
     linear,
     40% 0%,
     75% 84%,
-    from(#009dae),
-    to(#009dae),
-    color-stop(0.6, #028a8a)
+    from(#be9e57),
+    to(#be9e57),
+    color-stop(0.6, #be9e57)
   );
 }
 
@@ -313,7 +313,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   font-size: 64px;
   line-height: 68px;
   text-align: center;
-  color: #005555;
+  color: #be9e57;
   margin-bottom: 41px;
   font-family: "Arial", sans-serif;
 }
@@ -376,14 +376,49 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   left: 0;
   width: 100%;
   z-index: 999;
-  background: #009dae !important;
+  background: #fff !important;
   transition: all linear 0.3s;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.08);
+}
+.sticky .logo {
+  display: none;
+}
+.sticky .logo.hidden {
+  display: block;
+}
+.sticky .nav_item .link {
+  color: #0f0e0e;
+}
+.sticky .nav_item .link:hover {
+  color: #be9e57;
+}
+.sticky .nav_item a.active {
+  color: #be9e57;
+}
+.sticky .question .border {
+  border-color: #0f0e0e;
+}
+.sticky .question svg path {
+  stroke: #be9e57;
+}
+.sticky .question .link {
+  color: #0f0e0e;
+}
+.sticky a:hover::after {
+  content: "";
+  width: 15px;
+  height: 3px;
+  background: #be9e57;
+  border-radius: 5px;
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%);
 }
 
 /* sticky nav */
 
 /* nav */
-
 nav a:hover::after {
   content: "";
   width: 15px;
@@ -391,28 +426,6 @@ nav a:hover::after {
   background: #ffffff;
   border-radius: 5px;
   position: absolute;
-  left: 50%;
-  top: 100%;
-  transform: translateX(-50%);
-}
-nav a:hover::after {
-  content: "";
-  width: 15px;
-  height: 3px;
-  background: #ffffff;
-  border-radius: 5px;
-  position: absolute;
-  left: 50%;
-  top: 100%;
-  transform: translateX(-50%);
-}
-nav a.hov_effect:hover::after {
-  content: "";
-  width: 0px;
-  height: 0px;
-  background: #ffffff;
-  border-radius: 5px;
-  position: unset;
   left: 50%;
   top: 100%;
   transform: translateX(-50%);
@@ -435,19 +448,19 @@ nav .dropdown-menu #dropdown li a {
   text-align: center;
 }
 nav #dropdown svg path {
-  stroke: #009dae;
+  stroke: #be9e57;
 }
 
 /* nav */
 
 /* others page sticky page */
 
-.nav.bg005555 nav a {
+/* .nav a {
   opacity: 0.6;
-}
+} */
 
-.nav.bg005555 nav a.active {
-  opacity: 1;
+.nav a.active {
+  color: rgba(255, 255, 255, 1);
 }
 
 /* others page sticky page */
@@ -481,7 +494,7 @@ nav #dropdown svg path {
   width: 30px;
   height: 9px;
   border-radius: 5px;
-  background: #009dae;
+  background: #be9e57;
   border-radius: 5px;
 }
 
@@ -511,7 +524,7 @@ nav #dropdown svg path {
 }
 
 .bg_banner .slick-dots li.slick-active {
-  background: #009dae;
+  background: #be9e57;
 }
 
 /* destination part */
@@ -525,7 +538,7 @@ nav #dropdown svg path {
 }
 
 .top-destination .slick-dots li.slick-active {
-  background: #009dae;
+  background: #be9e57;
 }
 
 .top-destination .popular_item .img,
@@ -612,9 +625,13 @@ nav #dropdown svg path {
   left: 50%;
   width: 29px;
   height: 21px;
-  background: #009dae;
+  background: #be9e57;
   transform: rotate(-180deg) translateX(50%);
   clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.client_part .slider-single svg path {
+  fill: #be9e57;
 }
 
 /* client part */
@@ -699,7 +716,7 @@ nav #dropdown svg path {
 }
 
 .totop svg path {
-  fill: #009dae;
+  fill: #be9e57;
 }
 
 /* scroll to top */
@@ -746,7 +763,7 @@ nav #dropdown svg path {
 /* delux part */
 
 .delux_part ul li::marker {
-  color: #069a8e;
+  color: #be9e57;
   font-size: 30px;
   line-height: 20px;
 }
@@ -839,8 +856,8 @@ nav #dropdown svg path {
   height: 3px;
   font-size: 0.7em;
   display: block;
-  border: 1px solid #0f0e0e;
-  box-shadow: 0 1px 0 #0f0e0e inset;
+  border: 1px solid #be9e57;
+  box-shadow: 0 1px 0 #be9e57 inset;
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
   -khtml-border-radius: 6px;
@@ -975,7 +992,7 @@ nav #dropdown svg path {
 
 .contact_part .map .overlay {
   position: absolute;
-  background: #009dae;
+  background: #be9e57;
   top: -8%;
   right: -8%;
   width: 100%;
@@ -1056,8 +1073,23 @@ nav #dropdown svg path {
   -o-transition: all linear 0.3s;
 }
 
-.additional_part .additional_item.hover:hover svg path {
-  stroke: #000;
+.additional_part .additional_item.hover .see_details svg {
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+}
+.additional_part .additional_item.hover:hover .see_details svg {
+  margin-left: 10px;
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+}
+.additional_part .additional_item.hover:hover .see_details svg path {
+  stroke: #be9e57;
   transition: all linear 0.3s;
   -webkit-transition: all linear 0.3s;
   -moz-transition: all linear 0.3s;
@@ -1095,8 +1127,14 @@ nav #dropdown svg path {
   .nav.bg005555 nav a {
     opacity: 1;
   }
-  .bg_banner .nav svg path {
-    stroke: #009dae;
+  .nav svg path {
+    stroke: #fff;
+  }
+  .nav .share svg path {
+    stroke: rgb(0, 0, 0);
+  }
+  .nav .mobile_drop svg path {
+    stroke: rgb(0, 0, 0);
   }
   nav .mob_nav {
     width: calc(100% - 1rem) !important;
@@ -1250,6 +1288,7 @@ nav #dropdown svg path {
   .details_banner .search_part {
     max-width: 746px;
     margin: 0 auto;
+    top: -7rem !important;
   }
   .details_banner .room_search {
     max-width: 1116px;
@@ -1282,9 +1321,9 @@ nav #dropdown svg path {
 }
 
 @media (max-width: 1024px) {
-  .details_banner .search_part {
+  /* .details_banner .search_part {
     top: -7rem !important;
-  }
+  } */
   .hotel_item .hotel_slider_item.slick-slide img {
     padding: 10px;
     width: 100%;
