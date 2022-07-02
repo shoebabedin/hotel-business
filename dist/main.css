@@ -764,6 +764,10 @@ html {
   margin-right: 0.75rem;
 }
 
+.mb-\[26px\] {
+  margin-bottom: 26px;
+}
+
 .block {
   display: block;
 }
