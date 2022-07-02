@@ -474,11 +474,17 @@ html {
 
 .container {
   width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 16px;
+  padding-left: 16px;
 }
 
 @media (min-width: 640px) {
   .container {
     max-width: 640px;
+    padding-right: 16px;
+    padding-left: 16px;
   }
 }
 
@@ -491,18 +497,24 @@ html {
 @media (min-width: 1024px) {
   .container {
     max-width: 1024px;
+    padding-right: 24px;
+    padding-left: 24px;
   }
 }
 
 @media (min-width: 1280px) {
   .container {
     max-width: 1280px;
+    padding-right: 40px;
+    padding-left: 40px;
   }
 }
 
 @media (min-width: 1536px) {
   .container {
     max-width: 1536px;
+    padding-right: 60px;
+    padding-left: 60px;
   }
 }
 
@@ -716,16 +728,16 @@ html {
   margin-top: 3rem;
 }
 
+.mb-\[40px\] {
+  margin-bottom: 40px;
+}
+
 .ml-5 {
   margin-left: 1.25rem;
 }
 
 .mb-\[80px\] {
   margin-bottom: 80px;
-}
-
-.mr-28 {
-  margin-right: 7rem;
 }
 
 .mb-7 {
@@ -888,10 +900,6 @@ html {
 
 .max-w-sm {
   max-width: 24rem;
-}
-
-.max-w-\[1296px\] {
-  max-width: 1296px;
 }
 
 .max-w-lg {
@@ -1236,6 +1244,10 @@ html {
   border-color: rgb(190 158 87 / var(--tw-border-opacity));
 }
 
+.border-\[\#FFFFFF33\] {
+  border-color: #FFFFFF33;
+}
+
 .border-black {
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
@@ -1421,11 +1433,6 @@ html {
 .py-20 {
   padding-top: 5rem;
   padding-bottom: 5rem;
-}
-
-.px-8 {
-  padding-left: 2rem;
-  padding-right: 2rem;
 }
 
 .pt-2 {
@@ -1699,10 +1706,6 @@ html {
 .text-gray-700 {
   --tw-text-opacity: 1;
   color: rgb(55 65 81 / var(--tw-text-opacity));
-}
-
-.text-\[\#0F0E0E66\] {
-  color: #0F0E0E66;
 }
 
 .opacity-100 {
@@ -3092,6 +3095,20 @@ nav #dropdown svg path {
 }
 
 @media (max-width: 768px) {
+  nav .mob_nav {
+    width: calc(100% - 1rem) !important;
+    right: 0;
+    top: auto !important;
+  }
+
+  .nav svg path {
+    stroke: #fff;
+  }
+
+  .nav .mobile_drop svg path {
+    stroke: rgb(0, 0, 0);
+  }
+
   .client_part .slider-nav::after {
     width: 7.98px;
     height: 5.78px;
@@ -3134,6 +3151,20 @@ nav #dropdown svg path {
   .delux_part .event_part .events-item:nth-child(even) .event-img {
     order: 0;
   }
+}
+
+@media (min-width: 769px) and (max-width: 991px) {
+  .hotel_banner .col-span-12.lg\:col-span-2 {
+    grid-column: span 12 / span 12;
+  }
+
+  .hotel_banner .col-span-12.lg\:col-span-10 {
+    grid-column: span 12 / span 12;
+  }
+
+  /* .md\:bg-transparent {
+    background-color: #fff !important;
+  } */
 }
 
 @media (min-width: 992px) {
@@ -3182,6 +3213,34 @@ nav #dropdown svg path {
   }
 }
 
+@media (min-width: 1024px) and (max-width: 1050px) {
+  .hotel_banner .col-span-12.lg\:col-span-2 {
+    grid-column: span 4 / span 4;
+  }
+
+  .hotel_banner .col-span-12.lg\:col-span-10 {
+    grid-column: span 8 / span 8;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1050px) {
+  .hotel_banner .col-span-12.lg\:col-span-2 {
+    grid-column: span 4 / span 4;
+  }
+
+  .hotel_banner .col-span-12.lg\:col-span-2 .slick-list {
+    height: 622px !important;
+  }
+
+  .hotel_banner .col-span-12.lg\:col-span-10 {
+    grid-column: span 8 / span 8;
+  }
+
+  .hotel_banner .search_part {
+    top: -0px !important;
+  }
+}
+
 @media (max-width: 1024px) {
   /* .details_banner .search_part {
     top: -7rem !important;
@@ -3195,6 +3254,10 @@ nav #dropdown svg path {
 }
 
 /* responsive */
+
+.hover\:border-transparent:hover {
+  border-color: transparent;
+}
 
 .hover\:border-opacity-0:hover {
   --tw-border-opacity: 0;
@@ -3482,8 +3545,20 @@ nav #dropdown svg path {
     margin-bottom: 2rem;
   }
 
+  .lg\:mb-\[150px\] {
+    margin-bottom: 150px;
+  }
+
+  .lg\:mb-16 {
+    margin-bottom: 4rem;
+  }
+
   .lg\:mt-11 {
     margin-top: 2.75rem;
+  }
+
+  .lg\:mr-28 {
+    margin-right: 7rem;
   }
 
   .lg\:ml-2 {
@@ -3506,20 +3581,12 @@ nav #dropdown svg path {
     margin-right: 1.25rem;
   }
 
-  .lg\:mb-16 {
-    margin-bottom: 4rem;
-  }
-
   .lg\:mt-10 {
     margin-top: 2.5rem;
   }
 
   .lg\:mb-3 {
     margin-bottom: 0.75rem;
-  }
-
-  .lg\:mr-28 {
-    margin-right: 7rem;
   }
 
   .lg\:block {
@@ -3532,10 +3599,6 @@ nav #dropdown svg path {
 
   .lg\:h-40 {
     height: 10rem;
-  }
-
-  .lg\:h-\[42px\] {
-    height: 42px;
   }
 
   .lg\:h-11 {
@@ -3566,10 +3629,6 @@ nav #dropdown svg path {
     width: 40%;
   }
 
-  .lg\:w-\[42px\] {
-    width: 42px;
-  }
-
   .lg\:w-7 {
     width: 1.75rem;
   }
@@ -3594,12 +3653,12 @@ nav #dropdown svg path {
     width: 8rem;
   }
 
-  .lg\:w-3 {
-    width: 0.75rem;
-  }
-
   .lg\:w-64 {
     width: 16rem;
+  }
+
+  .lg\:w-3 {
+    width: 0.75rem;
   }
 
   .lg\:max-w-md {
@@ -3740,9 +3799,9 @@ nav #dropdown svg path {
     line-height: 1.5rem;
   }
 
-  .lg\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
+  .lg\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 
   .lg\:text-sm {
@@ -3750,13 +3809,13 @@ nav #dropdown svg path {
     line-height: 1.25rem;
   }
 
-  .lg\:text-lg {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-  }
-
   .lg\:text-\[22px\] {
     font-size: 22px;
+  }
+
+  .lg\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 
   .lg\:text-xl {
@@ -3764,13 +3823,13 @@ nav #dropdown svg path {
     line-height: 1.75rem;
   }
 
-  .lg\:text-\[32px\] {
-    font-size: 32px;
+  .lg\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 
-  .lg\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
+  .lg\:text-\[32px\] {
+    font-size: 32px;
   }
 
   .lg\:font-bold {
@@ -3796,6 +3855,11 @@ nav #dropdown svg path {
 }
 
 @media (min-width: 1280px) {
+  .xl\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
   .xl\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;

@@ -1244,6 +1244,17 @@ nav #dropdown svg path {
 }
 
 @media (max-width: 768px) {
+  nav .mob_nav {
+    width: calc(100% - 1rem) !important;
+    right: 0;
+    top: auto !important;
+  }
+  .nav svg path {
+    stroke: #fff;
+  }
+  .nav .mobile_drop svg path {
+    stroke: rgb(0, 0, 0);
+  }
   .client_part .slider-nav::after {
     width: 7.98px;
     height: 5.78px;
@@ -1280,7 +1291,17 @@ nav #dropdown svg path {
     order: 0;
   }
 }
-
+@media (min-width: 769px) and (max-width: 991px) {
+  .hotel_banner .col-span-12.lg\:col-span-2 {
+    grid-column: span 12 / span 12;
+  }
+  .hotel_banner .col-span-12.lg\:col-span-10 {
+    grid-column: span 12 / span 12;
+  }
+  /* .md\:bg-transparent {
+    background-color: #fff !important;
+  } */
+}
 @media (min-width: 992px) {
   .banner .container {
     max-width: 1079px;
@@ -1317,6 +1338,29 @@ nav #dropdown svg path {
     height: 196px;
     -o-object-fit: cover !important;
     object-fit: cover !important;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1050px) {
+  .hotel_banner .col-span-12.lg\:col-span-2 {
+    grid-column: span 4 / span 4;
+  }
+  .hotel_banner .col-span-12.lg\:col-span-10 {
+    grid-column: span 8 / span 8;
+  }
+}
+@media (min-width: 992px) and (max-width: 1050px) {
+  .hotel_banner .col-span-12.lg\:col-span-2 {
+    grid-column: span 4 / span 4;
+  }
+  .hotel_banner .col-span-12.lg\:col-span-2 .slick-list {
+    height: 622px !important;
+  }
+  .hotel_banner .col-span-12.lg\:col-span-10 {
+    grid-column: span 8 / span 8;
+  }
+  .hotel_banner .search_part {
+    top: -0px !important;
   }
 }
 

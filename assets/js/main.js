@@ -392,6 +392,14 @@ $(document).ready(function () {
     arrows: false,
     responsive: [
       {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          vertical: false,
+        },
+      },
+      {
         breakpoint: 769,
         settings: {
           slidesToShow: 4,
