@@ -3151,10 +3151,15 @@ nav #dropdown svg path {
   .delux_part .event_part .events-item:nth-child(even) .event-img {
     order: 0;
   }
+
+  .destination_part .destination_slider .slider_item {
+    overflow-y: hidden;
+    max-height: 400px;
+  }
 }
 
 @media (min-width: 769px) and (max-width: 991px) {
-  .hotel_banner .col-span-12.lg\:col-span-2 {
+  .destination_slider .hotel_banner .col-span-12.lg\:col-span-2 {
     grid-column: span 12 / span 12;
   }
 
@@ -3238,6 +3243,15 @@ nav #dropdown svg path {
 
   .hotel_banner .search_part {
     top: -0px !important;
+  }
+
+  .destination_part .destination_slider .slider_item {
+    overflow-y: hidden;
+    max-height: 500px;
+  }
+
+  .destination_part .destination_slider .slider_item img {
+    height: 100%;
   }
 }
 
